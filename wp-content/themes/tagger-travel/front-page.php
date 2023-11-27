@@ -2488,8 +2488,8 @@ get_header();
         <div class="hotel-top">
             <div class="left-content">
                 <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png">
+<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic01_sp.png">-->
+                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png" alt="">
                 </picture>
             </div>
@@ -2515,8 +2515,8 @@ get_header();
                 <div class="hotelArea-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic02_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png" alt="">
                         </picture>
                         <h3 class="title">
@@ -2540,8 +2540,8 @@ get_header();
                 <div class="hotelArea-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic03_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png" alt="">
                         </picture>
                         <h3 class="title">
@@ -2565,15 +2565,15 @@ get_header();
                 <div class="hotelArea-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic04_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png" alt="">
                         </picture>
                         <h3 class="title">
                             <span class="area-ja dnp-s-m">南部エリア</span>
                             <span class="area-en gp-p">Southern</span>
                         </h3>
-                        <h4 class="local">ホーチミン,カントー,ダラット</h4>
+                        <h4 class="local">ハイノ,ニンビン,サパ</h4>
                         <p class="icon-arrow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                 <g id="Group_68" data-name="Group 68" transform="translate(-496 -3642)">
@@ -2590,12 +2590,12 @@ get_header();
                 <div class="hotelArea-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic04_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png" alt="">
                         </picture>
                         <h3 class="title">
-                            <span class="area-ja dnp-s-m">南部リゾートエリア</span>
+                            <span class="area-ja dnp-s-m">南部リゾート<br class="sp-br"/>エリア</span>
                             <span class="area-en gp-p">Southern resort</span>
                         </h3>
                         <h4 class="local">フーコック島,コンダオ島</h4>
@@ -2629,7 +2629,7 @@ get_header();
                             <span class="ttl-ja dnp-s-m">ベトナム国外ツアー</span>
                             <span class="ttl-en c-g">Overseas tour</span>
                         </h2>
-                        <p class="subTitle dnp-s-m">中国、タイ、カンボジアなどベトナム国外の<br/>ツアーもご案内可能です。</p>
+                        <p class="subTitle dnp-s-m">中国、タイ、カンボジアなどベトナム国外の<br class="pc-br"/>ツアーもご案内可能です。</p>
                         <div class="link-more">
                             <a href="#" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                         </div>
@@ -2637,8 +2637,8 @@ get_header();
                 </div>
                 <div class="overseasTour-image">
                     <picture class="image">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_sp.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png">
+<!--                        <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/overseas_tour_pic01_sp.png">-->
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png" alt="">
                     </picture>
                     <picture class="image-01">
@@ -2650,13 +2650,13 @@ get_header();
             </div>
             <div class="image-bottom">
                 <picture class="image-01 hide-pc">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png">
+<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/overseas_tour_pic02_sp.png">-->
+                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png" alt="">
                 </picture>
                 <picture class="image-02">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png">
+<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/overseas_tour_pic03_sp.png">-->
+                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png" alt="">
                 </picture>
             </div>
@@ -2677,8 +2677,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic01_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2690,8 +2690,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic02_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2703,8 +2703,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic03_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2716,12 +2716,12 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic04_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png" alt="">
                         </picture>
                         <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">コンサート・ライブ</span>
+                            <span class="ttl-ja dnp-s-m">コンサート・ラ<br class="sp-br"/>イブ</span>
                             <span class="ttl-en gp-p">Concert Live</span>
                         </h4>
                     </a>
@@ -2729,8 +2729,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic05_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2742,8 +2742,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic06_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2755,8 +2755,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic07_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2768,8 +2768,8 @@ get_header();
                 <li class="arrangement-item">
                     <a href="#">
                         <picture class="image">
-                            <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_sp.png">
-                            <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png">
+<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic08_sp.png">-->
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png" alt="">
                         </picture>
                         <h4 class="title">
@@ -2790,8 +2790,8 @@ get_header();
         <div class="inner">
             <div class="imageContent">
                 <picture class="image">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_sp.png">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png">
+<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/qa_pic01_sp.png">-->
+                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png" alt="">
                 </picture>
             </div>
