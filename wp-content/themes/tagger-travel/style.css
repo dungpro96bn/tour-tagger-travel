@@ -838,6 +838,15 @@ body:not(.home) #header-menu .header-nav{
 }
 
 
+@media(min-width: 1024px){
+
+    .btn-openMenu{
+        display: none;
+    }
+
+}
+
+
 
 @media (max-width: 1023px) {
 
