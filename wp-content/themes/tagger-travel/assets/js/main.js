@@ -1,10 +1,146 @@
 jQuery(function ($) {
 
-    const ua = navigator.userAgent;
-    const uaLowerCase = navigator.userAgent.toLowerCase();
-    const isSp = ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0);
-    const isTablet = ua.indexOf('iPad') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') == -1) || ua.indexOf('A1_07') > 0 || ua.indexOf('SC-01C') > 0 || uaLowerCase.indexOf('macintosh') > 0 && 'ontouchend' in document;
-    const isPc = (!isSp && !isTablet);
+    //Slider banner homepage
+    $('.bannerSlider .sliderList-image').slick({
+        autoplay: true,
+        autoplaySpeed: 6000,
+        infinite: true,
+        dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        speed: 600
+    });
+
+    //Slider Vietnam tour
+    $('#north .list-imageTour').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // fade: true,
+        dots: false,
+        asNavFor: '#north .list-thumbnailTour',
+        prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
+    });
+    $('#north .list-thumbnailTour').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '#north .list-imageTour',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false,
+    });
+
+    $('#central-south .list-imageTour').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // fade: true,
+        dots: false,
+        asNavFor: '#central-south .list-thumbnailTour',
+        prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
+    });
+    $('#central-south .list-thumbnailTour').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '#central-south .list-imageTour',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false,
+    });
+
+    $('#south .list-imageTour').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // fade: true,
+        dots: false,
+        asNavFor: '#south .list-thumbnailTour',
+        prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
+    });
+    $('#south .list-thumbnailTour').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '#south .list-imageTour',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false,
+    });
+
+    $('#southern-resort-area .list-imageTour').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // fade: true,
+        dots: false,
+        asNavFor: '#southern-resort-area .list-thumbnailTour',
+        prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
+    });
+    $('#southern-resort-area .list-thumbnailTour').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '#southern-resort-area .list-imageTour',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false,
+    });
+
 
     //fade
     AOS.init({
@@ -13,61 +149,6 @@ jQuery(function ($) {
         delay: 0,
     });
 
-    $(document).ready(function () {
-
-        //Slider banner homepage
-        $('.bannerSlider .sliderList-image').slick({
-            autoplay: true,
-            autoplaySpeed: 6000,
-            infinite: true,
-            dots: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 600
-        });
-
-        //Slider Vietnam tour
-        $('.list-imageTour').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: true,
-            // fade: true,
-            dots: false,
-            asNavFor: '.list-thumbnailTour',
-            prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
-                "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
-                "</svg>\n</button>",
-            nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
-                "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
-                "</svg>\n</button>",
-            responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
-        });
-        $('.list-thumbnailTour').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.list-imageTour',
-            dots: false,
-            arrows: false,
-            focusOnSelect: true,
-            infinite: false,
-        });
-    });
-
-
-
-    // add Class HTML element
-    setTimeout((function() {
-            document.documentElement.classList.add("is-ready")
-        }
-    ), 300);
 
     //scroll
     $(function(){
@@ -76,9 +157,22 @@ jQuery(function ($) {
             var url = $(this).attr('href');
             var dest = url.split('#');var target = dest[1];
             var target_offset = $('#'+target).offset();
-            var target_top = target_offset.top;
+            var target_top = target_offset.top - 50;
             $('html, body').animate({scrollTop:target_top}, 500, 'swing');
             return false;
+        });
+
+        $('.locationItem a').click(function(event){
+            event.preventDefault();
+            var url = $(this).attr('href');
+            var dest = url.split('#');
+            var target = dest[1];
+            $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
+            $(this).addClass("active");
+            $("#vietnam-tour").attr("data-map", target);
+            $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
+            $('#'+target).addClass("active");
+            $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
         });
     });
 

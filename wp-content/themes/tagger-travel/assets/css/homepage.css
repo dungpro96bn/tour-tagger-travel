@@ -13,7 +13,7 @@
 
 .bannerSlider .heading-main{
     position: absolute;
-    top: 47%;
+    top: 46.2%;
     left: 0;
     width: 100%;
     text-align: center;
@@ -26,11 +26,36 @@
     display: block;
     letter-spacing: 5px;
     padding-left: 30px;
-    margin-bottom: 15px;
-    text-shadow: 5px 5px 26px #000;
+    margin-bottom: 49px;
+    text-shadow: 0px 0px 26px #000, 0px 0px 26px #000;
+    font-weight: bold;
 }
-.bannerSlider .heading-main .ttl-img{
+.bannerSlider .heading .ttl-big{
     display: block;
+    font-size: 127px;
+    line-height: 98px;
+    color: #fff;
+    font-family: 'Pristine Script';
+    letter-spacing: 13px;
+    padding-left: 58px;
+    margin-bottom: 33px;
+}
+.bannerSlider .heading .ttl-big small{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+    margin-right: -18px;
+    top: -1px;
+}
+.bannerSlider .heading .ttl-sub{
+    display: block;
+    font-size: 32px;
+    line-height: 42px;
+    color: #fff;
+    font-family: 'Pristine Script';
+    letter-spacing: 4px;
+    padding-left: 26px;
+    text-shadow: 3px 3px 26px #000, 3px 3px 26px #000;
 }
 .bannerSlider .heading-main .ttl-img.text-ttl01 img{
     width: 51%;
@@ -233,6 +258,9 @@
 
 
 
+
+
+
 /*vietnam-tour*/
 .vietnam-tour{
     padding-top: 96px;
@@ -269,6 +297,12 @@
     overflow: hidden;
     padding-top: 20px;
     position: relative;
+}
+.vietnam-tour .tourInfo .tourInfo-item{
+    display: none;
+}
+.vietnam-tour .tourInfo .tourInfo-item.active{
+    display: block;
 }
 .vietnam-tour .tourInfo .tag-location{
     display: flex;
@@ -515,11 +549,11 @@
     left: 43.3%;
     transform: translate(-50%, -50%);
 }
-.vietnam-tour[data-map="active-north"] svg .star-01,
-.vietnam-tour[data-map="active-north"] svg .item-01{
+.vietnam-tour[data-map="north"] svg .star-01,
+.vietnam-tour[data-map="north"] svg .item-01{
     fill: #CB4667;
 }
-.vietnam-tour[data-map="active-north"] svg .dots-01{
+.vietnam-tour[data-map="north"] svg .dots-01{
     stroke: #CB4667;
 }
 
@@ -531,6 +565,21 @@
     stroke: #CB4667;
 }
 
+.vietnam-tour[data-map="south"] svg .star-03,
+.vietnam-tour[data-map="south"] svg .item-03{
+    fill: #CB4667;
+}
+.vietnam-tour[data-map="south"] svg .dots-03{
+    stroke: #CB4667;
+}
+
+.vietnam-tour[data-map="southern-resort-area"] svg .star-04,
+.vietnam-tour[data-map="southern-resort-area"] svg .item-04{
+    fill: #CB4667;
+}
+.vietnam-tour[data-map="southern-resort-area"] svg .dots-04{
+    stroke: #CB4667;
+}
 
 
 /*hotel-block*/
@@ -621,7 +670,7 @@
 .hotel-block .hotelArea-item a svg circle{
     transition: .3s;
 }
-.hotel-block .hotelArea-item a:hover svg #Ellipse_11>circle{
+.hotel-block .hotelArea-item a:hover svg #Ellipse_11>circle:nth-child(2){
     fill: #6b5d54;
 }
 .hotel-block .hotelArea-item a:hover svg #Path_953{
@@ -686,12 +735,14 @@
     margin: -45px 0 0  auto;
     display: block;
     z-index: 2;
+    max-width: 300px;
 }
 .overseas-tour .image-bottom .image-02{
     position: absolute;
     width: 20.8%;
     bottom: 0;
     left: 0;
+    max-width: 310px;
 }
 
 
@@ -870,13 +921,13 @@
     width: 71.5%;
     padding-top: 15px;
 }
-.news-block .newsList .newsItem{
+.news-block .newsItem{
     border-top: 1px solid #D9D9D9;
 }
-.news-block .newsList .newsItem:last-child{
+.news-block .newsItem:last-child{
     border-bottom: 1px solid #D9D9D9;
 }
-.news-block .newsList .newsItem a{
+.news-block .newsItem a{
     font-size: 15px;
     line-height: 23px;
     display: flex;
@@ -885,11 +936,11 @@
     padding-bottom: 29px;
     color: #6A5D54;
 }
-.news-block .newsList .newsItem .date{
+.news-block .newsItem .date{
     width: 90px;
     letter-spacing: 0.4px;
 }
-.news-block .newsList .newsItem .text{
+.news-block .newsItem .text{
     width: calc(100% - 90px);
     text-decoration: underline;
 }
@@ -929,7 +980,14 @@
     .bannerSlider .scroll-action{
         font-size: 18px;
     }
-
+    .bannerSlider .heading .ttl-big{
+        font-size: 100px;
+        line-height: 76px;
+    }
+    .bannerSlider .heading .ttl-sub{
+        font-size: 24px;
+        line-height: 30px;
+    }
 
 
 
@@ -947,6 +1005,36 @@
         height: 56px;
         font-size: 18px;
     }
+
+
+
+    /*bannerSlider*/
+    .bannerSlider .heading-main .ttl-ja {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .bannerSlider .heading .ttl-big{
+        font-size: 80px;
+        line-height: 60px;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
+    }
+    .bannerSlider .heading .ttl-big small {
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+        margin-right: -12px;
+        top: -3px;
+    }
+    .bannerSlider .heading .ttl-sub{
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 3px;
+    }
+
+
+
 
 
     /*vietnam-tour*/
@@ -1122,12 +1210,30 @@
         top: 30%;
     }
     .bannerSlider .heading-main .ttl-ja {
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .bannerSlider .heading .ttl-big {
+        font-size: 66px;
+        line-height: 40px;
+        letter-spacing: 10px;
+        margin-bottom: 20px;
     }
     .bannerSlider .sliderHomepage .slick-dots{
         bottom: 70px;
         padding-right: 50px;
+    }
+    .bannerSlider .heading .ttl-sub {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 2.5px;
+    }
+    .bannerSlider .heading .ttl-big small {
+        display: inline-block;
+        margin-left: 17px;
+        position: relative;
+        margin-right: -10px;
+        top: -2px;
     }
 
 
@@ -1242,7 +1348,7 @@
     .news-block .heading-news{
         font-size: 22px;
     }
-    .news-block .newsList .newsItem .text{
+    .news-block .newsItem .text{
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
@@ -1286,6 +1392,31 @@
 
 
     /*bannerSlider*/
+    .bannerSlider .heading-main{
+        top: 41.1%;
+    }
+    .bannerSlider .heading .ttl-sub {
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 1.7px;
+        padding-left: 22px;
+    }
+    .bannerSlider .heading-main .ttl-ja {
+        font-size: 21px;
+        line-height: 33px;
+        letter-spacing: 2.8px;
+        padding-left: 34px;
+        margin-bottom: 19px;
+    }
+    .bannerSlider .heading .ttl-big {
+        font-size: 63px;
+        line-height: 65px;
+        letter-spacing: 6px;
+        margin-bottom: 9px;
+        padding-left: 23px;
+    }
+
+
     .bannerSlider .bannerContent .sliderItem-image .image img{
         height: 620px;
         object-fit: cover;
@@ -1588,6 +1719,7 @@
         position: static;
         width: 100%;
         display: block;
+        max-width: 100%;
     }
     .overseas-tour  .image-bottom{
         padding: 0 16px;
@@ -1715,16 +1847,16 @@
         transition: .3s;
         transform: translateY(-50%);
     }
-    .news-block .newsList .newsItem .text {
+    .news-block .newsItem .text {
         width: 100%;
         -webkit-line-clamp: 2;
     }
-    .news-block .newsList .newsItem .date {
+    .news-block .newsItem .date {
         width: 100%;
         letter-spacing: 0.3px;
         margin-bottom: 14px;
     }
-    .news-block .newsList .newsItem a {
+    .news-block .newsItem a {
         font-size: 15px;
         line-height: 22px;
         padding-top: 19px;

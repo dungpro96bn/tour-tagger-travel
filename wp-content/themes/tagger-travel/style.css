@@ -9,6 +9,11 @@ Author URI: http://www.1049.cc
 */
 
 
+@font-face {
+    font-family: 'Pristine Script';
+    src: url("./assets/fonts/Pristine-Script.ttf") format('truetype');
+}
+
 
 /* --------------------------------------------------------------
  * Reset default browser CSS.
@@ -124,7 +129,8 @@ textarea,
 select,
 button{
     /*font-family: 'Noto Sans CJK JP', sans-serif;*/
-    font-family: noto-sans-cjk-jp, sans-serif;
+    /*font-family: noto-sans-cjk-jp, sans-serif;*/
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 main {
@@ -417,6 +423,7 @@ body:not(.home) #header-menu .header-nav{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 }
 #header-menu .header-nav .header-logo .logo-scroll{
     position: absolute;
@@ -441,8 +448,23 @@ body:not(.home) #header-menu .header-nav{
     opacity: 1;
     visibility: visible;
 }
-#header-menu .header-nav .header-logo a:hover{
+#header-menu .header-nav .header-logo a:hover img{
+    transition: .3s;
+    position: relative;
+    z-index: 2;
+}
+#header-menu .header-nav .header-logo a:hover img{
     opacity: .7;
+}
+#header-menu .header-nav .header-logo .logo:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
 }
 #header-menu .header-nav .right-header {
     width: calc(100% - 320px);
@@ -1300,9 +1322,17 @@ body:not(.home) #header-menu .header-nav{
     #footer .footer-bottom .copyright{
         width: 100%;
     }
-
-
-
+    #footer #navList-menu .menu-item a:after{
+        border-top: 2px solid #A08953;
+        bottom: -13px;
+    }
+    #footer #navList-menu .menu-item a:hover:after,
+    #footer #navList-menu .menu-item.current-menu-item a:after{
+        bottom: -8px;
+    }
+    #footer #navList-menu .menu-item:nth-child(4):before{
+        border-right: 0;
+    }
 
 
 

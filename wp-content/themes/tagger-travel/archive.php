@@ -1,13 +1,5 @@
 <?php get_header(); ?>
 
-<?php /* breadcrumb */
-  global $homeName;
-  $homeName = '';
-  if (function_exists('breadcrumb')) :
-    breadcrumb();
-  endif;
-?>
-
 <div id="new" class="new-container">
   <h1 class="new-heading">
     <span class="letter-top">NEW</span>

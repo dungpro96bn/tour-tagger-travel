@@ -7,8 +7,8 @@ get_header();
 
     <div class="bannerSlider">
         <div class="bannerContent">
-            <div class="left-slider">
-                <p class="titleTag gp-p">Your Vietnam Adventure Starts Here</p>
+            <div class="left-slider" data-aos="fade-down">
+                <div class="titleTag gp-p"><p>Your Vietnam Adventure Starts Here</p></div>
             </div>
             <div class="right-slider">
                 <div class="sliderHomepage">
@@ -16,29 +16,25 @@ get_header();
                         <ul class="sliderList-image">
                             <li class="sliderItem-image">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic01_pc.jpg">
-                                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic01_pc.jpg">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic01_pc.jpg">
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic01_pc.jpg" alt="">
                                 </picture>
                             </li>
                             <li class="sliderItem-image">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic02_pc.jpg">
-                                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic02_pc.jpg">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic02_pc.jpg">
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic02_pc.jpg" alt="">
                                 </picture>
                             </li>
                             <li class="sliderItem-image">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic03_pc.jpg">
-                                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic03_pc.jpg">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic03_pc.jpg">
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic03_pc.jpg" alt="">
                                 </picture>
                             </li>
                             <li class="sliderItem-image">
                                 <picture class="image">
-                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic04_pc.jpg">
-                                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic04_pc.jpg">
+                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic04_pc.jpg">
                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic04_pc.jpg" alt="">
                                 </picture>
                             </li>
@@ -61,24 +57,16 @@ get_header();
             </div>
         </div>
         <div class="heading-main">
-            <h1 class="heading">
+            <h1 class="heading" data-aos="fade-up">
                 <span class="ttl-ja dnp-s-m">ベトナム旅行は</span>
-                <picture class="ttl-img text-ttl01">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/heading_ttl01_sp.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/heading_ttl01_pc.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/heading_ttl01_pc.png" alt="">
-                </picture>
-                <picture class="ttl-img text-ttl02">
-                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/heading_ttl02_pc.png 2x">
-                    <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/heading_ttl02_pc.png 2x">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/heading_ttl02_pc.png" alt="">
-                </picture>
+                <span class="ttl-big">TAGGER <br class="sp-br"/>T<small>RAVE</small>L</span>
+                <span class="ttl-sub">Your Vietnam Adventure Starts Here</span>
             </h1>
         </div>
         <div class="scroll-action"><a href="#vietnam-tour" class="scroll gp-p">Scroll Down</a></div>
     </div>
 
-    <div id="vietnam-tour" class="vietnam-tour" data-map="active-north">
+    <div id="vietnam-tour" class="vietnam-tour" data-map="north">
         <div class="bg-map">
             <svg class="map-pc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3000" height="1400" viewBox="0 0 3000 1400">
                 <defs>
@@ -1115,12 +1103,12 @@ get_header();
                         <text id="フエ" class="item-02" transform="translate(796 1786)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フエ</tspan></text>
                         <text id="ダナン" class="item-02" transform="translate(818 1816)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダナン</tspan></text>
                         <text id="ホイアン" class="item-02" transform="translate(842 1849)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホイアン</tspan></text>
-                        <text id="ニャチャン" transform="translate(848 2035)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ニャチャン</tspan></text>
-                        <text id="ダラット" transform="translate(774.488 2073)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
-                        <text id="コンダオ島" transform="translate(774.488 2114.185)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
-                        <text id="カントー" transform="translate(507.665 2125)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
-                        <text id="フーコック島" transform="translate(420 2093)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フーコック島</tspan></text>
-                        <text id="ホーチミン" transform="translate(420 2030)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホーチミン</tspan></text>
+                        <text id="ニャチャン" class="item-03" transform="translate(848 2035)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ニャチャン</tspan></text>
+                        <text id="ダラット" class="item-03" transform="translate(774.488 2073)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
+                        <text id="コンダオ島" class="item-04" transform="translate(774.488 2114.185)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
+                        <text id="カントー" class="item-04" transform="translate(507.665 2125)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
+                        <text id="フーコック島" class="item-04" transform="translate(420 2093)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フーコック島</tspan></text>
+                        <text id="ホーチミン" class="item-03" transform="translate(420 2030)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホーチミン</tspan></text>
                         <text id="ハロン湾" class="item-01" transform="translate(768 1630)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハロン湾</tspan></text>
                         <text id="ハノイ" class="item-01" transform="translate(520 1696)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハノイ</tspan></text>
                         <g id="Group_32" data-name="Group 32" transform="translate(598.025 1611.997)">
@@ -1151,7 +1139,7 @@ get_header();
                             <path id="Path_934-4" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-4" data-name="Group 29">
                                 <g id="Group_28-4" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-4" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-4" class="star-04" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1159,7 +1147,7 @@ get_header();
                             <path id="Path_934-5" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-5" data-name="Group 29">
                                 <g id="Group_28-5" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-5" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-5" class="star-03" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1167,7 +1155,7 @@ get_header();
                             <path id="Path_934-6" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-6" data-name="Group 29">
                                 <g id="Group_28-6" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-6" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-6" class="star-04" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1175,7 +1163,7 @@ get_header();
                             <path id="Path_934-7" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-7" data-name="Group 29">
                                 <g id="Group_28-7" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-7" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-7" class="star-03" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1183,7 +1171,7 @@ get_header();
                             <path id="Path_934-8" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-8" data-name="Group 29">
                                 <g id="Group_28-8" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-8" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-8" class="star-03" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1191,7 +1179,7 @@ get_header();
                             <path id="Path_934-9" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-9" data-name="Group 29">
                                 <g id="Group_28-9" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-9" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-9" class="star-04" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1221,16 +1209,16 @@ get_header();
                         </g>
                         <path id="Path_936" class="dots-01" data-name="Path 936" d="M598.025,1625,556,1580.705" transform="translate(5.003 -8.705)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_937" class="dots-01" data-name="Path 937" d="M578.557,1586.788l-50.974,32.985" transform="translate(182.142 43.599)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_945" data-name="Path 945" d="M527.583,1586.788l50.974,32.985" transform="translate(265.391 403.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_946" data-name="Path 946" d="M555.839,1569.432l22.718,50.341" transform="translate(191.879 441.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_947" data-name="Path 947" d="M555.839,1569.432l66.438,9.7" transform="translate(145.443 528.753)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_948" data-name="Path 948" d="M555.839,1569.432l-65.574,37" transform="translate(90.251 509.199)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_949" data-name="Path 949" d="M555.839,1569.432l-65.574,37" transform="translate(36.406 480.566)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_945" class="dots-03" data-name="Path 945" d="M527.583,1586.788l50.974,32.985" transform="translate(265.391 403.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_946" class="dots-03" data-name="Path 946" d="M555.839,1569.432l22.718,50.341" transform="translate(191.879 441.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_947" class="dots-04" data-name="Path 947" d="M555.839,1569.432l66.438,9.7" transform="translate(145.443 528.753)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_948" class="dots-04" data-name="Path 948" d="M555.839,1569.432l-65.574,37" transform="translate(90.251 509.199)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_949" class="dots-04" data-name="Path 949" d="M555.839,1569.432l-65.574,37" transform="translate(36.406 480.566)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_942" class="dots-02" data-name="Path 942" d="M578.557,1586.788l-50.974,32.985" transform="translate(214.417 201.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_943" class="dots-02" data-name="Path 943" d="M578.557,1586.788l-50.974,32.985" transform="translate(233.116 226.72)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_944" class="dots-02" data-name="Path 944" d="M578.557,1586.788l-50.974,32.985" transform="translate(254.93 255.712)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_938" class="dots-01" data-name="Path 938" d="M598.025,1625H529.691" transform="translate(41.975 64.599)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_950" data-name="Path 950" d="M598.025,1625H433.764" transform="translate(73.337 399.414)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_950" class="dots-03" data-name="Path 950" d="M598.025,1625H433.764" transform="translate(73.337 399.414)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                     </g>
                 </g>
             </svg>
@@ -2272,7 +2260,7 @@ get_header();
                                 <path id="Path_934" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                 <g id="Group_29" data-name="Group 29">
                                     <g id="Group_28" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                        <path id="Path_935" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#cb4667"/>
+                                        <path id="Path_935" class="star-01" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                     </g>
                                 </g>
                             </g>
@@ -2280,7 +2268,7 @@ get_header();
                                 <path id="Path_934-2" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                 <g id="Group_29-2" data-name="Group 29">
                                     <g id="Group_28-2" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                        <path id="Path_935-2" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#cb4667"/>
+                                        <path id="Path_935-2" class="star-01" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                     </g>
                                 </g>
                             </g>
@@ -2288,81 +2276,84 @@ get_header();
                                 <path id="Path_934-3" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                 <g id="Group_29-3" data-name="Group 29">
                                     <g id="Group_28-3" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                        <path id="Path_935-3" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#cb4667"/>
+                                        <path id="Path_935-3" class="star-01" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                     </g>
                                 </g>
                             </g>
                         </g>
-                        <path id="Path_936" data-name="Path 936" d="M579.4,1605.374l-31.334-15.548" transform="translate(-429.478 -388.848)" fill="none" stroke="#cb4667" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_937" data-name="Path 937" d="M555.971,1586.788l-28.389,18.37" transform="translate(-321.235 -368.414)" fill="none" stroke="#cb4667" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1929" data-name="Path 1929" d="M555.971,1586.788l-28.389,18.37" transform="translate(-301.114 -282.414)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1930" data-name="Path 1930" d="M555.971,1586.788l-28.389,18.37" transform="translate(-285.583 -269.346)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1931" data-name="Path 1931" d="M555.971,1586.788l-28.389,18.37" transform="translate(-277.583 -250.188)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1932" data-name="Path 1932" d="M558.2,1577.758H530.23" transform="translate(-277.583 -180.258)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1933" data-name="Path 1933" d="M577.126,1585.935l-46.9-8.177" transform="translate(-295.494 -167.258)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1935" data-name="Path 1935" d="M600.208,1583.468l-69.977-5.709" transform="translate(-410.494 -161.758)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_938" data-name="Path 938" d="M567.748,1625H529.691" transform="translate(-394.468 -374.649)" fill="none" stroke="#cb4667" stroke-width="1" stroke-dasharray="2 2"/>
-                        <text id="サパ" transform="translate(91 1204)" fill="#cb4667" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">サパ</tspan></text>
-                        <text id="ハロン湾" transform="translate(243 1223)" fill="#cb4667" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハロン湾</tspan></text>
-                        <text id="ハイノ" transform="translate(97 1255)" fill="#cb4667" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハイノ</tspan></text>
+                        <path id="Path_936" class="dots-01" data-name="Path 936" d="M579.4,1605.374l-31.334-15.548" transform="translate(-429.478 -388.848)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_937" class="dots-01" data-name="Path 937" d="M555.971,1586.788l-28.389,18.37" transform="translate(-321.235 -368.414)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1929" class="dots-02" data-name="Path 1929" d="M555.971,1586.788l-28.389,18.37" transform="translate(-301.114 -282.414)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1930" class="dots-02" data-name="Path 1930" d="M555.971,1586.788l-28.389,18.37" transform="translate(-285.583 -269.346)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1931" class="dots-02" data-name="Path 1931" d="M555.971,1586.788l-28.389,18.37" transform="translate(-277.583 -250.188)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1932" class="dots-03" data-name="Path 1932" d="M558.2,1577.758H530.23" transform="translate(-277.583 -180.258)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1933" class="dots-03" data-name="Path 1933" d="M577.126,1585.935l-46.9-8.177" transform="translate(-295.494 -167.258)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1935" class="dots-03" data-name="Path 1935" d="M600.208,1583.468l-69.977-5.709" transform="translate(-410.494 -161.758)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_938" class="dots-01" data-name="Path 938" d="M567.748,1625H529.691" transform="translate(-394.468 -374.649)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <text id="サパ" class="item-01" transform="translate(91 1204)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">サパ</tspan></text>
+                        <text id="ハロン湾" class="item-01" transform="translate(243 1223)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハロン湾</tspan></text>
+                        <text id="ハイノ" class="item-01" transform="translate(97 1255)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハイノ</tspan></text>
                         <g id="Group_207" data-name="Group 207" transform="translate(239.253 1391.298)">
                             <path id="Path_934-4" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             <g id="Group_29-4" data-name="Group 29">
                                 <g id="Group_28-4" data-name="Group 28" clip-path="url(#clip-path-8)">
-                                    <path id="Path_935-4" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                    <path id="Path_935-4" class="star-03" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
                         <g id="Group_208" data-name="Group 208" transform="translate(236.037 1349.298)">
-                            <path id="Path_934-5" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                            <path id="Path_934-5" class="star-02" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                        </g>
+                        <g id="Group_2809" data-name="Group 2809" transform="translate(228.300 1333.298)">
+                            <path id="Path_934-5" class="star-02" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                         </g>
                         <g id="Group_209" data-name="Group 209" transform="translate(214.542 1320.956)">
                             <path id="Path_934-6" data-name="Path 934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             <g id="Group_29-5" data-name="Group 29">
                                 <g id="Group_28-5" data-name="Group 28" clip-path="url(#clip-path-8)">
-                                    <path id="Path_935-5" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                    <path id="Path_935-5" class="star-02" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
                         <g id="Group_210" data-name="Group 210" transform="translate(158.716 1382)">
                             <g id="Group_28-6" data-name="Group 28" transform="translate(12.784 58)" clip-path="url(#clip-path-8)">
-                                <path id="Path_935-6" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                <path id="Path_935-6" class="star-04" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             </g>
                         </g>
                         <g id="Group_211" data-name="Group 211" transform="translate(210.026 1344.641)">
                             <g id="Group_28-7" data-name="Group 28" transform="translate(12.784 58)" clip-path="url(#clip-path-8)">
-                                <path id="Path_935-7" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                <path id="Path_935-7" class="star-03" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             </g>
                         </g>
                         <g id="Group_212" data-name="Group 212" transform="translate(179.026 1394.657)">
                             <g id="Group_28-8" data-name="Group 28" transform="translate(12.784 58)" clip-path="url(#clip-path-8)">
-                                <path id="Path_935-8" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                <path id="Path_935-8" class="star-04" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             </g>
                         </g>
                         <g id="Group_213" data-name="Group 213" transform="translate(181.026 1358)">
                             <g id="Group_28-9" data-name="Group 28" transform="translate(12.784 58)" clip-path="url(#clip-path-8)">
-                                <path id="Path_935-9" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                <path id="Path_935-9" class="star-03" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             </g>
                         </g>
-                        <text id="ニャチャン" transform="translate(285.145 1402)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ニャチャン</tspan></text>
-                        <text id="ダラット" transform="translate(285.729 1425.588)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
-                        <text id="コンダオ島" transform="translate(242 1457)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
-                        <text id="カントー" transform="translate(74 1469)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
-                        <text id="フーコック島" transform="translate(31 1445)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フーコック島</tspan></text>
-                        <text id="ホーチミン" transform="translate(55 1421)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホーチミン</tspan></text>
-                        <path id="Path_1934" data-name="Path 1934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(145.33 1429.084)" fill="#918569"/>
-                        <path id="Path_1936" data-name="Path 1936" d="M566.655,1571.311l-36.425,6.447" transform="translate(-327.126 -117.847)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1937" data-name="Path 1937" d="M566.655,1571.311l-44,15.824" transform="translate(-395.155 -122.535)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1938" data-name="Path 1938" d="M566.655,1571.311l-38.6,2.789" transform="translate(-419.786 -133.223)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <text id="フエ" transform="translate(257 1305)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フエ</tspan></text>
-                        <text id="ダナン" transform="translate(272 1321)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダナン</tspan></text>
-                        <text id="ホイアン" transform="translate(283 1341)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホイアン</tspan></text>
+                        <text id="ニャチャン" class="item-03" transform="translate(285.145 1402)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ニャチャン</tspan></text>
+                        <text id="ダラット" class="item-03" transform="translate(285.729 1425.588)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
+                        <text id="コンダオ島" class="item-04" transform="translate(242 1457)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
+                        <text id="カントー" class="item-04" transform="translate(74 1469)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
+                        <text id="フーコック島" class="item-04" transform="translate(31 1445)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フーコック島</tspan></text>
+                        <text id="ホーチミン" class="item-03" transform="translate(55 1421)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホーチミン</tspan></text>
+                        <path id="Path_1934" class="star-04" data-name="Path 1934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(145.33 1429.084)" fill="#918569"/>
+                        <path id="Path_1936" class="dots-04" data-name="Path 1936" d="M566.655,1571.311l-36.425,6.447" transform="translate(-327.126 -117.847)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1937" class="dots-04" data-name="Path 1937" d="M566.655,1571.311l-44,15.824" transform="translate(-395.155 -122.535)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1938" class="dots-04" data-name="Path 1938" d="M566.655,1571.311l-38.6,2.789" transform="translate(-419.786 -133.223)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <text id="フエ" class="item-02" transform="translate(257 1305)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フエ</tspan></text>
+                        <text id="ダナン" class="item-02" transform="translate(272 1321)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダナン</tspan></text>
+                        <text id="ホイアン" class="item-02" transform="translate(283 1341)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホイアン</tspan></text>
                     </g>
                 </g>
             </svg>
         </div>
         <div class="inner">
-            <h2 class="heading-block">
+            <h2 class="heading-block" data-aos="fade-up">
                 <picture class="icon-heading">
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
@@ -2374,111 +2365,79 @@ get_header();
                 <div class="map-tour">
                     <ul class="locationList">
                         <li class="locationItem">
-                            <a href="#north" class="active dnp-s-m">北部</a>
+                            <a href="#north" data-aos="fade-up" class="active dnp-s-m">北部</a>
                         </li>
                         <li class="locationItem">
-                            <a href="#central-south" class="dnp-s-m">中部・中南部</a>
+                            <a href="#central-south" data-aos="fade-up" class="dnp-s-m">中部・中南部</a>
                         </li>
                         <li class="locationItem">
-                            <a href="#south" class="dnp-s-m">南部</a>
+                            <a href="#south" data-aos="fade-up" class="dnp-s-m">南部</a>
                         </li>
                         <li class="locationItem">
-                            <a href="#southern-resort-area" class="dnp-s-m">南部リゾートエリア</a>
+                            <a href="#southern-resort-area" data-aos="fade-up" class="dnp-s-m">南部リゾートエリア</a>
                         </li>
                     </ul>
                 </div>
                 <div class="tourInfo">
-                    <div id="north">
-                        <div class="tag-location dnp-s-m"><p class="ttl">北部</p></div>
-                        <div class="tourInfo-inner">
-                            <div class="sliderInfo-tour">
-                                <ul class="list-imageTour">
-                                    <li class="item-imageTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic01_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic01_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic01_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-imageTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic02_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic02_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic02_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-imageTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic03_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic03_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic03_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-imageTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic04_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic04_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic04_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-imageTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic05_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic05_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic05_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                </ul>
-                                <ul class="list-thumbnailTour">
-                                    <li class="item-thumbnailTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic01_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic01_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic01_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-thumbnailTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic02_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic02_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic02_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-thumbnailTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic03_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic03_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic03_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-thumbnailTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic04_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic04_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic04_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                    <li class="item-thumbnailTour">
-                                        <picture class="image">
-<!--                                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/vietnam_tour_pic05_sp.png">-->
-                                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic05_pc.png">
-                                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/vietnam_tour_pic05_pc.png" alt="">
-                                        </picture>
-                                    </li>
-                                </ul>
+                <?php
+                $args = array(
+                    'post_type'=> 'tour',
+                    'post_status' => 'publish',
+                    'order'    => 'ASC',
+                );
+                $result = new WP_Query( $args );
+                if ( $result-> have_posts() ) : ?>
+                <?php $number = 1; ?>
+                    <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                    <?php $num = $number++; ?>
+                <div id="<?php echo $slug = get_post_field( 'post_name', get_post() ); ?>" class="tourInfo-item <?php if($num==1){echo "active";} ?>">
+                    <div class="tag-location dnp-s-m"><p class="ttl" data-aos="fade-up"><?php the_title(); ?></p></div>
+                    <div class="tourInfo-inner">
+                        <div class="sliderInfo-tour" data-aos="fade-up">
+                            <ul class="list-imageTour">
+                                <?php
+                                $images = get_field('image_slider');
+                                $size = 'full';
+                                if( $images ): ?>
+                                    <?php foreach( $images as $image_id ): ?>
+                                        <li class="item-imageTour">
+                                            <picture class="image">
+                                                <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                            </picture>
+                                        </li>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </ul>
+                            <ul class="list-thumbnailTour">
+                                <?php
+                                $images = get_field('image_slider');
+                                $size = 'full';
+                                if( $images ): ?>
+                                    <?php foreach( $images as $image_id ): ?>
+                                        <li class="item-thumbnailTour">
+                                            <picture class="image">
+                                                <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                            </picture>
+                                        </li>
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            </ul>
+                        </div>
+                        <div class="contentInfo" data-aos="fade-up">
+                            <div class="text"><?php echo get_field("tour_description"); ?></div>
+                            <div class="popular-tourist-destination">
+                                <p class="title dnp-s-m">人気の観光地</p>
+                                <p class="location"><?php echo get_field("popular_tourist_destination"); ?></p>
                             </div>
-                            <div class="contentInfo">
-                                <p class="text">ベトナム北部は首都ハノイのある地域で、南部ホーチミンと並び日本人旅行者に最も人気の観光地となります。政府のおひざ元のためか、昔ながらの古き良き町並みが都心でも広がり、「芸術の都」とも呼ばれているように、ただ歩くだけで郷愁漂う町散策ができます。</p>
-                                <div class="popular-tourist-destination">
-                                    <p class="title dnp-s-m">人気の観光地</p>
-                                    <p class="location">ハノイ,ニンビン,サパ</p>
-                                </div>
-                                <div class="link-more">
-                                    <a href="#" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
-                                </div>
+                            <div class="link-more">
+                                <a href="<?php the_permalink(); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
+                </div>
+                    <?php endwhile;?>
+                <?php endif;
+                wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
@@ -2486,15 +2445,14 @@ get_header();
 
     <div class="hotel-block">
         <div class="hotel-top">
-            <div class="left-content">
+            <div class="left-content" data-aos="fade-up">
                 <picture class="image">
-<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic01_sp.png">-->
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png" alt="">
                 </picture>
             </div>
             <div class="right-content">
-                <div class="rightInner">
+                <div class="rightInner" data-aos="fade-up">
                     <h2 class="heading-block">
                         <picture class="icon-heading">
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
@@ -2512,10 +2470,9 @@ get_header();
         </div>
         <div class="inner">
             <div class="hotelArea-list">
-                <div class="hotelArea-item">
+                <div class="hotelArea-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic02_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png" alt="">
                         </picture>
@@ -2537,10 +2494,9 @@ get_header();
                         </p>
                     </a>
                 </div>
-                <div class="hotelArea-item">
+                <div class="hotelArea-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic03_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png" alt="">
                         </picture>
@@ -2562,10 +2518,9 @@ get_header();
                         </p>
                     </a>
                 </div>
-                <div class="hotelArea-item">
+                <div class="hotelArea-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic04_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png" alt="">
                         </picture>
@@ -2587,10 +2542,9 @@ get_header();
                         </p>
                     </a>
                 </div>
-                <div class="hotelArea-item">
+                <div class="hotelArea-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/hotel_pic04_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png" alt="">
                         </picture>
@@ -2620,7 +2574,7 @@ get_header();
         <div class="overseas-inner">
             <div class="overseasTour-content">
                 <div class="overseasTour-info">
-                    <div class="leftInner">
+                    <div class="leftInner" data-aos="fade-up">
                         <h2 class="heading-block">
                             <picture class="icon-heading">
                                 <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
@@ -2635,9 +2589,8 @@ get_header();
                         </div>
                     </div>
                 </div>
-                <div class="overseasTour-image">
+                <div class="overseasTour-image" data-aos="fade-up">
                     <picture class="image">
-<!--                        <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/overseas_tour_pic01_sp.png">-->
                         <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png" alt="">
                     </picture>
@@ -2649,13 +2602,11 @@ get_header();
                 </div>
             </div>
             <div class="image-bottom">
-                <picture class="image-01 hide-pc">
-<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/overseas_tour_pic02_sp.png">-->
+                <picture class="image-01 hide-pc" data-aos="fade-up" >
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png" alt="">
                 </picture>
-                <picture class="image-02">
-<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/overseas_tour_pic03_sp.png">-->
+                <picture class="image-02" data-aos="fade-up" >
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png" alt="">
                 </picture>
@@ -2665,7 +2616,7 @@ get_header();
 
     <div class="arrangement">
         <div class="inner">
-            <h2 class="heading-block">
+            <h2 class="heading-block" data-aos="fade-up">
                 <picture class="icon-heading">
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
@@ -2674,10 +2625,9 @@ get_header();
                 <span class="ttl-en c-g">Arrangement</span>
             </h2>
             <ul class="arrangement-list">
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic01_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png" alt="">
                         </picture>
@@ -2687,10 +2637,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic02_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png" alt="">
                         </picture>
@@ -2700,10 +2649,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic03_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png" alt="">
                         </picture>
@@ -2713,10 +2661,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic04_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png" alt="">
                         </picture>
@@ -2726,10 +2673,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic05_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png" alt="">
                         </picture>
@@ -2739,10 +2685,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic06_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png" alt="">
                         </picture>
@@ -2752,10 +2697,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic07_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png" alt="">
                         </picture>
@@ -2765,10 +2709,9 @@ get_header();
                         </h4>
                     </a>
                 </li>
-                <li class="arrangement-item">
+                <li class="arrangement-item" data-aos="fade-up">
                     <a href="#">
                         <picture class="image">
-<!--                            <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/arrangement_pic08_sp.png">-->
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png" alt="">
                         </picture>
@@ -2779,8 +2722,8 @@ get_header();
                     </a>
                 </li>
             </ul>
-            <p class="text-note dnp-s-m ">各種様々な予約・手配もご案内可能です。お気軽にご相談ください。</p>
-            <div class="link-more">
+            <p class="text-note dnp-s-m " data-aos="fade-up">各種様々な予約・手配もご案内可能です。お気軽にご相談ください。</p>
+            <div class="link-more" data-aos="fade-up">
                 <a href="/contact/" class="btn-link btn-green c-g"><span>contact</span><i class="fa-light fa-angle-right"></i></a>
             </div>
         </div>
@@ -2788,14 +2731,13 @@ get_header();
 
     <div class="qa-block">
         <div class="inner">
-            <div class="imageContent">
+            <div class="imageContent" data-aos="fade-up">
                 <picture class="image">
-<!--                    <source media="(max-width: 767px)" srcset="--><?php //bloginfo('template_directory'); ?><!--/assets/images/qa_pic01_sp.png">-->
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png" alt="">
                 </picture>
             </div>
-            <div class="titleContent">
+            <div class="titleContent" data-aos="fade-up">
                 <p class="title-box dnp-s-m"><span>出国前に</span><span>チェック！</span></p>
                 <h3 class="title dnp-s-m">
                     <span>旅の情報<small class="c-g">Q&A</small></span>
@@ -2812,43 +2754,36 @@ get_header();
     <div class="news-block">
         <div class="inner">
             <div class="newsContent">
-                <div class="titleContent">
+                <div class="titleContent" data-aos="fade-up">
                     <h2 class="heading-news dnp-s-m">お知らせ</h2>
                     <div class="link-news">
-                        <a href="#" class="btn-more c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                        <a href="/news/" class="btn-more c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                     </div>
                 </div>
                 <ul class="newsList">
-                    <li class="newsItem">
-                        <a href="#" class="dnp-s-m">
-                            <p class="date">2023.10.04 </p>
-                            <p class="text">ベトナム国内旅行 ダナン・リゾート特集をアップしました。</p>
-                        </a>
-                    </li>
-                    <li class="newsItem">
-                        <a href="#" class="dnp-s-m">
-                            <p class="date">2023.10.04 </p>
-                            <p class="text">ベトナム国内旅行 ダナン・リゾート特集をアップしました。</p>
-                        </a>
-                    </li>
-                    <li class="newsItem">
-                        <a href="#" class="dnp-s-m">
-                            <p class="date">2023.10.04 </p>
-                            <p class="text">ベトナム国内旅行 ダナン・リゾート特集をアップしました。</p>
-                        </a>
-                    </li>
-                    <li class="newsItem">
-                        <a href="#" class="dnp-s-m">
-                            <p class="date">2023.10.04 </p>
-                            <p class="text">ベトナム国内旅行 ダナン・リゾート特集をアップしました。</p>
-                        </a>
-                    </li>
-                    <li class="newsItem">
-                        <a href="#" class="dnp-s-m">
-                            <p class="date">2023.10.04 </p>
-                            <p class="text">ベトナム国内旅行 ダナン・リゾート特集をアップしました。</p>
-                        </a>
-                    </li>
+                    <?php
+                    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+                    $args = array(
+                        'post_type'=> 'news',
+                        'post_status' => 'publish',
+                        'order'    => 'DESC',
+                        'paged' => $paged,
+                        'posts_per_page' => '5',
+                    );
+                    $result = new WP_Query( $args );
+                    if ( $result-> have_posts() ) : ?>
+                        <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                            <li class="newsItem" data-aos="fade-up">
+                                <a href="<?php the_permalink(); ?>" class="dnp-s-m">
+                                    <p class="date"><?php echo get_the_date(); ?></p>
+                                    <p class="text"><?php the_title(); ?></p>
+                                </a>
+                            </li>
+                        <?php endwhile;?>
+                    <?php else: ?>
+                        <li class="no_post"><?php _e('There is no news.', 'tcd-w'); ?></li>
+                    <?php endif;
+                    wp_reset_postdata(); ?>
                 </ul>
             </div>
         </div>
