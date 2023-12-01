@@ -2381,7 +2381,7 @@ get_header();
                 <div class="tourInfo">
                 <?php
                 $args = array(
-                    'post_type'=> 'tour',
+                    'post_type'=> 'tour-home',
                     'post_status' => 'publish',
                     'order'    => 'ASC',
                 );
@@ -2430,7 +2430,7 @@ get_header();
                                 <p class="location"><?php echo get_field("popular_tourist_destination"); ?></p>
                             </div>
                             <div class="link-more">
-                                <a href="<?php the_permalink(); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                                <a href="/tour/<?php echo get_field("read_more"); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
