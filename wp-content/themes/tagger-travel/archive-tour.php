@@ -15,7 +15,7 @@
             <div class="inner">
                 <ul class="areaList">
                     <li class="areaItem" data-aos="fade-up">
-                        <a href="#northern">
+                        <a class="scroll" href="#northern">
                             <picture class="image">
                                 <source srcset="/wp-content/uploads/area_tab_image01_pc.png">
                                 <img class="sizes" src="/wp-content/uploads/area_tab_image01_pc.png" alt="">
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="areaItem" data-aos="fade-up">
-                        <a href="#central">
+                        <a class="scroll" href="#central">
                             <picture class="image">
                                 <source srcset="/wp-content/uploads/area_tab_image02_pc.png">
                                 <img class="sizes" src="/wp-content/uploads/area_tab_image02_pc.png" alt="">
@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li class="areaItem" data-aos="fade-up">
-                        <a href="#southern">
+                        <a class="scroll" href="#southern">
                             <picture class="image">
                                 <source srcset="/wp-content/uploads/area_tab_image03_pc.png">
                                 <img class="sizes" src="/wp-content/uploads/area_tab_image03_pc.png" alt="">
@@ -87,7 +87,7 @@
                         </a>
                     </li>
                     <li class="areaItem" data-aos="fade-up">
-                        <a href="#southern-resort">
+                        <a class="scroll" href="#southern-resort">
                             <picture class="image">
                                 <source srcset="/wp-content/uploads/area_tab_image04_pc.png">
                                 <img class="sizes" src="/wp-content/uploads/area_tab_image04_pc.png" alt="">
@@ -165,7 +165,10 @@
                                         <div class="img-post">
                                             <img src="<?php echo get_the_post_thumbnail_url(); ?>">
                                         </div>
-                                        <p class="text dnp-s-m"><?php the_title(); ?></p>
+                                        <div class="infoTour">
+                                            <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
+                                            <p class="price"><?php echo get_field('tour_price') ?> <span>VND</span></p>
+                                        </div>
                                     </a>
                                 </li>
                             <?php endwhile; ?>
@@ -219,7 +222,10 @@
                                         <div class="img-post">
                                             <img src="<?php echo get_the_post_thumbnail_url(); ?>">
                                         </div>
-                                        <p class="text dnp-s-m"><?php the_title(); ?></p>
+                                        <div class="infoTour">
+                                            <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
+                                            <p class="price"><?php echo get_field('tour_price') ?> <span>VND</span></p>
+                                        </div>
                                     </a>
                                 </li>
                             <?php endwhile; ?>
@@ -292,7 +298,6 @@
                                             <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
                                             <p class="price"><?php echo get_field('tour_price') ?> <span>VND</span></p>
                                         </div>
-
                                     </a>
                                 </li>
                             <?php endwhile; ?>
