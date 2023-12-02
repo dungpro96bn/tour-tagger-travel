@@ -240,7 +240,17 @@ jQuery(function ($) {
         $('#header-menu .header-nav').removeClass('site-header--opening');
     }
 
-
-
+    $(window).on('scroll', function () {
+        if($(window).width() < 1024){
+            var ptop = $(".footer-bottom").offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > ptop - windowHeight) {
+                $('#line-contactBox').fadeOut();
+            } else {
+                $('#line-contactBox').fadeIn();
+            }
+        }
+    });
 
 });

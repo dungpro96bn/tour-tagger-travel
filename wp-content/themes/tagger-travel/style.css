@@ -621,6 +621,9 @@ body:not(.home) #header-menu .header-nav{
 
 
 /*footer*/
+body:not(.home) #footer {
+    border-top: 2px solid #F9F6F5;
+}
 #footer .footer-inner-top{
     padding-top: 12px;
     padding-bottom: 68px;
@@ -712,8 +715,8 @@ body:not(.home) #header-menu .header-nav{
 
 #page-top {
     position: fixed;
-    bottom: 80px;
-    right: 40px;
+    bottom: 20px;
+    right: 20px;
     z-index: 5;
     opacity: 0;
     transition: .3s;
@@ -748,6 +751,108 @@ body:not(.home) #header-menu .header-nav{
     font-weight: bold;
     margin-bottom: 4px;
 }
+
+
+#line-contactBox{
+    background: #fff;
+    padding: 6px;
+    width: 218px;
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    z-index: 6;
+}
+#line-contactBox .box-inner{
+    background: #CB4667;
+    padding: 12px 12px 24px;
+}
+#line-contactBox .check{
+    position: absolute;
+    top: -35px;
+    left: -21px;
+}
+#line-contactBox .title-box .icon{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+#line-contactBox .title-box{
+    margin-bottom: 16px;
+}
+#line-contactBox .title-box .text_ttl{
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E296A8;
+    height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+}
+#line-contactBox .title-box .text_ttl:after{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 9px solid #E296A8;
+    bottom: -8px;
+}
+#line-contactBox .text{
+    font-size: 10px;
+    line-height: 15px;
+    color: #fff;
+    margin-bottom: 24px;
+}
+#line-contactBox .btn-contact a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    height: 56px;
+    border-radius: 40px;
+    color: #CB4667;
+}
+#line-contactBox .btn-contact a:hover{
+    opacity: .7;
+}
+#line-contactBox .btn-contact a .icon{
+    width: 50px;
+    text-align: center;
+}
+#line-contactBox .btn-contact a .text-link{
+    font-size: 16px;
+    line-height: 27px;
+    font-weight: bold;
+}
+#line-contactBox .btn-contact a .text-link small{
+    font-size: 14px;
+}
+#line-contactBox .btn-contact{
+    margin-bottom: 12px;
+}
+#line-contactBox .btn-contact:last-child{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1440px) {
@@ -854,6 +959,9 @@ body:not(.home) #header-menu .header-nav{
 
     .btn-openMenu{
         display: none;
+    }
+    #line-contactBox{
+        display: block !important;
     }
 
 }
@@ -1289,6 +1397,7 @@ body:not(.home) #header-menu .header-nav{
 
     #page-top {
         right: 12px;
+        bottom: 80px;
     }
 
     #footer .footer-inner-top{
@@ -1333,6 +1442,72 @@ body:not(.home) #header-menu .header-nav{
     #footer #navList-menu .menu-item:nth-child(4):before{
         border-right: 0;
     }
+
+
+    #line-contactBox{
+        bottom: 0;
+        width: 100%;
+        padding: 0;
+    }
+    #line-contactBox .check,
+    #line-contactBox .text{
+        display: none;
+    }
+    #line-contactBox .box-inner{
+        background: transparent;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px -3px 10px rgba(0,0,0,.20);
+    }
+    #line-contactBox .btn-contact {
+        margin-bottom: 0;
+        width: 50%;
+    }
+    #line-contactBox .btn-contact.btn-line a{
+        background: #4CC764;
+        border-radius: 0;
+        color: #fff;
+    }
+    #line-contactBox .btn-contact.btn-email a{
+        background: #CB4667;
+        border-radius: 0;
+        color: #fff;
+    }
+    #line-contactBox .title-box .text_ttl:after{
+        display: none;
+    }
+    #line-contactBox .title-box .text_ttl{
+        width: 100%;
+        font-size: 10px;
+        line-height: 16px;
+        height: 24px;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    #line-contactBox .title-box .icon {
+        position: absolute;
+        top: 50%;
+        left: -1px;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    #line-contactBox .title-box {
+        margin-bottom: 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 252px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -16px;
+    }
+    #line-contactBox .btn-contact a .icon {
+        width: auto;
+        text-align: center;
+        margin-right: 10px;
+    }
+
 
 
 

@@ -46,12 +46,29 @@ get_header();
                         <p class="c-g">News</p>
                     </div>
                     <ul class="list-news">
-                        <li class="item-news">
-                            <a href="#" class="dnp-s-m">
-                                <p class="timeNews">2023.10.04</p>
-                                <p class="text">ホテルプロモーション開始しました</p>
-                            </a>
-                        </li>
+                        <?php
+                        $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+                        $args = array(
+                            'post_type'=> 'news',
+                            'post_status' => 'publish',
+                            'order'    => 'DESC',
+                            'paged' => $paged,
+                            'posts_per_page' => '1',
+                        );
+                        $result = new WP_Query( $args );
+                        if ( $result-> have_posts() ) : ?>
+                            <?php while ( $result->have_posts() ) : $result->the_post(); ?>
+                                <li class="item-news">
+                                    <a href="<?php the_permalink(); ?>" class="dnp-s-m">
+                                        <p class="timeNews"><?php echo get_the_date(); ?></p>
+                                        <p class="text"><?php the_title(); ?></p>
+                                    </a>
+                                </li>
+                            <?php endwhile;?>
+                        <?php else: ?>
+                            <li class="no_post"><?php _e('There is no news.', 'tcd-w'); ?></li>
+                        <?php endif;
+                        wp_reset_postdata(); ?>
                     </ul>
                 </div>
             </div>
@@ -2469,104 +2486,63 @@ get_header();
             </div>
         </div>
         <div class="inner">
-            <div class="hotelArea-list">
-                <div class="hotelArea-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic02_pc.png" alt="">
-                        </picture>
-                        <h3 class="title">
-                            <span class="area-ja dnp-s-m">北部エリア</span>
-                            <span class="area-en gp-p">Northern</span>
-                        </h3>
-                        <h4 class="local">ハノイ,ニンビン,サパ</h4>
-                        <p class="icon-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <g id="Group_68" data-name="Group 68" transform="translate(-496 -3642)">
-                                    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(496 3642)" fill="#fff" stroke="#6b5d54" stroke-width="1">
-                                        <circle cx="12" cy="12" r="12" stroke="none"/>
-                                        <circle cx="12" cy="12" r="11.5" fill="none"/>
-                                    </g>
-                                    <path id="Path_953" data-name="Path 953" d="M1025.225,1702.412l-4,4,4,4" transform="translate(1531.725 5360.412) rotate(180)" fill="none" stroke="#6b5d54" stroke-width="1"/>
-                                </g>
-                            </svg>
-                        </p>
-                    </a>
-                </div>
-                <div class="hotelArea-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic03_pc.png" alt="">
-                        </picture>
-                        <h3 class="title">
-                            <span class="area-ja dnp-s-m">中部エリア</span>
-                            <span class="area-en gp-p">Central</span>
-                        </h3>
-                        <h4 class="local">ダナン,フエ,ホイアン</h4>
-                        <p class="icon-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <g id="Group_68" data-name="Group 68" transform="translate(-496 -3642)">
-                                    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(496 3642)" fill="#fff" stroke="#6b5d54" stroke-width="1">
-                                        <circle cx="12" cy="12" r="12" stroke="none"/>
-                                        <circle cx="12" cy="12" r="11.5" fill="none"/>
-                                    </g>
-                                    <path id="Path_953" data-name="Path 953" d="M1025.225,1702.412l-4,4,4,4" transform="translate(1531.725 5360.412) rotate(180)" fill="none" stroke="#6b5d54" stroke-width="1"/>
-                                </g>
-                            </svg>
-                        </p>
-                    </a>
-                </div>
-                <div class="hotelArea-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png" alt="">
-                        </picture>
-                        <h3 class="title">
-                            <span class="area-ja dnp-s-m">南部エリア</span>
-                            <span class="area-en gp-p">Southern</span>
-                        </h3>
-                        <h4 class="local">ハイノ,ニンビン,サパ</h4>
-                        <p class="icon-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <g id="Group_68" data-name="Group 68" transform="translate(-496 -3642)">
-                                    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(496 3642)" fill="#fff" stroke="#6b5d54" stroke-width="1">
-                                        <circle cx="12" cy="12" r="12" stroke="none"/>
-                                        <circle cx="12" cy="12" r="11.5" fill="none"/>
-                                    </g>
-                                    <path id="Path_953" data-name="Path 953" d="M1025.225,1702.412l-4,4,4,4" transform="translate(1531.725 5360.412) rotate(180)" fill="none" stroke="#6b5d54" stroke-width="1"/>
-                                </g>
-                            </svg>
-                        </p>
-                    </a>
-                </div>
-                <div class="hotelArea-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic04_pc.png" alt="">
-                        </picture>
-                        <h3 class="title">
-                            <span class="area-ja dnp-s-m">南部リゾート<br class="sp-br"/>エリア</span>
-                            <span class="area-en gp-p">Southern resort</span>
-                        </h3>
-                        <h4 class="local">フーコック島,コンダオ島</h4>
-                        <p class="icon-arrow">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <g id="Group_68" data-name="Group 68" transform="translate(-496 -3642)">
-                                    <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(496 3642)" fill="#fff" stroke="#6b5d54" stroke-width="1">
-                                        <circle cx="12" cy="12" r="12" stroke="none"/>
-                                        <circle cx="12" cy="12" r="11.5" fill="none"/>
-                                    </g>
-                                    <path id="Path_953" data-name="Path 953" d="M1025.225,1702.412l-4,4,4,4" transform="translate(1531.725 5360.412) rotate(180)" fill="none" stroke="#6b5d54" stroke-width="1"/>
-                                </g>
-                            </svg>
-                        </p>
-                    </a>
-                </div>
-            </div>
+            <ul class="areaList">
+                <?php
+                $args = array(
+                    'post_type' => 'tour_area',
+                    'post_status' => 'publish',
+                    'posts_per_page' => '4',
+                    'meta_key'       => 'order',
+                    'orderby'        => 'meta_value_num',
+                    'order'          => 'ASC'
+                );
+                $result = new WP_Query($args);
+                if ($result->have_posts()) : ?>
+                    <?php while ($result->have_posts()) : $result->the_post();
+
+                        $slug = get_post_field( 'post_name', get_post() );
+                        if($slug == "northern"){
+                            $title_ja = "北部エリア";
+                            $title_en = "Northern";
+                        } elseif ($slug == "central"){
+                            $title_ja = "中部エリア";
+                            $title_en = "Central";
+                        } elseif ($slug == "southern"){
+                            $title_ja = "南部エリア";
+                            $title_en = "Southern";
+                        } elseif ($slug == "southern-resort"){
+                            $title_ja = "南部リゾートエリア";
+                            $title_en = "Southern Resort";
+                        }
+                        ?>
+                        <li class="areaItem" data-aos="fade-up">
+                            <a class="" href="/hotel/#<?php echo $slug; ?>">
+                                <picture class="image">
+                                    <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
+                                    <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                                </picture>
+                                <h3 class="title">
+                                    <span class="area-ja dnp-s-m"><?php echo $title_ja; ?></span>
+                                    <span class="area-en gp-p"><?php echo $title_en; ?></span>
+                                </h3>
+                                <h4 class="local"><?php echo get_field('popular_tourist_destination'); ?></h4>
+                                <p class="icon-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <g id="Group_68" data-name="Group 68" transform="translate(-496 -3642)">
+                                            <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(496 3642)" fill="#fff" stroke="#6b5d54" stroke-width="1">
+                                                <circle cx="12" cy="12" r="12" stroke="none"></circle>
+                                                <circle cx="12" cy="12" r="11.5" fill="none"></circle>
+                                            </g>
+                                            <path id="Path_953" data-name="Path 953" d="M1025.225,1702.412l-4,4,4,4" transform="translate(1531.725 5360.412) rotate(180)" fill="none" stroke="#6b5d54" stroke-width="1"></path>
+                                        </g>
+                                    </svg>
+                                </p>
+                            </a>
+                        </li>
+                    <?php endwhile; ?>
+                <?php endif;
+                wp_reset_postdata(); ?>
+            </ul>
         </div>
     </div>
 

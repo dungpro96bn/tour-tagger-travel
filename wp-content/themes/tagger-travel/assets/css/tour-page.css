@@ -1,0 +1,618 @@
+
+/*header-pageEntry*/
+/*=================================*/
+.header-pageEntry{
+    position: relative;
+    padding-bottom: 360px;
+    background: #B2A098;
+}
+#tour-template .header-pageEntry{
+    background-image: url("/wp-content/uploads/tour_banner_header_pc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header-pageEntry .headingMain-entry{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+.header-pageEntry .heading-entry{
+    text-align: center;
+}
+.header-pageEntry .heading-entry .ttl-ja{
+    display: block;
+    font-size: 52px;
+    line-height: 80px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 30px #000;
+    margin-bottom: 22px;
+}
+.header-pageEntry .heading-entry .ttl-en{
+    display: block;
+    font-size: 23px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 26px #000;
+    letter-spacing: 2.4px;
+    padding-left: 8px;
+}
+.header-pageEntry .heading-entry .icon-heading{
+    display: block;
+    margin-bottom: 7px;
+}
+
+
+/*tour-tabContent*/
+/*=================================*/
+#tour-template{
+    padding-bottom: 160px;
+}
+.tour-tabContent{
+    margin-top: 96px;
+    position: relative;
+    padding-bottom: 48px;
+}
+.tour-tabContent:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 130px);
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    background: #F9F6F5;
+}
+.areaList{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 16px;
+    position: relative;
+    z-index: 2;
+}
+.areaList .areaItem{
+    background: #fff;
+    text-align: center;
+}
+.areaList .areaItem .title .area-ja {
+    display: block;
+    font-size: 22px;
+    line-height: 28px;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.areaList .areaItem .title .area-en {
+    display: block;
+    font-size: 17px;
+    line-height: 17px;
+    color: #A08953;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.areaList .areaItem .local {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 17px;
+}
+.areaList .areaItem .image {
+    display: block;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 71.88%;
+}
+.areaList .areaItem .image img{
+    transition: .4s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+}
+.areaList .areaItem a:hover .image img{
+    transform: scale(1.15);
+}
+.areaList .areaItem .title {
+    margin-bottom: 22px;
+}
+.areaList .areaItem a{
+    display: block;
+    padding-bottom: 24px;
+}
+.areaList .areaItem a svg #Path_953,
+.areaList .areaItem a svg circle{
+    transition: .3s;
+}
+.areaList .areaItem a:hover svg #Ellipse_11>circle:nth-child(2){
+    fill: #6b5d54;
+}
+.areaList .areaItem a:hover svg #Path_953{
+    stroke: #fff;
+}
+
+
+
+
+
+/*tourByArea-item*/
+/*===================================*/
+.tourByArea-item{
+    padding-top: 81px;
+    position: relative;
+    padding-bottom: 86px;
+}
+.tourByArea-item:nth-child(2n-1):after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 145px);
+    left: calc((100% - 1200px) / 2 + 40px);
+    background: #F9F6F5;
+    bottom: 0;
+    pointer-events: none;
+}
+.tourByArea-item:nth-child(2n):after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 145px);
+    right: calc((100% - 1200px) / 2 + 40px);
+    background: #F9F6F5;
+    bottom: 0;
+    pointer-events: none;
+}
+.tourByArea-item .inner{
+    position: relative;
+    z-index: 2;
+}
+.tourByArea-item .heading-block{
+    margin-bottom: 55px;
+}
+
+
+
+
+.tourList-area{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 39px;
+    row-gap: 48px;
+}
+.tourList-area .tourItem-area{
+    background: #fff;
+    position: relative;
+}
+.tourList-area .tourItem-area a{
+    display: block;
+}
+.tourList-area .tourItem-area .featured-image{
+    position: relative;
+}
+.tourList-area .tourItem-area .featured-image .image{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 72.73%;
+}
+.tourList-area .tourItem-area .featured-image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .4s;
+}
+.tourList-area .tourItem-area a:hover .featured-image img{
+    transform: scale(1.15);
+}
+.tourList-area .tourItem-area .text{
+    font-size: 18px;
+    line-height: 28px;
+    min-height: 56px;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.tourList-area .tourItem-area .time-tour{
+    display: flex;
+    min-width: 64px;
+    height: 32px;
+    position: absolute;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #333333;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+    left: 15px;
+    bottom: -8px;
+    padding: 0 16px 4px;
+}
+.tourList-area .tourItem-area .price{
+    font-weight: 500;
+    text-align: right;
+    font-size: 24px;
+    line-height: 36px;
+    color: #CB4667;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.tourList-area .tourItem-area .price span{
+    font-size: 18px;
+    color: #333333;
+    position: relative;
+    margin-left: 7px;
+}
+.tourList-area .tourItem-area .infoTour{
+    padding: 33px 16px 29px;
+}
+
+
+
+
+
+
+
+.tourByArea-item .tour-overnight{
+    padding-top: 56px;
+}
+.tourByArea-item .title-block{
+    font-size: 28px;
+    line-height: 40px;
+    color: #866C2E;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 57px;
+}
+.tourByArea-item .title-block:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid #DED8D4;
+    bottom: 0;
+    left: 0;
+}
+.tourByArea-item .title-block:before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    border-bottom: 2px solid #A08953;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+
+@media (max-width: 1440px) {
+
+    .tourByArea-item:nth-child(2n-1):after{
+        left: calc((100% - 1040px) / 2 + 40px);
+    }
+    .tourByArea-item:nth-child(2n):after{
+        right: calc((100% - 1040px) / 2 + 40px);
+    }
+
+
+
+    .tourList-area .tourItem-area .text{
+        font-size: 16px;
+        line-height: 24px;
+        min-height: 48px;
+    }
+    .tourList-area .tourItem-area .price{
+        font-size: 22px;
+    }
+    .tourList-area .tourItem-area .price span{
+        font-size: 16px;
+    }
+
+    .tourList-area{
+        column-gap: 25px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+
+
+    .areaList .areaItem .title .area-ja{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 14px;
+    }
+    .areaList .areaItem .local{
+        font-size: 13px;
+    }
+    .tourByArea-item .title-block{
+        font-size: 22px;
+        line-height: 34px;
+        padding-bottom: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 1023px) {
+
+    .header-pageEntry{
+        padding-bottom: 300px;
+    }
+    .header-pageEntry .heading-entry .ttl-ja{
+        font-size: 36px;
+        line-height: 56px;
+        margin-bottom: 16px;
+    }
+    .header-pageEntry .heading-entry .ttl-en{
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 8px;
+    }
+
+
+    .areaList{
+        column-gap: 10px;
+    }
+    .areaList .areaItem .local {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .areaList .areaItem .title .area-ja {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .areaList .areaItem .image{
+        margin-bottom: 15px;
+    }
+    .areaList .areaItem .title .area-en{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .areaList .areaItem .title {
+        margin-bottom: 16px;
+    }
+
+
+    .tourList-area {
+        column-gap: 15px;
+        row-gap: 40px;
+    }
+    .tourList-area .tourItem-area .text {
+        font-size: 13px;
+        line-height: 21px;
+        min-height: 42px;
+    }
+    .tourList-area .tourItem-area .price {
+        font-size: 18px;
+    }
+    .tourList-area .tourItem-area .price span {
+        font-size: 14px;
+    }
+    .tourList-area .tourItem-area .time-tour{
+        min-width: 54px;
+        height: 26px;
+        font-size: 13px;
+        line-height: 21px;
+        left: 10px;
+        bottom: -6px;
+        padding: 0 10px 4px;
+    }
+    .tourList-area .tourItem-area .infoTour {
+        padding: 25px 12px 22px;
+    }
+
+    .tourByArea-item:nth-child(2n-1):after{
+        left: 50px;
+        height: calc(100% - 130px);
+    }
+    .tourByArea-item:nth-child(2n):after{
+        right: 50px;
+        height: calc(100% - 130px);
+    }
+    .tourByArea-item .title-block{
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    #tour-template .header-pageEntry{
+        background-image: url("/wp-content/uploads/tour_banner_header_sp.png");
+    }
+
+    .header-pageEntry .headingMain-entry{
+        top: 46.6%;
+    }
+    .header-pageEntry .heading-entry .ttl-ja{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .header-pageEntry .heading-entry .icon-heading img{
+        width: 40px;
+    }
+    .header-pageEntry {
+        padding-bottom: 63.97%;
+    }
+    .header-pageEntry .heading-entry .ttl-en {
+        font-size: 18px;
+        line-height: 22px;
+        padding-left: 3px;
+        letter-spacing: 1.9px;
+    }
+
+
+
+    #tour-template {
+        padding-bottom: 100px;
+    }
+
+    .areaList {
+        column-gap: 9px;
+        row-gap: 24px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hotel-block .hotelArea-item .image{
+        margin-bottom: 21px;
+    }
+    .areaList .areaItem .title .area-ja{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .areaList .areaItem .title .area-en{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .areaList .areaItem .title {
+        margin-bottom: 18px;
+    }
+    .areaList .areaItem .local{
+        font-size: 13px;
+        line-height: 14px;
+    }
+    .areaList .areaItem .icon-arrow svg {
+        width: 16px;
+        height: auto;
+    }
+    .areaList .areaItem a {
+        display: block;
+        padding-bottom: 18px;
+    }
+
+
+
+    .tourByArea-item:nth-child(2n-1):after {
+        left: 40px;
+        height: calc(100% - 139px);
+    }
+    .tourByArea-item:nth-child(2n):after {
+        right: 40px;
+        height: calc(100% - 139px);
+    }
+
+
+    .tour-tabContent{
+        margin-top: 64px;
+        padding-bottom: 70px;
+    }
+    .tour-tabContent:after{
+        height: calc(100% - 82px);
+    }
+    .tourByArea-item .heading-block {
+        margin-bottom: 52px;
+    }
+    .tourByArea-item .heading-block .icon-heading img{
+        width: 40px;
+    }
+    .tourByArea-item .heading-block .icon-heading {
+        margin-bottom: 0px;
+        padding-right: 6px;
+    }
+    .tourByArea-item .heading-block .ttl-en {
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 3px;
+    }
+
+    .tourByArea-item .title-block {
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 49px;
+    }
+    .tourList-area{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 32px;
+    }
+    .tourList-area .tourItem-area .time-tour {
+        min-width: 64px;
+        height: 32px;
+        font-size: 16px;
+        line-height: 25px;
+        left: 16px;
+        bottom: -8px;
+        padding: 0 16px 4px;
+    }
+    .tourList-area .tourItem-area .text {
+        font-size: 18px;
+        line-height: 28px;
+        min-height: 56px;
+        color: #6A5D54;
+        margin-bottom: 9px;
+    }
+    .tourList-area .tourItem-area .price {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .tourList-area .tourItem-area .price span {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+    .tourList-area .tourItem-area .infoTour {
+        padding: 32px 16px 35px;
+    }
+    .tourByArea-item{
+        padding-top: 80px;
+        padding-bottom: 96px;
+        margin-bottom: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
