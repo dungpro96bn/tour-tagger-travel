@@ -2,24 +2,18 @@
 global $post;
 ?>
 
-    <div id="single-news" class="post-content single-page">
+    <div id="tour-single" class="post-template tour-single-page">
 
         <div class="inner">
+            <div class="columns-page">
 
-            <div class="news-inner">
-                <div class="post-main">
-                    <div class="post-inner">
-                        <div class="date-tag" data-aos="fade-up">
-                            <p class="date-time en"><?php echo get_the_date(); ?></p>
-                        </div>
-                        <h2 class="heading-block" data-aos="fade-up"><?php the_title(); ?></h2>
-                        <div class="info-content" data-aos="fade-up">
-                            <?php the_content(); ?>
-                        </div>
-                    </div>
+                <div class="columns-main">
+
                 </div>
-            </div>
 
+                <?php get_template_part('sidebar'); ?>
+
+            </div>
         </div>
 
     </div><!-- #new -->

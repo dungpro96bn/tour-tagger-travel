@@ -27,7 +27,7 @@
     letter-spacing: 5px;
     padding-left: 30px;
     margin-bottom: 49px;
-    text-shadow: 0px 0px 26px #000, 0px 0px 26px #000;
+    text-shadow: 0px 0px 26px #000;
     font-weight: bold;
 }
 .bannerSlider .heading .ttl-big{
@@ -39,6 +39,7 @@
     letter-spacing: 13px;
     padding-left: 58px;
     margin-bottom: 33px;
+    text-shadow: 0px 0px 26px #000;
 }
 .bannerSlider .heading .ttl-big small{
     display: inline-block;
