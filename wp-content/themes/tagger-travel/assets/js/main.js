@@ -141,6 +141,38 @@ jQuery(function ($) {
         infinite: false,
     });
 
+    $('.post-template .list-imageTour').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        // fade: true,
+        dots: false,
+        asNavFor: '.post-template .list-thumbnailTour',
+        prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
+            "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
+            "</svg>\n</button>",
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                }
+            }
+        ]
+    });
+    $('.post-template .list-thumbnailTour').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.post-template .list-imageTour',
+        dots: false,
+        arrows: false,
+        focusOnSelect: true,
+        infinite: false,
+    });
+
 
     //fade
     AOS.init({
@@ -252,5 +284,19 @@ jQuery(function ($) {
             }
         }
     });
+
+
+    $(".tabTour-info .item-tab a").click(function (event) {
+        event.preventDefault();
+        $(".post-template .tourContent-info").removeClass("active");
+        $(".tabTour-info .item-tab a").removeClass("active");
+        var url = $(this).attr('href');
+        var dest = url.split('#');
+        var target = dest[1];
+        $('#'+target).addClass("active");
+        $(this).addClass("active");
+    })
+
+
 
 });
