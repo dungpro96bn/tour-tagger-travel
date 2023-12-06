@@ -535,6 +535,18 @@
     background: #F9F6F5;
     display: inline-block;
     padding: 20px;
+    position: relative;
+}
+.post-template .tour-schedule-item .inner-info:before{
+    content: "";
+    position: absolute;
+    width:0px;
+    height:0px;
+    border-bottom: 4.5px solid transparent;
+    border-top: 4.5px solid transparent;
+    border-right: 8px solid #F9F6F5;
+    top: 26px;
+    left: -8px;
 }
 .post-template .tour-schedule-item:nth-child(1) .inner-info{
     padding: 16.5px 20px;
@@ -542,6 +554,14 @@
 
 .post-template .tour-policy{
     padding-top: 86px;
+}
+.post-template .tour-policy .policy_content p{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+.post-template .tour-policy .policy_content p:last-child{
+    margin-bottom: 0;
 }
 .post-template .tour-notes{
     padding-top: 86px;
@@ -583,7 +603,8 @@
 }
 .post-template .link-contact .btn-contact{
     display: flex;
-    width: 272px;
+    width: 100%;
+    max-width: 272px;
     height: 48px;
     background: #007545;
     color: #fff;
@@ -714,11 +735,11 @@
 }
 
 
-.columns-sidebar .book-tour{
+.columns-sidebar .filter-item{
     border: 1px solid #A08953;
-    padding: 20px 24px 32px;
+    padding: 26px 24px 32px;
 }
-.columns-sidebar .book-tour .title{
+.columns-sidebar .filter-item .title{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -727,18 +748,92 @@
     padding-bottom: 19px;
     margin-bottom: 24px;
 }
-.columns-sidebar .book-tour .title p{
+.columns-sidebar .filter-item .title p{
     font-size: 20px;
     line-height: 30px;
     color: #A08953;
     font-weight: 500;
 }
-.columns-sidebar .book-tour .title svg{
+.columns-sidebar .filter-item .title svg{
     margin-right: 11px;
 }
 .columns-sidebar .link-contact{
     padding-top: 0;
 }
+.columns-sidebar .book-tour{
+    margin-bottom: 32px;
+}
+.areaList-search .areaItem-search a{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.areaList-search .areaItem-search{
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+.areaList-search .areaItem-search:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.areaList-search .areaItem-search i{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    color: #6B5D54;
+    font-size: 14px;
+    transition: .3s;
+}
+.areaList-search .areaItem-search a:hover i{
+    right: 0;
+}
+.areaList-search .areaItem-search .image{
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 40px;
+}
+.areaList-search .areaItem-search .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.areaList-search .areaItem-search .title-item{
+    width: calc(100% - 40px);
+    padding-left: 16px;
+}
+.areaList-search .areaItem-search .area-ja{
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    color: #6A5D54;
+}
+.areaList-search .areaItem-search .area-en{
+    font-size: 12px;
+    line-height: 12px;
+    color: #A08953;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -778,6 +873,40 @@
     .tourList-area{
         column-gap: 25px;
     }
+
+
+    /*Tour single*/
+    /*===============================*/
+    .post-template .columns-main .heading-single{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .post-template .tabTour-info .item-tab a{
+        font-size: 17px;
+        line-height: 30px;
+        height: 60px;
+        padding: 0 28px 4px;
+        min-width: 140px;
+    }
+    .areaList-search .areaItem-search .area-ja{
+        font-size: 15px;
+    }
+    .areaList-search .areaItem-search .title-item{
+        padding-left: 12px;
+    }
+    .columns-sidebar .filter-item .title p{
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -897,6 +1026,181 @@
         font-size: 18px;
         line-height: 26px;
     }
+
+
+
+    /*Tour single*/
+    /*================================*/
+    .post-template .columns-page .columns-main {
+        width: 67%;
+        margin-right: 3%;
+    }
+    .post-template .columns-page .columns-sidebar {
+        width: 30%;
+    }
+    .columns-sidebar .filter-item{
+        padding: 20px 15px 20px;
+    }
+    .columns-sidebar .book-tour {
+        margin-bottom: 25px;
+    }
+    .columns-sidebar .filter-item .title p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .columns-sidebar .filter-item .title{
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .areaList-search .areaItem-search .area-ja {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 7px;
+        font-weight: bold;
+        color: #6A5D54;
+    }
+    .areaList-search .areaItem-search .title-item{
+        padding-top: 3px;
+    }
+
+
+    .post-template .tour-schedule-list:before{
+        left: 100px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .tour-schedule-info{
+        padding-left: 30px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .tour-schedule-info:before{
+        left: -5.5px;
+    }
+    .post-template .columns-main .heading-single{
+        font-size: 22px;
+        line-height: 1.5;
+    }
+    .post-template .description-tour p{
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 26px;
+    }
+    .post-template .tabTour-info {
+        padding-top: 60px;
+    }
+    .post-template .tabTour-info .item-tab a{
+        font-size: 14px;
+        line-height: 26px;
+        height: 50px;
+        padding: 0px 15px 2px;
+        min-width: 110px;
+    }
+    .post-template .tourContent-info{
+        padding-top: 50px;
+    }
+    .post-template .tabTour-info .item-tab {
+        margin-right: 12px;
+    }
+    .post-template .title-block{
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 18px;
+        padding-bottom: 12px;
+    }
+    .post-template .title-block:after{
+        height: 24px;
+        top: 6px;
+    }
+    .post-template .tour-schedule-item .tour-schedule-info p{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .title-time span{
+        font-size: 24px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .title-time{
+        font-size: 14px;
+    }
+    .post-template .tour-policy .policy_content p{
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .post-template .tour-notes .tour-notes-content p{
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .post-template .tour-notes .notice .ttl{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .post-template .tour-notes .notice .notice-content p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .post-template .link-contact .btn-contact{
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+    .post-template .tour-notes .notice{
+        padding: 23px 25px 26px;
+    }
+    .post-template .fee-tour .fee-item .fee-title{
+        font-size: 16px;
+    }
+    .post-template .fee-tour .fee-item .fee-subContent {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 21px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-tablet-title {
+        width: 160px;
+        padding: 20px 16px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet {
+        width: calc(100% - 160px);
+        padding: 20px 16px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet small {
+        font-size: 13px;
+        line-height: 24px;
+        margin-right: 15px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet .price {
+        font-size: 18px;
+        line-height: 26px;
+        color: #CB4667;
+        font-weight: 500;
+        margin-right: 8px;
+    }
+    .post-template .payment-method .payment-method-item .ttl,
+    .post-template .information-notesItem .ttl{
+        font-size: 16px;
+    }
+    .post-template .payment-method .payment-method-item .text {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .post-template .information-notesItem .text p{
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .post-template .information-notesItem,
+    .post-template .payment-method .payment-method-item{
+        margin-bottom: 25px;
+    }
+    .post-template .payment-method .payment-method-item picture{
+        padding-top: 20px;
+    }
+
+
+
+
 
 
 
@@ -1045,6 +1349,245 @@
         padding-top: 80px;
         padding-bottom: 96px;
         margin-bottom: 16px;
+    }
+
+
+
+    /*Tour single*/
+    /*=================================*/
+    .post-template {
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+    .post-template .columns-page .columns-main {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 48px;
+    }
+    .post-template .columns-page .columns-sidebar {
+        width: calc(100% + 32px);
+        padding: 48px 28px 125px;
+        margin-left: -16px;
+        background: #F9F6F5;
+        margin-right: -16px;
+    }
+    .post-template .columns-main .heading-single {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 35px;
+    }
+    .post-template .sliderImage-tour .list-imageTour .slick-arrow{
+        width: 19px;
+        height: 47px;
+    }
+    .post-template .sliderImage-tour .list-imageTour .slick-arrow.slick-next {
+        border-radius: 2px 0 0 2px;
+    }
+    .post-template .sliderImage-tour .list-imageTour .slick-arrow.slick-prev {
+        border-radius: 0 2px 2px 0;
+    }
+    .post-template .sliderImage-tour .list-imageTour {
+        margin-bottom: 4px;
+    }
+    .post-template .list-thumbnailTour .slick-track{
+        column-gap: 0;
+    }
+    .post-template .description-tour p {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+    .post-template .sliderImage-tour {
+        margin-bottom: 44px;
+    }
+    .post-template .tabTour-info .item-tab a{
+        font-size: 16px;
+        line-height: 24px;
+        min-width: auto;
+        text-align: center;
+        height: 72px;
+        padding: 0px 0px 4px;
+    }
+    .post-template .tabTour-info .item-tab{
+        margin-right: 2.3%;
+    }
+    .post-template .tabTour-info .item-tab:nth-child(1) {
+        width: 25.7%;
+    }
+    .post-template .tabTour-info .item-tab:nth-child(2) {
+        width: 37.3%;
+    }
+    .post-template .tabTour-info .item-tab:nth-child(3) {
+        width: 32.4%;
+    }
+    .post-template .tabTour-info {
+        padding-top: 62px;
+    }
+    .post-template .tourContent-info {
+        padding-top: 56px;
+    }
+    .post-template .title-block {
+        font-size: 24px;
+        line-height: 28px;
+        padding-left: 20px;
+        padding-bottom: 21px;
+        margin-bottom: 32px;
+    }
+    .post-template .title-block:after {
+        height: 32px;
+        top: 0px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .title-time span {
+        font-size: 20px;
+        display: block;
+        line-height: 22px;
+        margin-right: 0;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .title-time {
+        font-size: 16px;
+        width: 40px;
+        text-align: center;
+        padding-top: 7px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .tour-schedule-info {
+        padding-left: 36px;
+        width: calc(100% - 40px);
+    }
+    .post-template .tour-schedule-item .tour-schedule-info p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .post-template .tour-schedule-list:before {
+        left: 55px;
+    }
+    .post-template .tour-schedule-list .tour-schedule-item .tour-schedule-info:before {
+        left: 9.7px;
+        top: 22px;
+    }
+    .post-template .tour-policy .policy_content p {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+    .post-template .tour-policy {
+        padding-top: 79px;
+    }
+    .post-template .tour-notes {
+        padding-top: 77px;
+    }
+    .post-template .tour-notes .tour-notes-content p {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+    .post-template .tour-notes .notice .notice-content p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .post-template .tour-notes .notice .ttl {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 14px;
+    }
+    .post-template .tour-notes .notice .notice-content p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .post-template .tour-notes .notice {
+        padding: 23px 25px 30px;
+    }
+    .post-template #detail .link-contact,
+    .post-template #payment-method .link-contact{
+        display: none;
+    }
+    .columns-sidebar .filter-item .title p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .columns-sidebar .filter-item .title {
+        padding-bottom: 19px;
+        margin-bottom: 24px;
+    }
+    .columns-sidebar .filter-item {
+        padding: 26px 23px 30px;
+    }
+    .columns-sidebar .search-by-area.filter-item{
+        padding-top: 30px;
+    }
+    .areaList-search .areaItem-search .title-item {
+        padding-top: 0px;
+        padding-left: 16px;
+    }
+    .areaList-search .areaItem-search .area-ja {
+        font-size: 18px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+    .post-template .fee-tour .fee-item .fee-title {
+        font-size: 18px;
+        line-height: 29px;
+        margin-bottom: 10px;
+    }
+    .post-template .fee-tour .fee-item .fee-subContent {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 21px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-tablet-title {
+        width: 129px;
+        padding: 28px 10px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet small {
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        margin: 0;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet .price {
+        font-size: 20px;
+        line-height: 28px;
+        margin-right: 8px;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet p {
+        font-size: 14px;
+        line-height: 28px;
+        display: block;
+    }
+    .post-template .fee-tour .fee-tablet .fee-content-tablet {
+        width: calc(100% - 129px);
+        padding: 12px 15px 14px 24px;
+        display: flex;
+        align-items: center;
+    }
+    .post-template .fee-tour .fee-item {
+        margin-bottom: 32px;
+    }
+    .post-template .link-contact .btn-contact {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    .post-template .payment-method {
+        padding-top: 63px;
+    }
+    .post-template .payment-method .payment-method-item .ttl,
+    .post-template .information-notesItem .ttl {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 11px;
+    }
+    .post-template .payment-method .payment-method-item .text {
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .post-template .information-notesItem, .post-template .payment-method .payment-method-item {
+        margin-bottom: 31px;
+    }
+    .post-template .payment-method .payment-method-item picture {
+        padding-top: 29px;
+        padding-bottom: 11px;
     }
 
 

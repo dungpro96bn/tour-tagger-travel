@@ -50,10 +50,10 @@ global $post;
                                 <a class="tab-action dnp-s-m active" href="#detail"><span>詳細</span></a>
                             </li>
                             <li class="item-tab">
-                                <a class="tab-action dnp-s-m" href="#payment-method"><span>料金一覧・お支払い方法</span></a>
+                                <a class="tab-action dnp-s-m" href="#payment-method"><span>料金一覧・<br class="sp-br"/>お支払い方法</span></a>
                             </li>
                             <li class="item-tab">
-                                <a class="tab-action dnp-s-m" href="#information-notes"><span>ご案内・ご注意事項</span></a>
+                                <a class="tab-action dnp-s-m" href="#information-notes"><span>ご案内・<br class="sp-br"/>ご注意事項</span></a>
                             </li>
                         </ul>
                     </div>

@@ -153,15 +153,7 @@ jQuery(function ($) {
             "</svg>\n</button>",
         nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
-            "</svg>\n</button>",
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
+            "</svg>\n</button>"
     });
     $('.post-template .list-thumbnailTour').slick({
         slidesToShow: 5,

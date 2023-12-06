@@ -2480,7 +2480,7 @@ get_header();
                     </h2>
                     <p class="subTitle dnp-s-m">ベトナム北部から南部までベトナム全国エリアの<br/>ホテルをご案内可能です。</p>
                     <div class="link-more">
-                        <a href="#" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                        <a href="/hotel/" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
