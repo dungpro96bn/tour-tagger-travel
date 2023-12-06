@@ -593,7 +593,7 @@ body:not(.home) #header-menu .header-nav{
 #navList-menu .menu-item a:hover:after,
 #navList-menu .menu-item.current-menu-item a:after{
     opacity: 1;
-    bottom: 1px;
+    bottom: 0px;
 }
 
 .heading-block{

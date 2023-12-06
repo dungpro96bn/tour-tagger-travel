@@ -4,13 +4,13 @@
 .header-pageEntry{
     position: relative;
     padding-bottom: 360px;
-    background: #B2A098;
-}
-#tour-template .header-pageEntry{
-    background-image: url("/wp-content/uploads/tour_banner_header_pc.png");
+    background-color: #B2A098;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+#tour-template .header-pageEntry{
+    background-image: url("/wp-content/uploads/tour_banner_header_pc.png");
 }
 .header-pageEntry .headingMain-entry{
     position: absolute;
@@ -1358,6 +1358,9 @@
     .post-template {
         padding-top: 70px;
         padding-bottom: 0px;
+    }
+    .post-template:after{
+        height: 320px;
     }
     .post-template .columns-page .columns-main {
         width: 100%;

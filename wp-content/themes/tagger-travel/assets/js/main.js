@@ -278,16 +278,49 @@ jQuery(function ($) {
     });
 
 
-    $(".tabTour-info .item-tab a").click(function (event) {
+    $(".tab-action").click(function (event) {
         event.preventDefault();
         $(".post-template .tourContent-info").removeClass("active");
-        $(".tabTour-info .item-tab a").removeClass("active");
+        $(".tab-action").removeClass("active");
+        $(".hotel-by-rating").removeClass("active");
         var url = $(this).attr('href');
         var dest = url.split('#');
         var target = dest[1];
         $('#'+target).addClass("active");
         $(this).addClass("active");
-    })
+    });
+
+    //pagination ajax
+    var total = 1;
+    $('.navigation-more a').click(function(e){
+        e.preventDefault();
+        total += 1;
+
+        var dataMax = $(this).attr('data-max');
+        if(total >= dataMax){
+            $(this).addClass("is-stop");
+        }
+
+        $(this).addClass('is-loading');
+        var classParents = $(this).parents('.hotel-by-rating').attr('data-class');
+
+        var link = window.location;
+        var urlPage = link + 'page/' + total;
+
+        $.ajax({
+            url: urlPage ,
+            type:'GET',
+            success: function(data){
+                var thisHtml =  $(data).find('#'+classParents + ' .hotel_list');
+                console.log(thisHtml);
+                thisHtml.each(function(){
+                    var a = $(this).html();
+                    $('#'+classParents + ' .hotel_list').append(a);
+                });
+                $(".navigation-more a").removeClass('is-loading');
+            }
+        });
+    });
 
 
 

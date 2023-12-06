@@ -46,10 +46,9 @@
         })(document);
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <!--font-family: 'Cormorant Garamond', serif;-->
     <!--font-family: 'League Spartan', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <!--    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">-->
 
     <!--Garamond Premier Pro-->
@@ -64,6 +63,7 @@
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/tour-page.css">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/hotel.css">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/pro.js" crossorigin="anonymous"></script>

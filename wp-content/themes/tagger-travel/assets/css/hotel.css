@@ -1,0 +1,287 @@
+
+#hotel-template{
+    padding-bottom: 140px;
+}
+#hotel-template .header-pageEntry{
+    background-image: url("/wp-content/uploads/hotel_banner_header_pc.png");
+}
+.tour-tabContent .text-description{
+    font-size: 20px;
+    line-height: 30px;
+    color: #6A5D54;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 69px;
+}
+#hotel-template .tour-tabContent {
+    margin-top: 57px;
+    position: relative;
+    padding-bottom: 48px;
+}
+
+.hotel-colItem{
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+.hotel-colItem .heading-block{
+    margin-bottom: 65px;
+}
+.rating_list{
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.rating_list .rating_item{
+    border-left: 1px solid #3C2F32;
+}
+.rating_list .rating_item a{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 27px;
+}
+.rating_list .rating_item a.active,
+.rating_list .rating_item a:hover{
+    background: #F9F6F5;
+}
+.rating_list .rating_item a svg #Ellipse_11 circle,
+.rating_list .rating_item a svg #Path_953{
+    transition: .3s;
+}
+.rating_list .rating_item a:hover svg #Ellipse_11 circle:nth-child(2),
+.rating_list .rating_item a.active svg #Ellipse_11 circle:nth-child(2){
+    fill: #6B5D54;
+}
+.rating_list .rating_item a:hover svg #Path_953,
+.rating_list .rating_item a.active svg #Path_953{
+    stroke: #fff;
+}
+.rating_list .rating_item:last-child{
+    border-right: 1px solid #3C2F32;
+}
+.rating_list .rating_item .ttl{
+    display: block;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.rating_list .rating_item .icon-star{
+    margin-bottom: 40px;
+    display: block;
+}
+.hotel-rating{
+    margin-bottom: 64px;
+}
+.hotel-by-rating{
+    display: none;
+}
+.hotel-by-rating.active{
+    display: block;
+}
+.hotel-by-rating .hotel_item {
+    border: 1px solid #D5D5D5;
+    padding: 52px 23px 49px 52px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+.hotel-by-rating .hotel_item:last-child{
+    margin-bottom: 0;
+}
+.hotel-by-rating .hotel_item .featured-image{
+    width: 33.2%;
+}
+.hotel-by-rating .hotel_item .featured-image .image{
+    display: block;
+    position: relative;
+    padding-bottom: 72.93%;
+}
+.hotel-by-rating .hotel_item .featured-image .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hotel-by-rating .hotel_item .hotel_information{
+    width: 66.8%;
+    padding-left: 32px;
+    padding-top: 2px;
+}
+.hotel-by-rating .hotel_item .title{
+    font-size: 22px;
+    line-height: 28px;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+.hotel-by-rating .hotel_item .price{
+    font-size: 24px;
+    line-height: 28px;
+    color: #CB4667;
+    font-weight: 500;
+    text-align: right;
+    padding-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 27px;
+}
+.hotel-by-rating .hotel_item .price span{
+    font-size: 18px;
+    color: #333333;
+    padding-left: 13px;
+    position: relative;
+    top: -2px;
+}
+.hotel-by-rating .hotel_item .text-info{
+    padding-right: 10px;
+    margin-bottom: 23px;
+}
+.hotel-by-rating .hotel_item .text-info p{
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+.hotel-by-rating .hotel_item .text-info p:last-child{
+    margin-bottom: 0;
+}
+.hotel-by-rating .hotel_item .btn-contact{
+    display: flex;
+    height: 64px;
+    width: 100%;
+    max-width: 240px;
+    background: #007545;
+    border: 1px solid #007545;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 40px;
+    margin: 0 0 0 auto;
+    padding-bottom: 4px;
+}
+.hotel-by-rating .hotel_item .btn-contact:hover{
+    background: #fff;
+    color: #007545;
+}
+.hotel-by-rating .hotel_item .btn-contact i{
+    position: absolute;
+    font-size: 13px;
+    top: 50%;
+    right: 21px;
+    transform: translateY(-50%);
+}
+.navigation-more{
+    padding-top: 96px;
+}
+.navigation-more a{
+    display: flex;
+    width: 100%;
+    max-width: 240px;
+    height: 64px;
+    background: #53313A;
+    border: 1px solid #53313A;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    margin: auto;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.navigation-more a:hover{
+    background: #fff;
+    color: #53313A;
+}
+.navigation-more a i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+}
+.navigation-more a:before{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin: auto;background: transparent;display: block;shape-rendering: auto;' width='230px' height='230px' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid'%3E%3Cg transform='rotate(0 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.9285714285714286s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(25.714285714285715 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.8571428571428571s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(51.42857142857143 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.7857142857142857s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(77.14285714285714 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.7142857142857143s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(102.85714285714286 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.6428571428571429s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(128.57142857142858 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5714285714285714s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(154.28571428571428 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(180 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.42857142857142855s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(205.71428571428572 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.35714285714285715s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(231.42857142857142 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.2857142857142857s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(257.14285714285717 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.21428571428571427s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(282.85714285714283 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.14285714285714285s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(308.57142857142856 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.07142857142857142s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(334.2857142857143 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%23fff'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3C!-- %5Bldio%5D generated by https://loading.io/ --%3E%3C/svg%3E");
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+    opacity: 0;
+    pointer-events: none;
+}
+.navigation-more a.is-loading:before{
+    opacity: 1;
+}
+.navigation-more a:hover:before{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' style='margin: auto;background: transparent;display: block;shape-rendering: auto;' width='230px' height='230px' viewBox='0 0 100 100' preserveAspectRatio='xMidYMid'%3E%3Cg transform='rotate(0 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.9285714285714286s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(25.714285714285715 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.8571428571428571s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(51.42857142857143 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.7857142857142857s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(77.14285714285714 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.7142857142857143s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(102.85714285714286 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.6428571428571429s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(128.57142857142858 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5714285714285714s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(154.28571428571428 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.5s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(180 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.42857142857142855s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(205.71428571428572 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.35714285714285715s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(231.42857142857142 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.2857142857142857s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(257.14285714285717 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.21428571428571427s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(282.85714285714283 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.14285714285714285s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(308.57142857142856 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='-0.07142857142857142s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3Cg transform='rotate(334.2857142857143 50 50)'%3E%3Crect x='44.5' y='10.5' rx='5.5' ry='5.5' width='11' height='11' fill='%2353313A'%3E%3Canimate attributeName='opacity' values='1;0' keyTimes='0;1' dur='1s' begin='0s' repeatCount='indefinite'/%3E%3C/rect%3E%3C/g%3E%3C!-- %5Bldio%5D generated by https://loading.io/ --%3E%3C/svg%3E");
+}
+.navigation-more a.is-stop{
+    pointer-events: none;
+}
+
+
+
+
+@media (max-width: 1440px) {
+
+
+    .rating_list{
+        max-width: 860px;
+    }
+    .hotel-by-rating .hotel_item .title{
+        font-size: 20px;
+    }
+    .hotel-by-rating .hotel_item .text-info p{
+        font-size: 14px;
+    }
+    .hotel-by-rating .hotel_item .btn-contact{
+        height: 56px;
+        font-size: 16px;
+    }
+    .hotel-by-rating .hotel_item .price{
+        font-size: 22px;
+    }
+    .hotel-by-rating .hotel_item .price span {
+        font-size: 16px;
+        top: 0;
+    }
+    .rating_list .rating_item .ttl{
+        font-size: 20px;
+    }
+    .rating_list .rating_item .icon-star img{
+        width: 160px;
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
