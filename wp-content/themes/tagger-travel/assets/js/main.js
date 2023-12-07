@@ -282,7 +282,7 @@ jQuery(function ($) {
         event.preventDefault();
         $(".post-template .tourContent-info").removeClass("active");
         $(".tab-action").removeClass("active");
-        $(".hotel-by-rating").removeClass("active");
+        $(this).parents(".hotel-colItem").find(".hotel-by-rating").removeClass("active");
         var url = $(this).attr('href');
         var dest = url.split('#');
         var target = dest[1];

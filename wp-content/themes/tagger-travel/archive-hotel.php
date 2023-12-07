@@ -15,7 +15,7 @@
         </div>
         <div class="tour-tabContent">
             <div class="inner">
-                <p class="text-description dnp-s-m" data-aos="fade-up">ベトナム北部から南部までベトナム全国エリアのホテルをご案内可能です。</p>
+                <p class="text-description dnp-s-m" data-aos="fade-up">ベトナム北部から南部まで<br class="sp-br"/>ベトナム全国エリアのホテルをご案内可能です。</p>
                 <ul class="areaList">
                     <?php
                     $args = array(
@@ -105,7 +105,7 @@
                         }
                         ?>
 
-                        <div id="<?php echo $terms; ?>" class="hotel-colItem">
+                        <div id="<?php echo $terms; ?>" class="hotel-colItem" data-aos="fade-up">
                             <div class="inner">
                                 <h2 class="heading-block" data-aos="fade-up">
                                     <picture class="icon-heading">
@@ -145,7 +145,7 @@
                                             <a class="tab-action" href="#<?php echo $terms; ?>-4star">
                                                 <span class="ttl dnp-s-m">4つ星</span>
                                                 <picture class="icon-star">
-                                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/4_star_pc.png 2x">
+                                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/4_star_sp.png 2x">
                                                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/4_star_pc.png 2x">
                                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/4_star_pc.png" alt="">
                                                 </picture>
@@ -168,7 +168,7 @@
                                             <a class="tab-action" href="#<?php echo $terms; ?>-3star">
                                                 <span class="ttl dnp-s-m">3つ星</span>
                                                 <picture class="icon-star">
-                                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/3_star_pc.png 2x">
+                                                    <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/3_star_sp.png 2x">
                                                     <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/3_star_pc.png 2x">
                                                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/3_star_pc.png" alt="">
                                                 </picture>

@@ -78,9 +78,11 @@
 }
 .hotel-by-rating{
     display: none;
+    height: 0;
 }
 .hotel-by-rating.active{
     display: block;
+    height: auto;
 }
 .hotel-by-rating .hotel_item {
     border: 1px solid #D5D5D5;
@@ -278,10 +280,212 @@
 }
 
 
+@media (max-width: 1023px) {
+
+
+    .tour-tabContent .text-description{
+        font-size: 16px;
+    }
+    .rating_list .rating_item .ttl {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .rating_list .rating_item .icon-star img {
+        width: 140px;
+        height: auto;
+    }
+    .rating_list .rating_item .icon-star {
+        margin-bottom: 30px;
+    }
+    .rating_list .rating_item a{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .rating_list{
+        width: calc(100% - 60px);
+    }
+
+    .hotel-by-rating .hotel_item{
+        padding: 20px;
+    }
+    .hotel-by-rating .hotel_item .hotel_information {
+        width: 65%;
+        padding-left: 25px;
+        padding-top: 0;
+    }
+    .hotel-by-rating .hotel_item .featured-image {
+        width: 35%;
+    }
+    .hotel-by-rating .hotel_item .title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+    .hotel-by-rating .hotel_item .text-info p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .hotel-by-rating .hotel_item .price {
+        font-size: 20px;
+    }
+    .hotel-by-rating .hotel_item .price span {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    .hotel-by-rating .hotel_item .btn-contact {
+        height: 50px;
+        font-size: 16px;
+    }
+    .navigation-more a{
+        height: 50px;
+        font-size: 16px;
+    }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 767px) {
+
+    body:not(.home) .heading-block .icon-heading img{
+        width: 40px;
+    }
+    #hotel-template .header-pageEntry {
+        background-image: url("/wp-content/uploads/hotel_banner_header_sp.png");
+    }
+
+    #hotel-template {
+        padding-bottom: 100px;
+    }
+
+    #hotel-template .tour-tabContent{
+        margin-top: 65px;
+        padding-bottom: 70px;
+    }
+    .tour-tabContent .text-description {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 260px;
+        margin: 0 auto 38px;
+    }
+    #hotel-template .tour-tabContent:after {
+        height: 72.5%;
+    }
+
+    .hotel-colItem {
+        padding-top: 77px;
+        padding-bottom: 13px;
+    }
+    .hotel-colItem .heading-block {
+        margin-bottom: 62px;
+    }
+    .rating_list .rating_item .icon-star img {
+        width: auto;
+        height: auto;
+    }
+    .rating_list {
+        width: 100%;
+        max-width: 550px;
+    }
+    .rating_list .rating_item .ttl {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+    .rating_list .rating_item .icon-star {
+        margin-bottom: 25px;
+    }
+    .rating_list .rating_item a {
+        padding-top: 18px;
+        padding-bottom: 20px;
+    }
+    .hotel-rating {
+        margin-bottom: 40px;
+    }
+    .hotel-by-rating .hotel_item .featured-image {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .hotel-by-rating .hotel_item .hotel_information {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .hotel-by-rating .hotel_item {
+        padding: 39px 24px 40px;
+        margin-bottom: 19px;
+    }
+    .hotel-by-rating .hotel_item .title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 11px;
+    }
+    .hotel-by-rating .hotel_item .price {
+        font-size: 24px;
+        padding-right: 0px;
+    }
+    .hotel-by-rating .hotel_item .price span {
+        font-size: 18px;
+        padding-left: 12px;
+    }
+    .hotel-by-rating .hotel_item .price {
+        font-size: 24px;
+        padding-right: 0px;
+        margin-bottom: 27px;
+    }
+    .hotel-by-rating .hotel_item .text-info p {
+        font-size: 15px;
+        line-height: 22px;
+        padding-left: 3px;
+    }
+    .hotel-by-rating .hotel_item .text-info {
+        padding-right: 0;
+        margin-bottom: 33px;
+    }
+    .navigation-more {
+        padding-top: 56px;
+    }
+    .navigation-more a {
+        height: 64px;
+        font-size: 20px;
+    }
+    .hotel-by-rating .hotel_item .btn-contact {
+        height: 64px;
+        font-size: 18px;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
