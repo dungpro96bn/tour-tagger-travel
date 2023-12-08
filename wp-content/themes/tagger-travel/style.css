@@ -243,15 +243,15 @@ textarea {
 }
 
 ::placeholder {
-    color: #dddddd;
+    color: #919191;
 }
 
 ::-ms-input-placeholder {
-    color: #dddddd;
+    color: #919191;
 }
 
 :-ms-input-placeholder {
-    color: #dddddd;
+    color: #919191;
 }
 
 body::-webkit-scrollbar{

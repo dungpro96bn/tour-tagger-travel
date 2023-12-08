@@ -173,6 +173,15 @@ jQuery(function ($) {
         delay: 0,
     });
 
+    setInterval(function () {
+        if($(".wpcf7-form").hasClass("sent")){
+            var strHref = window.location.href,
+                href = strHref.replace('confirm/', '');
+            $(".wpcf7-form").removeClass("sent");
+            window.location.replace(href + 'complete/');
+        }
+    }, 100);
+
 
     //scroll
     $(function(){

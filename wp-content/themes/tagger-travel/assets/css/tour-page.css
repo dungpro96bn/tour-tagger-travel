@@ -40,6 +40,7 @@
     text-shadow: 0px 0px 26px #000;
     letter-spacing: 2.4px;
     padding-left: 8px;
+    text-transform: capitalize;
 }
 .header-pageEntry .heading-entry .icon-heading{
     display: block;

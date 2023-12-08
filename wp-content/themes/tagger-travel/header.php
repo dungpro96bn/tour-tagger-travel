@@ -65,6 +65,7 @@
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/tour-page.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/hotel.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/overseas.css">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom-page.css">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/pro.js" crossorigin="anonymous"></script>
@@ -124,7 +125,7 @@
                     )
                 ); ?>
                 <div class="contact-action">
-                    <a class="scroll contact-btn btn-green c-g" href="/contact/">Contact</a>
+                    <a class="contact-btn btn-green c-g" href="/contact/">Contact</a>
                 </div>
             </div>
             <div class="btn-openMenu">
