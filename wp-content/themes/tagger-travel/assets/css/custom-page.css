@@ -296,6 +296,33 @@
 
 
 
+/*News page*/
+#news .news-block .newsList{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+#news .news-block .newsItem a{
+    font-size: 16px;
+    line-height: 28px;
+    padding: 28px;
+}
+#news .news-block .newsItem .date {
+    width: 100px;
+}
+#news .news-block .newsItem .text {
+    width: calc(100% - 100px);
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1023px) {
 
 

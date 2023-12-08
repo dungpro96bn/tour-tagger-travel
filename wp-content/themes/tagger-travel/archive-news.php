@@ -1,9 +1,20 @@
 <?php get_header(); ?>
 
     <div id="news" class="news-page">
+        <div class="header-pageEntry">
+            <div class="headingMain-entry">
+                <h2 class="heading-entry">
+                    <picture class="icon-heading">
+                        <source srcset="/wp-content/uploads/icon_header_entry.png 2x">
+                        <img class="sizes" src="/wp-content/uploads/icon_header_entry.png" alt="">
+                    </picture>
+                    <span class="ttl-ja dnp-s-m">お知らせ</span>
+                    <span class="ttl-en c-g">News</span>
+                </h2>
+            </div>
+        </div>
         <div class="news-block">
             <div class="inner">
-                <h2 class="heading-block en">News</h2>
                     <?php
                     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
                     $args = array(
