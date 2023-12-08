@@ -1,0 +1,228 @@
+<?php get_header();
+global $post;
+?>
+
+    <div id="tour-single" class="post-template tour-single-page">
+
+        <div class="inner">
+            <div class="columns-page">
+
+                <div class="columns-main">
+                    <h2 class="heading-single dnp-s-m"><?php the_title(); ?></h2>
+                    <div class="sliderImage-tour">
+                        <ul class="list-imageTour">
+                            <?php
+                            $images = get_field('image_slider_tour');
+                            $size = 'full';
+                            if( $images ): ?>
+                                <?php foreach( $images as $image_id ): ?>
+                                    <li class="item-imageTour">
+                                        <picture class="image">
+                                            <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                        </picture>
+                                    </li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </ul>
+                        <ul class="list-thumbnailTour">
+                            <?php
+                            $images = get_field('image_slider_tour');
+                            $size = 'full';
+                            if( $images ): ?>
+                                <?php foreach( $images as $image_id ): ?>
+                                    <li class="item-thumbnailTour">
+                                        <picture class="image">
+                                            <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                        </picture>
+                                    </li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+
+                    <div class="description-tour">
+                        <?php echo get_field('tourist_destination_information') ?>
+                    </div>
+
+                    <div class="tabTour-info">
+                        <ul class="list-tabs">
+                            <li class="item-tab">
+                                <a class="tab-action dnp-s-m active" href="#detail"><span>詳細</span></a>
+                            </li>
+                            <li class="item-tab">
+                                <a class="tab-action dnp-s-m" href="#payment-method"><span>料金一覧・<br class="sp-br"/>お支払い方法</span></a>
+                            </li>
+                            <li class="item-tab">
+                                <a class="tab-action dnp-s-m" href="#information-notes"><span>ご案内・<br class="sp-br"/>ご注意事項</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="detail" class="tourContent-info active">
+                        <div class="tour-inner">
+
+                            <?php if (have_rows('tour_schedule')):?>
+                                <div class="tour-schedule">
+                                    <h3 class="title-block dnp-s-m"><span>ツアースケジュール</span></h3>
+                                    <ul class="tour-schedule-list">
+                                        <?php while (have_rows('tour_schedule')) : the_row(); ?>
+                                            <li class="tour-schedule-item">
+                                                <p class="title-time"><span
+                                                            class="c-g"><?php echo get_sub_field('schedule_time'); ?></span>頃
+                                                </p>
+                                                <div class="tour-schedule-info">
+                                                    <div class="inner-info">
+                                                        <?php echo get_sub_field('schedule_content'); ?>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php
+                            $policy_content = get_field('policy_content');
+                            if ($policy_content):
+                                ?>
+                                <div class="tour-policy">
+                                    <h3 class="title-block dnp-s-m"><span>変更・取り消し規定</span></h3>
+                                    <div class="policy_content">
+                                        <?php echo $policy_content; ?>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php
+                            $tour_notes = get_field('tour_notes');
+                            $notice = get_field('notice');
+                            if ($tour_notes || $notice):
+                                ?>
+                                <div class="tour-notes">
+                                    <h3 class="title-block dnp-s-m"><span>ツアー備考/注意事項</span></h3>
+                                    <div class="tour-notes-content">
+                                        <?php echo $tour_notes; ?>
+                                    </div>
+                                    <div class="notice">
+                                        <p class="ttl dnp-s-m">お知らせ</p>
+                                        <div class="notice-content">
+                                            <?php echo $notice; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                            
+                            <div class="link-contact">
+                                <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="payment-method" class="tourContent-info">
+                        <div class="tour-inner">
+                            <div class="fee-tour">
+                                <h3 class="title-block dnp-s-m"><span>料金</span></h3>
+
+                                <?php
+                                if (have_rows('fee')):?>
+                                    <div class="fee-list">
+                                        <?php while (have_rows('fee')) : the_row(); ?>
+                                            <div class="fee-item">
+                                                <p class="fee-title dnp-s-m"><?php echo get_sub_field('fee_title'); ?></p>
+                                                <div class="fee-subContent">
+                                                    <p><?php echo get_sub_field('fee_content'); ?></p>
+                                                </div>
+
+                                                <?php
+                                                if (have_rows('fee_tablet')):?>
+                                                    <div class="fee-tablet">
+                                                        <?php while (have_rows('fee_tablet')) : the_row(); ?>
+                                                            <div class="fee-tablet-item">
+                                                                <div class="fee-tablet-title">
+                                                                    <p class="dnp-s-m"><?php echo get_sub_field('fee_title_tablet'); ?></p>
+                                                                </div>
+                                                                <div class="fee-content-tablet">
+                                                                    <?php echo get_sub_field('fee_content_tablet'); ?>
+                                                                </div>
+                                                            </div>
+                                                        <?php endwhile; ?>
+                                                    </div>
+                                                <?php endif; ?>
+
+                                            </div>
+                                        <?php endwhile; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <div class="link-contact">
+                                    <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>
+                                </div>
+
+                                <div class="payment-method">
+                                    <h3 class="title-block dnp-s-m"><span>お支払い方法</span></h3>
+                                    <ul class="payment-method-list">
+                                        <li class="payment-method-item">
+                                            <p class="ttl dnp-s-m">銀行振込（日本国内・先払い）</p>
+                                            <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                        </li>
+                                        <li class="payment-method-item">
+                                            <p class="ttl dnp-s-m">Paypalでのお支払い</p>
+                                            <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                            <picture class="icon-paypal">
+                                                <source srcset="/wp-content/uploads/icon_paypal.png 2x">
+                                                <img class="sizes" src="/wp-content/uploads/icon_paypal.png" alt="">
+                                            </picture>
+                                        </li>
+                                        <li class="payment-method-item">
+                                            <p class="ttl dnp-s-m">現地、ホーチミンまたはハノイのツアーデスクにてお支払い</p>
+                                            <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                            <picture class="icon-paypal">
+                                                <source srcset="/wp-content/uploads/icon_paypal.png 2x">
+                                                <img class="sizes" src="/wp-content/uploads/icon_paypal.png" alt="">
+                                            </picture>
+                                        </li>
+                                        <li class="payment-method-item">
+                                            <p class="ttl dnp-s-m">ガイドに直接お支払い（ガイド付きツアーのみ可能）</p>
+                                            <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="link-contact">
+                                    <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php
+                    if (have_rows('information_notes')):?>
+                        <div id="information-notes" class="tourContent-info">
+                            <div class="tour-inner">
+                                <h3 class="title-block dnp-s-m"><span>ご案内・ご注意事項</span></h3>
+                                <div class="information-notesList">
+                                    <?php while (have_rows('information_notes')) : the_row(); ?>
+                                        <div class="information-notesItem">
+                                            <p class="ttl dnp-s-m"><?php echo get_sub_field('title_information_notes'); ?></p>
+                                            <div class="text">
+                                                <?php echo get_sub_field('content_information_notes'); ?>
+                                            </div>
+                                        </div>
+                                    <?php endwhile; ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                </div>
+
+                <?php get_template_part('sidebar'); ?>
+
+            </div>
+        </div>
+
+    </div><!-- #new -->
+
+<?php get_footer(); ?>
