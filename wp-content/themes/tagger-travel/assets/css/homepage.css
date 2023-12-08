@@ -13,7 +13,7 @@
 
 .bannerSlider .heading-main{
     position: absolute;
-    top: 46.2%;
+    top: 42.5%;
     left: 0;
     width: 100%;
     text-align: center;
@@ -24,11 +24,25 @@
     line-height: 50px;
     color: #fff;
     display: block;
+    padding-right: 3px;
     letter-spacing: 5px;
-    padding-left: 30px;
-    margin-bottom: 49px;
     text-shadow: 0px 0px 26px #000;
     font-weight: bold;
+}
+.bannerSlider .heading-main .img-heading-main{
+    display: inline-block;
+    position: relative;
+    margin-top: -4px;
+    margin-bottom: 16px;
+}
+.bannerSlider .heading-main .img-heading-main:after{
+    content: "";
+    position: absolute;
+    width: calc(100% - 80px);
+    border-bottom: 3px solid #FFFFFF;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .bannerSlider .heading .ttl-big{
     display: block;
@@ -50,12 +64,13 @@
 }
 .bannerSlider .heading .ttl-sub{
     display: block;
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 29px;
     color: #fff;
-    font-family: 'Pristine Script';
-    letter-spacing: 4px;
-    padding-left: 26px;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2.4px;
+    padding-right: 6px;
+    font-weight: 600;
     text-shadow: 3px 3px 26px #000, 3px 3px 26px #000;
 }
 .bannerSlider .heading-main .ttl-img.text-ttl01 img{
@@ -148,10 +163,11 @@
     font-weight: 400;
     writing-mode: vertical-rl;
     position: absolute;
-    bottom: 33px;
-    left: 50%;
+    bottom: 31px;
+    left: 51%;
     transform: translateX(-50%);
-    letter-spacing: 1.65px;
+    letter-spacing: 1.6px;
+    font-family: 'Cormorant Garamond', serif;
 }
 .bannerSlider .bannerContent .left-slider .titleTag:before{
     content: "";
@@ -986,10 +1002,12 @@
         line-height: 76px;
     }
     .bannerSlider .heading .ttl-sub{
-        font-size: 24px;
+        font-size: 20px;
         line-height: 30px;
     }
-
+    .bannerSlider .heading-main .img-heading-main img{
+        height: 120px;
+    }
 
 
 
@@ -1010,16 +1028,25 @@
 
 
     /*bannerSlider*/
+    .bannerSlider .heading-main .img-heading-main img {
+        height: 100px;
+    }
+
     .bannerSlider .heading-main .ttl-ja {
         font-size: 24px;
         line-height: 30px;
-        margin-bottom: 30px;
     }
     .bannerSlider .heading .ttl-big{
         font-size: 80px;
         line-height: 60px;
         letter-spacing: 10px;
         margin-bottom: 20px;
+    }
+    .bannerSlider .heading-main .img-heading-main {
+        display: inline-block;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 12px;
     }
     .bannerSlider .heading .ttl-big small {
         display: inline-block;
@@ -1028,13 +1055,14 @@
         margin-right: -12px;
         top: -3px;
     }
-    .bannerSlider .heading .ttl-sub{
-        font-size: 20px;
-        line-height: 30px;
-        letter-spacing: 3px;
+    .bannerSlider .heading .ttl-sub {
+        font-size: 16px;
+        line-height: 28px;
     }
-
-
+    .bannerSlider .heading-main .img-heading-main:after{
+        width: calc(100% - 60px);
+        bottom: 12px;
+    }
 
 
 
@@ -1180,6 +1208,13 @@
 
 
     /*bannerSlider*/
+    .bannerSlider .heading-main .img-heading-main img {
+        height: 80px;
+    }
+    .bannerSlider .heading-main .img-heading-main:after {
+        width: calc(100% - 50px);
+        bottom: 10px;
+    }
     .bannerSlider .bannerContent .left-slider{
         width: 50px;
     }
@@ -1211,8 +1246,8 @@
         top: 30%;
     }
     .bannerSlider .heading-main .ttl-ja {
-        font-size: 16px;
-        line-height: 26px;
+        font-size: 20px;
+        line-height: 30px;
     }
     .bannerSlider .heading .ttl-big {
         font-size: 66px;
@@ -1225,9 +1260,9 @@
         padding-right: 50px;
     }
     .bannerSlider .heading .ttl-sub {
-        font-size: 16px;
-        line-height: 26px;
-        letter-spacing: 2.5px;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 2px;
     }
     .bannerSlider .heading .ttl-big small {
         display: inline-block;
@@ -1393,21 +1428,30 @@
 
 
     /*bannerSlider*/
+    .bannerSlider .heading-main .img-heading-main img {
+        height: auto;
+    }
     .bannerSlider .heading-main{
-        top: 41.1%;
+        top: 41.5%;
     }
     .bannerSlider .heading .ttl-sub {
-        font-size: 17px;
-        line-height: 26px;
-        letter-spacing: 1.7px;
-        padding-left: 22px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.7px;
+        padding-left: 38px;
     }
     .bannerSlider .heading-main .ttl-ja {
         font-size: 21px;
         line-height: 33px;
         letter-spacing: 2.8px;
-        padding-left: 34px;
-        margin-bottom: 19px;
+        padding-right: 0;
+        padding-left: 36px;
+    }
+    .bannerSlider .heading-main .img-heading-main:after {
+        width: calc(100% - 110px);
+        bottom: 13px;
+        left: calc(50% + 17px);
+        border-bottom: 1px solid #FFFFFF;
     }
     .bannerSlider .heading .ttl-big {
         font-size: 63px;
@@ -1429,11 +1473,18 @@
     .bannerSlider .bannerContent .right-slider {
         width: calc(100% - 32px);
     }
+    .bannerSlider .heading-main .img-heading-main {
+        display: inline-block;
+        position: relative;
+        margin-top: -18px;
+        margin-bottom: 2px;
+        padding-left: 31px;
+    }
     .bannerSlider .bannerContent .left-slider .titleTag {
         font-size: 16px;
         line-height: 20px;
-        bottom: 24px;
-        letter-spacing: 1.9px;
+        bottom: 22px;
+        letter-spacing: 1.65px;
     }
     .bannerSlider .scroll-action {
         font-size: 14px;

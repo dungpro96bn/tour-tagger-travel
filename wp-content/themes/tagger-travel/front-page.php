@@ -8,7 +8,7 @@ get_header();
     <div class="bannerSlider">
         <div class="bannerContent">
             <div class="left-slider" data-aos="fade-down">
-                <div class="titleTag gp-p"><p>Your Vietnam Adventure Starts Here</p></div>
+                <div class="titleTag"><p>Your Vietnam Adventure Starts Here</p></div>
             </div>
             <div class="right-slider">
                 <div class="sliderHomepage">
@@ -76,11 +76,15 @@ get_header();
         <div class="heading-main">
             <h1 class="heading" data-aos="fade-up">
                 <span class="ttl-ja dnp-s-m">ベトナム旅行は</span>
-                <span class="ttl-big">TAGGER <br class="sp-br"/>T<small>RAVE</small>L</span>
+                <picture class="img-heading-main">
+                    <source media="(max-width: 767px)" srcset="/wp-content/uploads/img_heading_main_sp.png 2x">
+                    <source media="(min-width: 768px)" srcset="/wp-content/uploads/img_heading_main_pc.png 2x">
+                    <img class="sizes" src="/wp-content/uploads/img_heading_main_pc.png" alt="">
+                </picture>
                 <span class="ttl-sub">Your Vietnam Adventure Starts Here</span>
             </h1>
         </div>
-        <div class="scroll-action"><a href="#vietnam-tour" class="scroll gp-p">Scroll Down</a></div>
+<!--        <div class="scroll-action"><a href="#vietnam-tour" class="scroll gp-p">Scroll Down</a></div>-->
     </div>
 
     <div id="vietnam-tour" class="vietnam-tour" data-map="north">
