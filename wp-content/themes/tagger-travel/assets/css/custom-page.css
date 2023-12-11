@@ -1,14 +1,10 @@
 
 /*Contact*/
 /*===============================*/
-#confirm-pageContent,
-#contact-pageContent,
-#complete-pageContent{
+#contact-page{
     padding-bottom: 160px;
 }
-#confirm-pageContent .header-pageEntry .headingMain-entry,
-#contact-pageContent .header-pageEntry .headingMain-entry,
-#complete-pageContent .header-pageEntry .headingMain-entry{
+#contact-page .header-pageEntry .headingMain-entry{
     top: 44%;
 }
 #contact-page .header-pageEntry{
@@ -30,12 +26,18 @@
     padding: 74px;
     margin-bottom: 64px;
 }
+.request-advice .contact-form-main .contact-list{
+    margin-bottom: 48px;
+}
 .field-group{
     display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid #DED8D4;
     padding-bottom: 24px;
     margin-bottom: 24px;
+}
+.field-group .input-field .wpcf7-list-item{
+    margin: 0;
 }
 .field-group:last-child{
     margin-bottom: 0;
@@ -132,7 +134,7 @@
 .field-group .input-field .wpcf7-form-control-wrap{
     width: 100%;
 }
-.field-group .input-field .wpcf7-form-control-wrap[data-name="gender"] .wpcf7-list-item input{
+.field-group .input-field .wpcf7-form-control-wrap .wpcf7-list-item input[type="radio"]{
     position: absolute;
     opacity: 0;
 }
@@ -169,6 +171,24 @@
 .field-group .input-field .wpcf7-list-item input:checked ~ .wpcf7-list-item-label:after{
     opacity: 1;
 }
+.field-group .radio-left .input-field .wpcf7-list-item .wpcf7-list-item-label{
+    padding-left: 36px;
+    padding-right: 0;
+}
+.field-group .radio-left .input-field .wpcf7-list-item:last-child .wpcf7-list-item-label:last-child{
+    margin-right: 0;
+}
+.field-group .radio-left .input-field .wpcf7-list-item .wpcf7-list-item-label:before{
+    right: unset;
+    left: 0;
+}
+.field-group .radio-left .input-field .wpcf7-list-item .wpcf7-list-item-label:after{
+    right: unset;
+    left: 7px;
+}
+
+
+
 .field-group .text-note{
     font-size: 14px;
     line-height: 21px;
@@ -376,14 +396,10 @@
 
 @media (max-width: 767px) {
 
-    #confirm-pageContent,
-    #contact-pageContent,
-    #complete-pageContent{
+    #contact-page{
         padding-bottom: 120px;
     }
-    #confirm-pageContent .header-pageEntry .headingMain-entry,
-    #contact-pageContent .header-pageEntry .headingMain-entry,
-    #complete-pageContent .header-pageEntry .headingMain-entry {
+    #contact-page .header-pageEntry .headingMain-entry{
         top: 46%;
         padding: 0 20px;
     }
@@ -400,7 +416,7 @@
     .field-group .title {
         width: 100%;
         padding-top: 0;
-        margin-bottom: 14px;
+        margin-bottom: 21px;
     }
     .field-group .input-container {
         width: 100%;
@@ -414,6 +430,10 @@
         height: 24px;
         font-size: 14px;
         right: 0;
+    }
+    .field-group{
+        padding-bottom: 22px;
+        margin-bottom: 22px;
     }
     .field-group .input-field {
         font-size: 16px;
@@ -509,7 +529,9 @@
         height: 48px;
         font-size: 16px;
     }
-
+    .request-advice .contact-form-main .contact-list{
+        margin-bottom: 32px;
+    }
 
 
 

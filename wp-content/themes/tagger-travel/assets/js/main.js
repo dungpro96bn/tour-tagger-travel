@@ -182,6 +182,22 @@ jQuery(function ($) {
         }
     }, 100);
 
+    $(".mw_wp_form_confirm .submit-form").click(function () {
+        localStorage.setItem('sendmail', 'complete');
+    });
+
+    $(document).ready(function () {
+        var checkItem1 = document.getElementsByClassName('contact-form-complete');
+        var checkItem2 = document.getElementsByClassName('mw_wp_form_confirm');
+        if(checkItem1.length <= 0 || checkItem2.length <= 0){
+            localStorage.removeItem('sendmail');
+        }
+    });
+
+    $(".link-top a").click(function () {
+        localStorage.removeItem('sendmail');
+    });
+
 
     //scroll
     $(function(){

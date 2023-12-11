@@ -519,6 +519,7 @@
 }
 .vietnam-tour .map-tour{
     position: relative;
+    padding-bottom: 123%;
 }
 .vietnam-tour .map-tour .locationItem{
     display: flex;
@@ -1010,6 +1011,31 @@
     }
 
 
+    .vietnam-tour .map-tour{
+        padding-bottom: 140%;
+    }
+    .vietnam-tour .map-tour .locationItem:nth-child(1){
+        top: 34.8%;
+        left: 32.3%;
+    }
+    .vietnam-tour .map-tour .locationItem:nth-child(2){
+        top: 53.8%;
+        left: 32.3%;
+    }
+    .vietnam-tour .map-tour .locationItem:nth-child(3){
+        top: 69%;
+        left: 32.3%;
+    }
+    .vietnam-tour .map-tour .locationItem:nth-child(4){
+        top: 96%;
+        left: 32.3%;
+    }
+
+
+
+
+
+
 
 
 
@@ -1079,6 +1105,9 @@
     .vietnam-tour .bg-map svg{
         width: 2500px;
     }
+    .vietnam-tour .map-tour {
+        padding-bottom: 130%;
+    }
     .vietnam-tour .map-tour .locationItem a{
         font-size: 16px;
         min-width: 140px;
@@ -1086,15 +1115,19 @@
     }
     .vietnam-tour .map-tour .locationItem:nth-child(3){
         top: 59%;
+        left: 43.3%;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(2){
         top: 47%;
+        left: 43.3%;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(4){
         top: 85%;
+        left: 43.3%;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(1){
         top: 30%;
+        left: 43.3%;
     }
 
 
@@ -1311,16 +1344,16 @@
         height: 30px;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(1) {
-        top: 28%;
+        top: 165px;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(2) {
-        top: 43%;
+        top: 252px;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(3) {
-        top: 54.5%;
+        top: 320px;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(4) {
-        top: 77%;
+        top: 450px;
         right: 140px !important;
     }
     .vietnam-tour .map-tour .locationItem{
@@ -1328,8 +1361,8 @@
         transform: translateY(-50%) !important;
         right: 154px !important;
     }
-    .vietnam-tour .map-tour{
-        min-height: 585px;
+    .vietnam-tour .map-tour {
+        padding-bottom: 145%;
     }
 
 
@@ -1747,6 +1780,9 @@
         position: relative;
         margin-right: -18px;
         margin-left: 16px;
+    }
+    .overseas-tour .overseasTour-image .image-01{
+        display: none;
     }
     .overseas-tour .overseasTour-info .leftInner{
         max-width: 100%;

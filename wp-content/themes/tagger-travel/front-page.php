@@ -14,30 +14,18 @@ get_header();
                 <div class="sliderHomepage">
                     <div class="slider-inner">
                         <ul class="sliderList-image">
-                            <li class="sliderItem-image">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic01_pc.jpg">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic01_pc.jpg" alt="">
-                                </picture>
-                            </li>
-                            <li class="sliderItem-image">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic02_pc.jpg">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic02_pc.jpg" alt="">
-                                </picture>
-                            </li>
-                            <li class="sliderItem-image">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic03_pc.jpg">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic03_pc.jpg" alt="">
-                                </picture>
-                            </li>
-                            <li class="sliderItem-image">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic04_pc.jpg">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/home_slider_pic04_pc.jpg" alt="">
-                                </picture>
-                            </li>
+                            <?php
+                            $images = get_field('slider_banner');
+                            $size = 'full';
+                            if( $images ): ?>
+                                <?php foreach( $images as $image_id ): ?>
+                                    <li class="sliderItem-image">
+                                        <picture class="image">
+                                            <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                        </picture>
+                                    </li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -2467,10 +2455,14 @@ get_header();
     <div class="hotel-block">
         <div class="hotel-top">
             <div class="left-content" data-aos="fade-up">
-                <picture class="image">
-                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/hotel_pic01_pc.png" alt="">
-                </picture>
+                <?php
+                $image = get_field('hotel_banner');
+                if( !empty( $image ) ): ?>
+                    <picture class="image">
+                        <source srcset="<?php echo esc_url($image['url']); ?>">
+                        <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="">
+                    </picture>
+                <?php endif; ?>
             </div>
             <div class="right-content">
                 <div class="rightInner" data-aos="fade-up">
@@ -2479,12 +2471,12 @@ get_header();
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
                         </picture>
-                        <span class="ttl-ja dnp-s-m">ホテル</span>
-                        <span class="ttl-en c-g">Hotel</span>
+                        <span class="ttl-ja dnp-s-m"><?php echo get_field('hotel_title_ja'); ?></span>
+                        <span class="ttl-en c-g"><?php echo get_field('hotel_title_en'); ?></span>
                     </h2>
-                    <p class="subTitle dnp-s-m">ベトナム北部から南部までベトナム全国エリアの<br/>ホテルをご案内可能です。</p>
+                    <div class="subTitle dnp-s-m"><?php echo get_field('hotel_description'); ?></div>
                     <div class="link-more">
-                        <a href="/hotel/" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                        <a href="<?php echo get_field('hotel_link'); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -2560,36 +2552,54 @@ get_header();
                                 <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                                 <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
                             </picture>
-                            <span class="ttl-ja dnp-s-m">ベトナム国外ツアー</span>
-                            <span class="ttl-en c-g">Overseas tour</span>
+                            <span class="ttl-ja dnp-s-m"><?php echo get_field('overseas_title_ja'); ?></span>
+                            <span class="ttl-en c-g"><?php echo get_field('overseas_title_en'); ?></span>
                         </h2>
-                        <p class="subTitle dnp-s-m">中国、タイ、カンボジアなどベトナム国外の<br class="pc-br"/>ツアーもご案内可能です。</p>
+                        <div class="subTitle dnp-s-m"><?php echo get_field('overseas_description'); ?></div>
                         <div class="link-more">
-                            <a href="#" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                            <a href="<?php echo get_field('overseas_link'); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="overseasTour-image" data-aos="fade-up">
-                    <picture class="image">
-                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic01_pc.png" alt="">
-                    </picture>
-                    <picture class="image-01">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_sp.png">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png" alt="">
-                    </picture>
+                    <?php
+                    $image = get_field('overseas_banner');
+                    if( !empty( $image ) ): ?>
+                        <picture class="image">
+                            <source srcset="<?php echo esc_url($image['url']); ?>">
+                            <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="">
+                        </picture>
+                    <?php endif; ?>
+
+                    <?php
+                    $image = get_field('overseas_image_01');
+                    if( !empty( $image ) ): ?>
+                        <picture class="image-01">
+                            <source srcset="<?php echo esc_url($image['url']); ?>">
+                            <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="">
+                        </picture>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="image-bottom">
-                <picture class="image-01 hide-pc" data-aos="fade-up" >
-                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic02_pc.png" alt="">
-                </picture>
-                <picture class="image-02" data-aos="fade-up" >
-                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/overseas_tour_pic03_pc.png" alt="">
-                </picture>
+                <?php
+                $image = get_field('overseas_image_01');
+                if( !empty( $image ) ): ?>
+                    <picture class="image-01 hide-pc">
+                        <source srcset="<?php echo esc_url($image['url']); ?>">
+                        <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="">
+                    </picture>
+                <?php endif; ?>
+
+                <?php
+                $image = get_field('overseas_image_02');
+                if( !empty( $image ) ): ?>
+                    <picture class="image-02" data-aos="fade-up">
+                        <source srcset="<?php echo esc_url($image['url']); ?>">
+                        <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="">
+                    </picture>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
@@ -2712,20 +2722,23 @@ get_header();
     <div class="qa-block">
         <div class="inner">
             <div class="imageContent" data-aos="fade-up">
-                <picture class="image">
-                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png">
-                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/qa_pic01_pc.png" alt="">
-                </picture>
+                <?php
+                $image = get_field('q&a_banner');
+                if( !empty( $image ) ): ?>
+                    <picture class="image">
+                        <source srcset="<?php echo esc_url($image['url']); ?>">
+                        <img class="sizes" src="<?php echo esc_url($image['url']); ?>" alt="">
+                    </picture>
+                <?php endif; ?>
             </div>
             <div class="titleContent" data-aos="fade-up">
-                <p class="title-box dnp-s-m"><span>出国前に</span><span>チェック！</span></p>
+                <p class="title-box dnp-s-m"><?php echo get_field('q&a_title_box'); ?></p>
                 <h3 class="title dnp-s-m">
-                    <span>旅の情報<small class="c-g">Q&A</small></span>
-                    <span>ベトナムの気候注意点など</span>
+                    <?php echo get_field('q&a_heading'); ?>
                 </h3>
-                <p class="text">ベトナム旅行前に必ずチェックしておきたい情報はこちら</p>
+                <div class="text"><?php echo get_field('q&a_description'); ?></div>
                 <div class="link-more">
-                    <a href="#" class="btn-link btn-white c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                    <a href="<?php echo get_field('q&a_link'); ?>" class="btn-link btn-white c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                 </div>
             </div>
         </div>
