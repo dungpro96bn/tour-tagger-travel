@@ -141,6 +141,8 @@ jQuery(function ($) {
         delay: 0,
     });
 
+
+    // Check submit contact complete
     setInterval(function () {
         if($(".mw_wp_form_confirm .wpcf7-form").hasClass("sent")){
             var strHref = window.location.href,
@@ -164,6 +166,17 @@ jQuery(function ($) {
 
     $(".link-top a").click(function () {
         localStorage.removeItem('sendmail');
+    });
+
+
+    //Open line box
+    $("#line-contactBox .boxClose").click(function () {
+        $("#line-contactBox").addClass("is-hide");
+        $(".lineBox").removeClass("is-close");
+    });
+    $(".lineBox").click(function () {
+        $("#line-contactBox").removeClass("is-hide");
+        $(this).addClass("is-close");
     });
 
 
