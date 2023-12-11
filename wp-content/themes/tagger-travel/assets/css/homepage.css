@@ -598,6 +598,31 @@
 .vietnam-tour[data-map="southern-resort-area"] svg .dots-04{
     stroke: #CB4667;
 }
+.vietnam-tour .slick-dots{
+    position: absolute;
+    bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.vietnam-tour .slick-dots li{
+    margin: 0 4px;
+}
+.vietnam-tour .slick-dots li button{
+    font-size: 0;
+    display: flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.6);
+    transition: .3s;
+    cursor: pointer;
+}
+.vietnam-tour .slick-dots li.slick-active button{
+    background: #fff;
+}
+
 
 
 /*hotel-block*/
@@ -1585,30 +1610,6 @@
     .vietnam-tour .vietnam-tourContent {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
-    .vietnam-tour .slick-dots{
-        position: absolute;
-        bottom: 12px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
-    .vietnam-tour .slick-dots li{
-        margin: 0 4px;
-    }
-    .vietnam-tour .slick-dots li button{
-        font-size: 0;
-        display: flex;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: rgba(255,255,255,.6);
-        transition: .3s;
-        cursor: pointer;
-    }
-    .vietnam-tour .slick-dots li.slick-active button{
-        background: #fff;
     }
     .vietnam-tour .tourInfo .list-imageTour .slick-arrow{
         width: 16px;

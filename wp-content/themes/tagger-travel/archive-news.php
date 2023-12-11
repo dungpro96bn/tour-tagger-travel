@@ -22,7 +22,7 @@
                         'post_status' => 'publish',
                         'order'    => 'DESC',
                         'paged' => $paged,
-                        'posts_per_page' => '10',
+                        'posts_per_page' => '9',
                     );
                     $result = new WP_Query( $args );
                     if ( $result-> have_posts() ) : ?>
@@ -35,8 +35,6 @@
                                 </a>
                             </li>
                         <?php endwhile;?>
-                    <?php else: ?>
-                            <li class="no_post"><?php _e('There is no news.', 'tcd-w'); ?></li>
                         </ul>
                     <?php endif;
                     wp_reset_postdata(); ?>

@@ -18,7 +18,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
-        dots: false,
+        dots: true,
         asNavFor: '#north .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -26,14 +26,6 @@ jQuery(function ($) {
         nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
     });
     $('#north .list-thumbnailTour').slick({
         slidesToShow: 5,
@@ -50,7 +42,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
-        dots: false,
+        dots: true,
         asNavFor: '#central-south .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -58,14 +50,6 @@ jQuery(function ($) {
         nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
     });
     $('#central-south .list-thumbnailTour').slick({
         slidesToShow: 5,
@@ -82,7 +66,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
-        dots: false,
+        dots: true,
         asNavFor: '#south .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -90,14 +74,6 @@ jQuery(function ($) {
         nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
     });
     $('#south .list-thumbnailTour').slick({
         slidesToShow: 5,
@@ -114,7 +90,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
-        dots: false,
+        dots: true,
         asNavFor: '#southern-resort-area .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -122,14 +98,6 @@ jQuery(function ($) {
         nextArrow:"<button type='button' class='slick-next pull-right'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: true,
-                }
-            }
-        ]
     });
     $('#southern-resort-area .list-thumbnailTour').slick({
         slidesToShow: 5,
@@ -146,7 +114,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
-        dots: false,
+        dots: true,
         asNavFor: '.post-template .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -174,10 +142,10 @@ jQuery(function ($) {
     });
 
     setInterval(function () {
-        if($(".wpcf7-form").hasClass("sent")){
+        if($(".mw_wp_form_confirm .wpcf7-form").hasClass("sent")){
             var strHref = window.location.href,
                 href = strHref.replace('confirm/', '');
-            $(".wpcf7-form").removeClass("sent");
+            $(".mw_wp_form_confirm .wpcf7-form").removeClass("sent");
             window.location.replace(href + 'complete/');
         }
     }, 100);
