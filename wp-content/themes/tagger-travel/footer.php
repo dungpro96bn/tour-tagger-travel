@@ -12,9 +12,9 @@
             </div>
             <div class="title-box">
                 <picture class="icon">
-                    <source media="(max-width: 767px)" srcset="/wp-content/uploads/line_box_icon01_sp.png 2x">
-                    <source media="(min-width: 768px)" srcset="/wp-content/uploads/line_box_icon01_pc.png 2x">
-                    <img class="sizes" src="/wp-content/uploads/line_box_icon01_pc.png" alt="">
+                    <source media="(max-width: 767px)" srcset="/wp-content/uploads/line_icon_person_sp.png 2x">
+                    <source media="(min-width: 768px)" srcset="/wp-content/uploads/line_icon_person_pc.png 2x">
+                    <img class="sizes" src="/wp-content/uploads/line_icon_person_pc.png" alt="">
                 </picture>
                 <p class="text_ttl">オーダーメイドや<br class="pc-br"/>カスタマイズも承ります！</p>
             </div>

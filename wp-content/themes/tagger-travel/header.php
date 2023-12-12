@@ -46,6 +46,7 @@
         })(document);
     </script>
 
+
     <!--font-family: 'Cormorant Garamond', serif;-->
     <!--font-family: 'League Spartan', sans-serif;-->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=League+Spartan:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -54,6 +55,10 @@
     <!--Garamond Premier Pro-->
     <!--font-family: "garamond-premier-pro", serif;-->
     <link rel="stylesheet" href="https://use.typekit.net/vep1vdd.css">
+
+    <!--Eurostile Extended-->
+    <!--font-family: eurostile-extended, sans-serif;-->
+<!--    <link rel="stylesheet" href="https://use.typekit.net/yoj8hdx.css">-->
 
     <!-- css file-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">

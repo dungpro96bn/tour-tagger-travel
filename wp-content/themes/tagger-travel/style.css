@@ -726,19 +726,26 @@ body:not(.home) #footer {
     align-items: center;
     width: 80px;
     height: 80px;
-    background: #fff;
+    background: #CB4667;
+    padding-top: 3px;
 }
 .lineBox a:hover{
-    background: #CB4667;
+    background: #fff;
 }
 .lineBox a svg path{
     transition: .3s;
 }
-.lineBox a:hover svg path{
+.lineBox a svg path{
     fill: #CB4667;
 }
-.lineBox a:hover svg path#Path_21{
+.lineBox a:hover svg path{
     fill: #fff;
+}
+.lineBox a svg path#Path_21{
+    fill: #fff;
+}
+.lineBox a:hover svg path#Path_21{
+    fill: #CB4667;
 }
 .lineBox a svg{
     width: 50px;

@@ -114,7 +114,7 @@ jQuery(function ($) {
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
-        dots: true,
+        dots: false,
         asNavFor: '.post-template .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -288,6 +288,9 @@ jQuery(function ($) {
         event.preventDefault();
         $(".post-template .tourContent-info").removeClass("active");
         $(".tab-action").removeClass("active");
+        $(".guide-infoContent").removeClass("active");
+        // $(".guide-infoContent *").removeClass("aos-init");
+        // $(".guide-infoContent *").removeClass("aos-animate");
         $(this).parents(".hotel-colItem").find(".hotel-by-rating").removeClass("active");
         var url = $(this).attr('href');
         var dest = url.split('#');

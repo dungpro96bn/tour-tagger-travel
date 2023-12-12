@@ -378,8 +378,486 @@ body .wp-pagenavi a:hover{
 
 
 
+/*guide page*/
+/*================================*/
+#guide-page{
+    padding-bottom: 120px;
+}
+#guide-page .header-pageEntry{
+    background-image: url("/wp-content/uploads/guide_banner_header_pc.png");
+}
+
+.tabs-guide{
+    padding-top: 96px;
+    padding-bottom: 64px;
+}
+.guide_list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.guide_list .guide_item a{
+    display: flex;
+    background: #F8F8F8;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    line-height: 28px;
+    color: #53313A;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.guide_list .guide_item a.active,
+.guide_list .guide_item a:hover{
+    color: #fff;
+    background: #53313A;
+}
+.guide_list .guide_item a:after{
+    content: "";
+    position: absolute;
+    height: 24px;
+    border-left: 1px solid #D0D0D0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.guide_list .guide_item:last-child a:after,
+.guide_list .guide_item a.active:after,
+.guide_list .guide_item a:hover:after{
+    display: none;
+}
+
+.tabList-guide-info{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.tabList-guide-info .tabItem-guide-info a{
+    display: flex;
+    background: #fff;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6A5D54;
+    font-weight: bold;
+    border-left: 1px solid #3C2F32;
+    padding-bottom: 4px;
+}
+.tabList-guide-info .tabItem-guide-info:last-child a{
+    border-right: 1px solid #3C2F32;
+}
+.tabList-guide-info .tabItem-guide-info a:hover{
+    background: #F9F6F5;
+}
+.tabList-guide-info .tabItem-guide-info a:after{
+    content: "";
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg id='Group_77' data-name='Group 77' transform='translate(3658 -496) rotate(90)'%3E%3Cg id='Group_68' data-name='Group 68' transform='translate(496 3642)'%3E%3Cg id='Ellipse_11' data-name='Ellipse 11' fill='%23fff' stroke='%236b5d54' stroke-width='1'%3E%3Ccircle cx='8' cy='8' r='8' stroke='none'/%3E%3Ccircle cx='8' cy='8' r='7.5' fill='none'/%3E%3C/g%3E%3Cpath id='Path_953' data-name='Path 953' d='M2,0,0,2,2,4' transform='translate(9.3 10) rotate(180)' fill='none' stroke='%236b5d54' stroke-width='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 16px;
+    bottom: -2px;
+}
+.tab-guide-information{
+    margin-bottom: 30px;
+}
 
 
+.guide-infoContent{
+    display: none;
+}
+.guide-infoContent.active{
+    display: block;
+}
+
+.guideDetails-item{
+    padding-top: 60px;
+}
+.guideDetails-item .heading-item{
+    font-size: 28px;
+    line-height: 40px;
+    color: #866C2E;
+    font-weight: bold;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 42px;
+}
+.guideDetails-item .heading-item:before{
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-left: 4px solid #866C2E;
+    width: 4px;
+    top: 6px;
+    left: 0;
+}
+
+.itemDetails-info{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #DED8D4;
+}
+.itemDetails-info:last-child{
+    border-bottom: 1px solid #DED8D4;
+}
+.itemDetails-info .title{
+    width: 210px;
+    background: #F9F6F5;
+    display: flex;
+    align-items: center;
+}
+.itemDetails-info .title p{
+    width: 100%;
+    padding-left: 17px;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    color: #866C2E;
+    font-weight: 500;
+    padding-right: 15px;
+}
+.itemDetails-info .info{
+    width: calc(100% - 210px);
+    padding: 29px 20px 29px 32px;
+}
+.itemDetails-info .info p{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+.itemDetails-info .info p:last-child{
+    margin-bottom: 0;
+}
+.itemDetails-info .info strong{
+    font-weight: bold;
+    color: #866C2E;
+}
+.itemDetails-info .info .image-flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 12px;
+}
+
+.itemDetails-qa{
+    display: flex;
+    flex-wrap: wrap;
+    background: #F9F6F5;
+}
+.itemDetails-qa:nth-child(2n){
+    background: #fff;
+}
+.itemDetails-qa .title{
+    width: 90px;
+}
+.itemDetails-qa .title .ttl{
+    font-size: 28px;
+    line-height: 40px;
+    color: #866C2E;
+    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-weight: 500;
+    padding-left: 32px;
+    padding-top: 17px;
+}
+.itemDetails-qa .info{
+    width: calc(100% - 90px);
+}
+.itemDetails-qa .info.question{
+    padding: 23px 20px 27px 0;
+}
+.itemDetails-qa .info.answer {
+    padding: 28px 20px 38px 0;
+}
+.itemDetails-qa .info.question p{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-weight: 500;
+}
+.itemDetails-qa .info.answer p{
+    font-size: 15px;
+    line-height: 28px;
+    max-width: 960px;
+}
+
+.itemDetails-banner{
+    border: 1px solid #D5D5D5;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 32px;
+}
+.itemDetails-banner:last-child{
+    margin-bottom: 0;
+}
+.itemDetails-banner .banner-item{
+    width: 240px;
+}
+.itemDetails-banner .banner-item .image{
+    display: block;
+    position: relative;
+    padding-bottom: 73%;
+}
+.itemDetails-banner .banner-item .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.itemDetails-banner .infoItem{
+    width: calc(100% - 240px);
+    padding-left: 24px;
+}
+.itemDetails-banner .ttl{
+    font-size: 18px;
+    line-height: 28px;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.itemDetails-banner .banner-item .ttl{
+    display: none;
+}
+.itemDetails-banner .infoItem .info p{
+    font-size: 15px;
+    line-height: 28px;
+}
+.item-align .itemDetails-banner .infoItem{
+    padding-top: 30px;
+}
+.itemDetails-banner .tag{
+    display: flex;
+    margin-top: 24px;
+}
+.itemDetails-banner .tag span{
+    display: flex;
+    padding: 0 16px 4px 17px;
+    height: 32px;
+    background: #F8F6F5;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #53313A;
+    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+.itemDetails-banner .link-action .btn-link{
+    font-size: 18px;
+    line-height: 29px;
+    color: #53313A;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 1px solid #53313A;
+    padding-right: 21px;
+    padding-bottom: 9px;
+    margin-right: 40px;
+}
+.itemDetails-banner .link-action{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.itemDetails-banner .link-action .btn-link:last-child{
+    margin-right: 0;
+}
+.itemDetails-banner .link-action .btn-link:nth-child(3){
+    margin-bottom: 0;
+}
+.itemDetails-banner .link-action .btn-link:after{
+    content: "\f105";
+    position: absolute;
+    font-weight: 300;
+    font-family: "Font Awesome 6 Pro";
+    font-size: 14px;
+    right: 0;
+    top: 47%;
+    transform: translateY(-50%);
+    transition: .3s;
+}
+.itemDetails-banner .link-action .btn-link:hover:after {
+    right: -10px;
+}
+
+.related_tours{
+    width: 100%;
+    margin-top: 32px;
+}
+.related_tours .title-item{
+    font-size: 18px;
+    line-height: 29px;
+    color: #866C2E;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 1px solid #D5D5D5;
+    padding-bottom: 13px;
+    margin-bottom: 24px;
+}
+.related_tours .listDetails-banner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    row-gap: 48px;
+}
+.related_tours .tourItem-area{
+
+}
+.related_tours .tourItem-area a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 16px;
+    background: #F9F6F5;
+    height: 100%;
+}
+.related_tours .tourItem-area .featured-image{
+    width: 38%;
+    position: relative;
+}
+.related_tours .tourItem-area .featured-image .image{
+    display: block;
+    position: relative;
+    padding-bottom: 72.5%;
+    overflow: hidden;
+}
+.related_tours .tourItem-area .featured-image .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+.related_tours .tourItem-area a:hover .featured-image .image img{
+    transform: scale(1.15);
+}
+.related_tours .tourItem-area .infoTour{
+    width: 62%;
+    padding-top: 23px;
+    padding-left: 16px;
+}
+.related_tours .tourItem-area .time-tour{
+    display: flex;
+    min-width: 64px;
+    height: 32px;
+    position: absolute;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #333333;
+    bottom: 12px;
+    left: 12px;
+    padding: 0 16px 4px;
+}
+.related_tours .tourItem-area .title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #6A5D54;
+    font-weight: bold;
+    transition: .3s;
+    margin-bottom: 15px;
+}
+.related_tours .tourItem-area a:hover .title{
+    text-decoration: underline;
+}
+.related_tours .tourItem-area .price{
+    font-size: 24px;
+    line-height: 28px;
+    color: #CB4667;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.related_tours .tourItem-area .price span{
+    font-size: 18px;
+    color: #333333;
+    font-weight: 400;
+    margin-left: 13px;
+}
+
+
+.tabList-guide-info.tabList-flex{
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+.tabList-guide-info.tabList-flex .tabItem-guide-info a{
+    padding: 0 22px 4px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+
+
+    .tabList-guide-info .tabItem-guide-info a{
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .tabList-guide-info .tabItem-guide-info a:after{
+        margin-left: 12px;
+    }
+
+
+    .tabList-guide-info.tabList-flex .tabItem-guide-info a {
+        padding: 0 19px 4px;
+        text-align: center;
+    }
+
+    .related_tours .tourItem-area .infoTour{
+        padding-top: 10px;
+    }
+    .related_tours .tourItem-area .title{
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .related_tours .tourItem-area .price{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .related_tours .tourItem-area .price span {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .related_tours .tourItem-area .time-tour {
+        min-width: 48px;
+        height: 26px;
+        font-size: 13px;
+        line-height: 21px;
+        bottom: 8px;
+        left: 8px;
+        padding: 0 10px 4px;
+    }
+
+
+}
+
+
+
+@media (max-width: 1280px) {
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -426,6 +904,100 @@ body .wp-pagenavi a:hover{
         line-height: 18px;
     }
 
+
+
+    /*guide page*/
+    /*===============================*/
+    .tabList-guide-info .tabItem-guide-info a{
+        font-size: 12px;
+        height: 50px;
+    }
+    .tabList-guide-info .tabItem-guide-info a:after{
+        width: 14px;
+        height: 14px;
+        margin-left: 9px;
+    }
+    .guide_list .guide_item a{
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .itemDetails-info .title{
+        width: 160px;
+    }
+    .itemDetails-info .info{
+        width: calc(100% - 160px);
+        padding: 25px 20px 25px 25px;
+    }
+    .itemDetails-info .title p{
+        padding-left: 15px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .itemDetails-info .info p {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .itemDetails-info .info .image {
+        margin-bottom: 24px;
+    }
+
+    .itemDetails-qa .info.answer p {
+        font-size: 13px;
+        line-height: 24px;
+        max-width: 960px;
+    }
+    .itemDetails-qa .info.question p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .itemDetails-qa .title .ttl {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .itemDetails-banner .infoItem .info p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .itemDetails-banner .ttl{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .itemDetails-banner{
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    .item-align .itemDetails-banner .infoItem {
+        padding-top: 0;
+    }
+    .itemDetails-banner .link-action .btn-link {
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 18px;
+        padding-bottom: 6px;
+        margin-right: 30px;
+    }
+    .itemDetails-banner .tag span{
+        padding: 0 13px 4px 13px;
+        height: 28px;
+        font-size: 13px;
+        line-height: 24px;
+    }
+    .related_tours .tourItem-area .time-tour {
+        min-width: 36px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 21px;
+        bottom: 5px;
+        left: 5px;
+        padding: 0px 6px 4px;
+    }
+    .related_tours .listDetails-banner{
+        column-gap: 20px;
+        row-gap: 30px;
+    }
 
 
 
@@ -593,6 +1165,214 @@ body .wp-pagenavi a:hover{
         padding-bottom: 80px;
     }
 
+
+
+    /*guide*/
+    /*===================================*/
+    #guide-page {
+        /*padding-bottom: 92px;*/
+    }
+    
+    .tabs-guide {
+        padding-top: 64px;
+        padding-bottom: 48px;
+    }
+    .guide_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 16px;
+    }
+    .guide_list .guide_item{
+        width: 33.33%;
+    }
+    .guide_list .guide_item a {
+        height: 64px;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+
+    .tabList-guide-info {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 24px;
+    }
+    .tabList-guide-info .tabItem-guide-info a {
+        font-size: 14px;
+        line-height: 21px;
+        height: 100%;
+        min-height: 64px;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 11px;
+        padding-bottom: 18px;
+        text-align: center;
+    }
+    .tabList-guide-info .tabItem-guide-info a:after {
+        width: 16px;
+        height: 16px;
+        margin-left: 0;
+        margin-top: 12px;
+    }
+    .tabList-guide-info .tabItem-guide-info:nth-child(3n) a{
+        border-right: 1px solid #3C2F32;
+    }
+    .tab-guide-information {
+        margin-bottom: 0px;
+    }
+
+
+    .itemDetails-info .title {
+        width: 100%;
+        height: 64px;
+    }
+    .itemDetails-info .title p {
+        padding-left: 16px;
+        font-size: 16px;
+        line-height: 28px;
+        padding-bottom: 7px;
+    }
+    .itemDetails-info .info {
+        width: 100%;
+        padding: 21px 15px 23px 16px;
+    }
+
+    .itemDetails-qa .title {
+        width: 62px;
+    }
+    .itemDetails-qa .info {
+        width: calc(100% - 62px);
+    }
+    .itemDetails-qa .title .ttl {
+        font-size: 24px;
+        line-height: 34px;
+        padding-left: 15px;
+        padding-top: 11px;
+    }
+    .itemDetails-qa .info.question {
+        padding: 17px 20px 21px 0;
+    }
+    .itemDetails-qa .info.answer {
+        padding: 21px 10px 23px 0;
+    }
+    .itemDetails-qa .info.answer p {
+        font-size: 14px;
+    }
+
+
+    .tabList-guide-info.tabList-flex{
+        display: grid;
+    }
+    .tabList-guide-info.tabList-flex .tabItem-guide-info a {
+        padding: 0px 10px 4px;
+        text-align: center;
+    }
+
+    .itemDetails-banner .banner-item{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        align-items: flex-start;
+    }
+    .itemDetails-banner .banner-item .image {
+        display: block;
+        position: relative;
+        padding-bottom: 22.8%;
+        width: 32%;
+    }
+    .itemDetails-banner .infoItem {
+        width: 100%;
+        padding-left: 0;
+    }
+    .itemDetails-banner{
+        margin-bottom: 24px;
+        padding: 24px 16px;
+        position: relative;
+    }
+    .itemDetails-banner .ttl {
+        font-size: 16px;
+        line-height: 28px;
+        color: #6A5D54;
+        font-weight: bold;
+        margin-bottom: 0px;
+        width: calc(100% - 32%);
+        padding-left: 16px;
+        padding-top: 15px;
+    }
+    .itemDetails-banner .tag span {
+        padding: 0 11px 4px;
+        height: 32px;
+        font-size: 15px;
+        line-height: 28px;
+    }
+    .itemDetails-banner .link-action .btn-link {
+        font-size: 14px;
+        line-height: 24px;
+        padding-right: 16px;
+        padding-bottom: 6px;
+        margin-right: 0;
+        margin-bottom: 18px;
+        margin-left: 24px;
+    }
+
+
+
+    .related_tours .listDetails-banner {
+        column-gap: 0;
+        row-gap: 16px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .related_tours .tourItem-area .featured-image {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .related_tours .tourItem-area .infoTour {
+        padding-top: 0;
+        width: 100%;
+        padding-left: 0;
+    }
+    .related_tours .tourItem-area .title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .related_tours .tourItem-area .price {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .related_tours .tourItem-area .price span {
+        font-size: 18px;
+        margin-left: 13px;
+    }
+    .related_tours .tourItem-area a{
+        padding: 16px 16px 24px;
+    }
+    .related_tours .tourItem-area .time-tour {
+        min-width: 64px;
+        height: 32px;
+        font-size: 16px;
+        line-height: 25px;
+        bottom: 12px;
+        left: 12px;
+        padding: 0 16px 4px;
+    }
+    .related_tours .title-item {
+        font-size: 16px;
+        line-height: 25px;
+        padding-bottom: 10px;
+        margin-bottom: 24px;
+    }
+    .related_tours {
+        margin-top: 25px;
+    }
+
+    .itemDetails-banner .banner-item .ttl{
+        display: block;
+    }
+    .itemDetails-banner .infoItem .ttl{
+        display: none;
+    }
 
 
 
