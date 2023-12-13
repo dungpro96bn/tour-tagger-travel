@@ -35,16 +35,16 @@
     <!--DNPShueiMinPr6-->
     <!--font-family: "dnp-shuei-mincho-pr6", sans-serif;-->
 
-    <script>
-        (function(d) {
-            var config = {
-                    kitId: 'amr2fjo',
-                    scriptTimeout: 3000,
-                    async: true
-                },
-                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-    </script>
+<!--    <script>-->
+<!--        (function(d) {-->
+<!--            var config = {-->
+<!--                    kitId: 'amr2fjo',-->
+<!--                    scriptTimeout: 3000,-->
+<!--                    async: true-->
+<!--                },-->
+<!--                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)-->
+<!--        })(document);-->
+<!--    </script>-->
 
 
     <!--font-family: 'Cormorant Garamond', serif;-->
@@ -58,7 +58,7 @@
 
     <!--Eurostile Extended-->
     <!--font-family: eurostile-extended, sans-serif;-->
-<!--    <link rel="stylesheet" href="https://use.typekit.net/yoj8hdx.css">-->
+    <link rel="stylesheet" href="https://use.typekit.net/yoj8hdx.css">
 
     <!-- css file-->
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/all.min.css">

@@ -98,7 +98,7 @@
                                     <ul class="overseas_list">
                                         <?php while ($result->have_posts()) : $result->the_post(); ?>
                                             <li class="overseas_item" data-id="<?php echo get_the_ID(); ?>" data-aos="fade-up">
-                                                <a href="<?php echo $area->slug."/".$post->post_name; ?>">
+                                                <a href="<?php echo $area->slug."/".$post->post_name; ?>" class="box-shadow">
                                                     <div class="featured-image">
                                                         <picture class="image">
                                                             <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">

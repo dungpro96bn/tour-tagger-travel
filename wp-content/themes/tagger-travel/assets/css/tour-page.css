@@ -192,6 +192,7 @@
 }
 .tourList-area .tourItem-area a{
     display: block;
+    height: 100%;
 }
 .tourList-area .tourItem-area .featured-image{
     position: relative;
@@ -326,6 +327,14 @@
 }
 .post-template .columns-page .columns-sidebar{
     width: 26.8%;
+    position: relative;
+}
+.post-template .columns-page .columns-sidebar .sidebar-content{
+    position: sticky;
+    top: 90px;
+}
+.admin-bar .post-template .columns-page .columns-sidebar .sidebar-content{
+    top: 126px;
 }
 .post-template .columns-main .heading-single{
     font-size: 32px;
@@ -1065,6 +1074,14 @@
         padding-top: 3px;
     }
 
+    .post-template .columns-page .columns-sidebar .sidebar-content{
+        position: sticky;
+        top: 100px;
+    }
+    .admin-bar .post-template .columns-page .columns-sidebar .sidebar-content{
+        top: 136px;
+    }
+
 
     .post-template .tour-schedule-list:before{
         left: 100px;
@@ -1241,6 +1258,10 @@
 
     #tour-template {
         padding-bottom: 100px;
+    }
+
+    .post-template .columns-page .columns-sidebar .sidebar-content{
+        position: static;
     }
 
     .areaList {

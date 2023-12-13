@@ -94,7 +94,7 @@
     align-items: center;
     border-radius: 2px;
     font-size: 14px;
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
     color: #fff;
     padding-bottom: 4px;
     right: 38px;
@@ -206,7 +206,7 @@
     height: 64px;
     background: #007545;
     color: #fff;
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
     font-size: 18px;
     border-radius: 40px;
     padding-bottom: 5px;
@@ -516,7 +516,7 @@ body .wp-pagenavi a:hover{
     padding-left: 17px;
     font-size: 16px;
     line-height: 28px;
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
     color: #866C2E;
     font-weight: 500;
     padding-right: 15px;
@@ -558,7 +558,7 @@ body .wp-pagenavi a:hover{
     font-size: 28px;
     line-height: 40px;
     color: #866C2E;
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
     font-weight: 500;
     padding-left: 32px;
     padding-top: 17px;
@@ -575,7 +575,7 @@ body .wp-pagenavi a:hover{
 .itemDetails-qa .info.question p{
     font-size: 18px;
     line-height: 30px;
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
     font-weight: 500;
 }
 .itemDetails-qa .info.answer p{
@@ -643,7 +643,7 @@ body .wp-pagenavi a:hover{
     line-height: 28px;
     text-align: center;
     color: #53313A;
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
     justify-content: center;
     align-items: center;
 }

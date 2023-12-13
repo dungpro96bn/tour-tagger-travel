@@ -64,11 +64,7 @@ get_header();
         <div class="heading-main">
             <h1 class="heading" data-aos="fade-up">
                 <span class="ttl-ja dnp-s-m">ベトナム旅行は</span>
-                <picture class="img-heading-main">
-                    <source media="(max-width: 767px)" srcset="/wp-content/uploads/img_heading_main_sp.png 2x">
-                    <source media="(min-width: 768px)" srcset="/wp-content/uploads/img_heading_main_pc.png 2x">
-                    <img class="sizes" src="/wp-content/uploads/img_heading_main_pc.png" alt="">
-                </picture>
+                <span class="text-big">tagger travel</span>
                 <span class="ttl-sub">Your Vietnam Adventure Starts Here</span>
             </h1>
         </div>
@@ -2615,102 +2611,25 @@ get_header();
                 <span class="ttl-en c-g">Arrangement</span>
             </h2>
             <ul class="arrangement-list">
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic01_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">航空券</span>
-                            <span class="ttl-en gp-p">Air Ticket</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic02_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">夜行・長距離バス</span>
-                            <span class="ttl-en gp-p">Night/Long Distance Bus</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic03_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">列車</span>
-                            <span class="ttl-en gp-p">Train</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic04_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">コンサート・ラ<br class="sp-br"/>イブ</span>
-                            <span class="ttl-en gp-p">Concert Live</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic05_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">スパ</span>
-                            <span class="ttl-en gp-p">Spa</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic06_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">レストラン</span>
-                            <span class="ttl-en gp-p">Restaurant</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic07_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">車チャーター</span>
-                            <span class="ttl-en gp-p">Car Charter</span>
-                        </h4>
-                    </a>
-                </li>
-                <li class="arrangement-item" data-aos="fade-up">
-                    <a href="#">
-                        <picture class="image">
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png">
-                            <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/arrangement_pic08_pc.png" alt="">
-                        </picture>
-                        <h4 class="title">
-                            <span class="ttl-ja dnp-s-m">スポーツ観戦</span>
-                            <span class="ttl-en gp-p">Watching Sports</span>
-                        </h4>
-                    </a>
-                </li>
+                <?php if (have_rows('arrangement_list')):?>
+                    <?php while (have_rows('arrangement_list')) : the_row(); ?>
+                        <li class="arrangement-item" data-aos="fade-up">
+                            <div class="box-shadow">
+                                <?php
+                                $image = get_sub_field('image_arrangement_list');
+                                if( !empty( $image ) ): ?>
+                                    <picture class="image">
+                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                    </picture>
+                                <?php endif; ?>
+                                <h4 class="title">
+                                    <span class="ttl-ja dnp-s-m"><?php echo get_sub_field('title_ja_arrangement_list'); ?></span>
+                                    <span class="ttl-en gp-p"><?php echo get_sub_field('title_en_arrangement_list'); ?></span>
+                                </h4>
+                            </div>
+                        </li>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </ul>
             <p class="text-note dnp-s-m " data-aos="fade-up">各種様々な予約・手配もご案内可能です。お気軽にご相談ください。</p>
             <div class="link-more" data-aos="fade-up">

@@ -14,6 +14,23 @@ Author URI: http://www.1049.cc
     src: url("./assets/fonts/Pristine-Script.ttf") format('truetype');
 }
 
+@font-face {
+    font-family: "dnp-shuei-mincho-pr6";
+    src: url("./assets/fonts/dnp-shuei-mincho-pr6-B.ttf") format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "dnp-shuei-mincho-pr6";
+    src: url("./assets/fonts/dnp-shuei-mincho-pr6-M.ttf") format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "dnp-shuei-mincho-pr6";
+    src: url("./assets/fonts/dnp-shuei-mincho-pr6-L.ttf") format('truetype');
+    font-weight: 300;
+}
 
 /* --------------------------------------------------------------
  * Reset default browser CSS.
@@ -295,7 +312,8 @@ body::-webkit-scrollbar-thumb:hover{
     font-family: "garamond-premier-pro", serif;
 }
 .dnp-s-m{
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    /*font-family: "dnp-shuei-mincho-pr6", sans-serif;*/
+    font-family: "dnp-shuei-mincho-pr6";
 }
 .l-s{
     font-family: 'League Spartan', sans-serif;
@@ -336,13 +354,13 @@ main{
 }
 
 .outer{
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
 }
 .bg-headerOpen{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 120px);
     background: rgba(0,0,0,.6);
     opacity: 0;
     visibility: hidden;
@@ -360,6 +378,14 @@ body.header-open .bg-headerOpen{
 .cf7sr-recaptcha .wpcf7-not-valid-tip{
     text-align: center;
 }
+
+.box-shadow{
+    transition: .3s;
+}
+.box-shadow:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.20);
+}
+
 
 
 /*Header*/
@@ -881,8 +907,8 @@ body:not(.home) #footer {
     bottom: -8px;
 }
 #line-contactBox .text{
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 12px;
+    line-height: 17px;
     color: #fff;
     margin-bottom: 24px;
 }
@@ -1060,16 +1086,19 @@ body:not(.home) #footer {
     }
     #header-menu .header-nav .right-header {
         position: absolute;
-        top: 0;
+        top: 0px;
         background: #fff;
         height: 100vh;
         z-index: 99;
-        right: -505px;
+        right: 0;
+        /*right: -505px;*/
         padding: 130px 40px 40px;
-        transition: .5s;
+        transition: .4s;
         width: 80%;
         max-width: 500px;
         display: block;
+        visibility: hidden;
+        opacity: 0;
     }
     #header-menu.is-openMenu .header-nav .header-logo{
         z-index: -9;
@@ -1106,7 +1135,9 @@ body:not(.home) #footer {
     }
 
     #header-menu.is-openMenu .header-nav .right-header {
-        right: 0;
+        top: 0;
+        visibility: visible;
+        opacity: 1;
     }
 
     #header-menu .header-nav #navList-menu {
@@ -1369,8 +1400,9 @@ body:not(.home) #footer {
     #header-menu .header-nav .right-header{
         max-width: 335px;
         padding: 80px 32px 40px;
-        right: -340px;
+        /*right: -340px;*/
         width: 100%;
+        right: 0;
     }
     #header-menu .header-nav #nav-container {
         width: 100%;

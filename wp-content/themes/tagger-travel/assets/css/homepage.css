@@ -28,6 +28,20 @@
     letter-spacing: 5px;
     text-shadow: 0px 0px 26px #000;
     font-weight: bold;
+    margin-bottom: 11px;
+}
+.bannerSlider .heading-main .text-big{
+    font-family: eurostile-extended, sans-serif;
+    font-size: 80px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-left: 6px;
+    font-weight: 300;
+    border-bottom: 3px solid #FFFFFF;
+    display: inline-block;
+    margin-bottom: 32px;
 }
 .bannerSlider .heading-main .img-heading-main{
     display: inline-block;
@@ -294,7 +308,7 @@
     height: auto;
 }
 .vietnam-tour .bg-map svg text{
-    font-family: "dnp-shuei-mincho-pr6", sans-serif;
+    font-family: "dnp-shuei-mincho-pr6";
 }
 .vietnam-tour .bg-map svg.map-sp{
     display: none;
@@ -823,8 +837,10 @@
 .arrangement .arrangement-item{
     background: #fff;
 }
-.arrangement .arrangement-item a{
+.arrangement .arrangement-item .box-shadow{
     padding-bottom: 32px;
+    display: block;
+    height: 100%;
 }
 .arrangement .arrangement-item .title{
     text-align: center;
@@ -853,7 +869,7 @@
 .arrangement .arrangement-item .image img{
     transition: .4s;
 }
-.arrangement .arrangement-item a:hover .image img{
+.arrangement .arrangement-item .box-shadow:hover .image img{
     transform: scale(1.15);
 }
 .arrangement .text-note{
@@ -1033,6 +1049,11 @@
     }
     .bannerSlider .heading-main .img-heading-main img{
         height: 120px;
+    }
+    .bannerSlider .heading-main .text-big{
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 25px;
     }
 
 
@@ -1329,6 +1350,15 @@
         margin-right: -10px;
         top: -2px;
     }
+    .bannerSlider .heading-main .text-big{
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 16px;
+    }
+    .bannerSlider .heading-main .ttl-ja{
+        margin-bottom: 6px;
+    }
+
 
 
     /*vietnam-tour*/
@@ -1604,6 +1634,29 @@
         bottom: 125px;
         padding-right: 0;
     }
+    .bannerSlider .heading-main .text-big{
+        font-size: 38px;
+        line-height: 48px;
+        letter-spacing: 1.5px;
+        padding-left: 36px;
+        border-bottom: 0;
+        margin-bottom: 16px;
+        padding-bottom: 15px;
+        position: relative;
+        max-width: 250px;
+    }
+    .bannerSlider .heading-main .text-big:after{
+        content: "";
+        position: absolute;
+        width: 204px;
+        border-bottom: 1px solid #fff;
+        bottom: 0;
+        left: calc(50% + 18px);
+        transform: translateX(-50%);
+    }
+    .bannerSlider .heading-main .ttl-ja{
+        margin-bottom: 10px;
+    }
 
 
     /*vietnam-tour*/
@@ -1648,6 +1701,7 @@
         min-height: auto;
         padding-top: 313px;
         margin-bottom: 16px;
+        padding-bottom: 0;
     }
     .vietnam-tour .tourInfo .tag-location .ttl{
         font-size: 18px;
@@ -1844,7 +1898,7 @@
         line-height: 29px;
         margin-bottom: 8px;
     }
-    .arrangement .arrangement-item a {
+    .arrangement .arrangement-item .box-shadow {
         padding-bottom: 24px;
     }
     .arrangement .text-note {

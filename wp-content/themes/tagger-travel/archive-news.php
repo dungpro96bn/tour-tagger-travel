@@ -28,7 +28,7 @@
                     if ( $result-> have_posts() ) : ?>
                         <ul class="newsList">
                         <?php while ( $result->have_posts() ) : $result->the_post(); ?>
-                            <li class="newsItem">
+                            <li class="newsItem" data-aos="fade-up">
                                 <a href="<?php the_permalink(); ?>" class="dnp-s-m">
                                     <p class="date dnp-s-m"><?php echo get_the_date(); ?></p>
                                     <p class="text dnp-s-m"><?php the_title(); ?></p>

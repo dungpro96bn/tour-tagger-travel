@@ -198,11 +198,13 @@ jQuery(function ($) {
             var dest = url.split('#');
             var target = dest[1];
             $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
+            // $(".tourInfo-item .aos-init").removeClass("aos-animate");
             $(this).addClass("active");
             $("#vietnam-tour").attr("data-map", target);
             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
             $('#'+target).addClass("active");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+            // AOS.refresh();
         });
     });
 
@@ -289,14 +291,16 @@ jQuery(function ($) {
         $(".post-template .tourContent-info").removeClass("active");
         $(".tab-action").removeClass("active");
         $(".guide-infoContent").removeClass("active");
-        // $(".guide-infoContent *").removeClass("aos-init");
-        // $(".guide-infoContent *").removeClass("aos-animate");
+        $(".hotel-colItem .aos-init").removeClass("aos-animate");
+        $(".tourContent-infoInner .aos-init").removeClass("aos-animate");
+        $(".guide-infoContent .aos-init").removeClass("aos-animate");
         $(this).parents(".hotel-colItem").find(".hotel-by-rating").removeClass("active");
         var url = $(this).attr('href');
         var dest = url.split('#');
         var target = dest[1];
         $('#'+target).addClass("active");
         $(this).addClass("active");
+        AOS.refresh();
     });
 
     //pagination ajax

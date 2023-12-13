@@ -1,7 +1,7 @@
 
 <div class="columns-sidebar">
     <div class="sidebar-content">
-        <div class="book-tour filter-item">
+        <div class="book-tour filter-item" data-aos="fade-up">
             <div class="title">
                 <svg id="Group_322" data-name="Group 322" xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24">
                     <path id="Path_1945" data-name="Path 1945" d="M1,8.5H22V23H1ZM20,5V3h2V7.5H1V3H3V5H6V3H17V5ZM4,3V1H5V4H4ZM18,3V1h1V4H18ZM17,0V2H6V0H3V2H0V24H23V2H20V0Z" fill="#a08953"/>
@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <div class="search-by-area filter-item">
+        <div class="search-by-area filter-item" data-aos="fade-up">
             <div class="title">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20.235" height="20.472" viewBox="0 0 20.235 20.472">
                     <path id="Path_1944" data-name="Path 1944" d="M20.235,19.765l-5.5-5.5a8.442,8.442,0,1,0-.718.7l5.515,5.515ZM1,8.5A7.5,7.5,0,1,1,8.5,16,7.508,7.508,0,0,1,1,8.5" fill="#a08953"/>

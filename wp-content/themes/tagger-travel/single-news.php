@@ -2,7 +2,20 @@
 global $post;
 ?>
 
-    <div id="single-news" class="post-content single-page">
+    <div id="news" class="post-content single-page">
+
+        <div class="header-pageEntry">
+            <div class="headingMain-entry">
+                <h2 class="heading-entry">
+                    <picture class="icon-heading">
+                        <source srcset="/wp-content/uploads/icon_header_entry.png 2x">
+                        <img class="sizes" src="/wp-content/uploads/icon_header_entry.png" alt="">
+                    </picture>
+                    <span class="ttl-ja dnp-s-m">お知らせ</span>
+                    <span class="ttl-en c-g">News</span>
+                </h2>
+            </div>
+        </div>
 
         <div class="inner">
 

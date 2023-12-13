@@ -93,9 +93,8 @@
         <div class="footer-bottom">
             <div class="inner footer-inner-bottom">
                 <div class="privacy-link">
-                    <a target="_blank" href="/privacy-policy/">プライバシーポリシー</a>
-                    <a target="_blank" href="#">旅行約款</a>
-                    <a target="_blank" href="#">特定特定商取引法に基づく表記</a>
+                    <a target="_blank" href="http://tagger-travel.vccdev.vn/">会社情報</a>
+                    <a target="_blank" href="https://tagger-travel.vccdev.vn/privacy-policy/">プライバシーポリシー</a>
                 </div>
                 <div class="copyright">
                     <p>© TAGGER TRAVEL Co., Ltd.</p>
