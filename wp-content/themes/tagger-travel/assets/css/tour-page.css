@@ -126,6 +126,7 @@
 .areaList .areaItem a{
     display: block;
     padding-bottom: 24px;
+    height: 100%;
 }
 .areaList .areaItem a svg #Path_953,
 .areaList .areaItem a svg circle{
@@ -628,17 +629,37 @@
     font-weight: bold;
     position: relative;
     padding-bottom: 5px;
+    cursor: pointer;
+    transition: .3s;
 }
 .post-template .link-contact .btn-contact:hover{
     background: #fff;
     color: #007545;
 }
-.post-template .link-contact .btn-contact i{
+.post-template .link-contact .submit-contact{
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    max-width: 272px;
+}
+.post-template .link-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.post-template .link-contact form{
+    width: 100%;
+}
+.post-template .link-contact i{
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
     font-size: 14px;
+}
+.post-template .link-contact:hover i{
+    color: #007545;
 }
 .post-template .fee-tour .fee-item .fee-title{
     font-size: 18px;

@@ -112,7 +112,13 @@ global $post;
                                 <?php endif; ?>
 
                                 <div class="link-contact" data-aos="fade-up">
-                                    <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>
+<!--                                    <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>-->
+                                    <form method="POST" action="/contact/">
+                                        <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                        <div class="submit-contact">
+                                            <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="このツアーを予約する"><i class="fa-light fa-angle-right"></i>
+                                        </div>
+                                    </form>
                                 </div>
 
                             </div>
@@ -155,7 +161,13 @@ global $post;
                                     <?php endif; ?>
 
                                     <div class="link-contact" data-aos="fade-up">
-                                        <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>
+<!--                                        <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>-->
+                                        <form method="POST" action="/contact/">
+                                            <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                            <div class="submit-contact">
+                                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="このツアーを予約する"><i class="fa-light fa-angle-right"></i>
+                                            </div>
+                                        </form>
                                     </div>
 
                                     <div class="payment-method">
@@ -189,7 +201,13 @@ global $post;
                                     </div>
 
                                     <div class="link-contact" data-aos="fade-up">
-                                        <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>
+<!--                                        <a class="btn-contact dnp-s-m" href="/contact/">このツアーを予約する<i class="fa-light fa-angle-right"></i></a>-->
+                                        <form method="POST" action="/contact/">
+                                            <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                            <div class="submit-contact">
+                                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="このツアーを予約する"><i class="fa-light fa-angle-right"></i>
+                                            </div>
+                                        </form>
                                     </div>
 
                                 </div>

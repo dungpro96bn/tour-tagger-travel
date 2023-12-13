@@ -13,13 +13,14 @@ jQuery(function ($) {
     });
 
     //Slider Vietnam tour
-    $('#north .list-imageTour').slick({
+    var count1 = $('#northern .list-imageTour').attr("data-count");
+    $('#northern .list-imageTour').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
         dots: true,
-        asNavFor: '#north .list-thumbnailTour',
+        asNavFor: '#northern .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
@@ -27,23 +28,24 @@ jQuery(function ($) {
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
     });
-    $('#north .list-thumbnailTour').slick({
-        slidesToShow: 5,
+    $('#northern .list-thumbnailTour').slick({
+        slidesToShow: count1,
         slidesToScroll: 1,
-        asNavFor: '#north .list-imageTour',
+        asNavFor: '#northern .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
         infinite: false,
     });
 
-    $('#central-south .list-imageTour').slick({
+    var count2 = $('#central .list-imageTour').attr("data-count");
+    $('#central .list-imageTour').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
         dots: true,
-        asNavFor: '#central-south .list-thumbnailTour',
+        asNavFor: '#central .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
@@ -51,23 +53,24 @@ jQuery(function ($) {
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
     });
-    $('#central-south .list-thumbnailTour').slick({
-        slidesToShow: 5,
+    $('#central .list-thumbnailTour').slick({
+        slidesToShow: count2,
         slidesToScroll: 1,
-        asNavFor: '#central-south .list-imageTour',
+        asNavFor: '#central .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
         infinite: false,
     });
 
-    $('#south .list-imageTour').slick({
+    var count3 = $('#southern .list-imageTour').attr("data-count");
+    $('#southern .list-imageTour').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
         dots: true,
-        asNavFor: '#south .list-thumbnailTour',
+        asNavFor: '#southern .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
@@ -75,23 +78,24 @@ jQuery(function ($) {
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
     });
-    $('#south .list-thumbnailTour').slick({
-        slidesToShow: 5,
+    $('#southern .list-thumbnailTour').slick({
+        slidesToShow: count3,
         slidesToScroll: 1,
-        asNavFor: '#south .list-imageTour',
+        asNavFor: '#southern .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
         infinite: false,
     });
 
-    $('#southern-resort-area .list-imageTour').slick({
+    var count4 = $('#southern-resort .list-imageTour').attr("data-count");
+    $('#southern-resort .list-imageTour').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         // fade: true,
         dots: true,
-        asNavFor: '#southern-resort-area .list-thumbnailTour',
+        asNavFor: '#southern-resort .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
@@ -99,10 +103,10 @@ jQuery(function ($) {
             "  <path id=\"Path_958\" data-name=\"Path 958\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(1026.079 1711.765) rotate(180)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
             "</svg>\n</button>",
     });
-    $('#southern-resort-area .list-thumbnailTour').slick({
-        slidesToShow: 5,
+    $('#southern-resort .list-thumbnailTour').slick({
+        slidesToShow: count4,
         slidesToScroll: 1,
-        asNavFor: '#southern-resort-area .list-imageTour',
+        asNavFor: '#southern-resort .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
@@ -192,11 +196,14 @@ jQuery(function ($) {
             return false;
         });
 
-        $('.locationItem a').click(function(event){
-            event.preventDefault();
-            var url = $(this).attr('href');
-            var dest = url.split('#');
-            var target = dest[1];
+        $('.locationItem a').hover(function(event){
+            if($(window).width() < 768) {
+                event.preventDefault();
+            }
+            // event.preventDefault();
+            var url = $(this).attr('data-id');
+            // var dest = url.split('#');
+            var target = url;
             $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
             // $(".tourInfo-item .aos-init").removeClass("aos-animate");
             $(this).addClass("active");

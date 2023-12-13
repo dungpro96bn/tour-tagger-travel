@@ -1,7 +1,16 @@
 <?php get_header();
 global $post, $page;
 $post_slug = $post->post_name;
-?>
+
+if(isset($_POST["submitTour"])):?>
+    <?php $title = $_POST['title']; ?>
+    <script>
+        $(document).ready(function () {
+            var title = "<?php Print($title); ?>";
+            $("input#tour-name").val(title);
+        })
+    </script>
+<?php endif; ?>
 
     <div id="<?php echo $post_slug; ?>-pageContent">
 
@@ -29,7 +38,6 @@ $post_slug = $post->post_name;
             endif;
             ?>
         </div>
-
 
     </div>
 

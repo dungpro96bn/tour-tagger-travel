@@ -45,7 +45,7 @@
                             }
                         ?>
                             <li class="areaItem" data-aos="fade-up">
-                                <a class="scroll" href="#<?php echo $slug; ?>">
+                                <a class="box-shadow scroll" href="#<?php echo $slug; ?>">
                                     <picture class="image">
                                         <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
                                         <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">

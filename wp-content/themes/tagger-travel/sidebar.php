@@ -15,7 +15,12 @@
                 <p class="dnp-s-m">このツアーを予約する</p>
             </div>
             <div class="link-contact">
-                <a class="btn-contact dnp-s-m" href="#"><span>予約する</span><i class="fa-light fa-angle-right"></i></a>
+                <form method="POST" action="/contact/">
+                    <input type="hidden" name="title" value="<?php the_title(); ?>">
+                    <div class="submit-contact">
+                        <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="予約する"><i class="fa-light fa-angle-right"></i>
+                    </div>
+                </form>
             </div>
         </div>
 

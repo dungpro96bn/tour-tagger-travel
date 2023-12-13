@@ -144,3 +144,4 @@
     </header><!-- #header-menu -->
 
     <main role="main">
+        <div class="bg-popup"></div>

@@ -63,15 +63,15 @@ get_header();
         </div>
         <div class="heading-main">
             <h1 class="heading" data-aos="fade-up">
-                <span class="ttl-ja dnp-s-m">ベトナム旅行は</span>
-                <span class="text-big">tagger travel</span>
-                <span class="ttl-sub">Your Vietnam Adventure Starts Here</span>
+                <span class="ttl-ja dnp-s-m"><?php echo get_field('heading_banner_01'); ?></span>
+                <span class="text-big"><?php echo get_field('heading_banner_02'); ?></span>
+                <span class="ttl-sub"><?php echo get_field('heading_banner_03'); ?></span>
             </h1>
         </div>
 <!--        <div class="scroll-action"><a href="#vietnam-tour" class="scroll gp-p">Scroll Down</a></div>-->
     </div>
 
-    <div id="vietnam-tour" class="vietnam-tour" data-map="north">
+    <div id="vietnam-tour" class="vietnam-tour" data-map="northern">
         <div class="bg-map">
             <svg class="map-pc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3000" height="1400" viewBox="0 0 3000 1400">
                 <defs>
@@ -2363,23 +2363,23 @@ get_header();
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
                 </picture>
-                <span class="ttl-ja dnp-s-m">ベトナム国内ツアー</span>
-                <span class="ttl-en c-g">Vietnam Tour</span>
+                <span class="ttl-ja dnp-s-m"><?php echo get_field('vietnam_tour_heading_ja'); ?></span>
+                <span class="ttl-en c-g"><?php echo get_field('vietnam_tour_heading_en'); ?></span>
             </h2>
             <div class="vietnam-tourContent">
                 <div class="map-tour">
                     <ul class="locationList">
                         <li class="locationItem">
-                            <a href="#north" data-aos="fade-up" class="active dnp-s-m">北部</a>
+                            <a href="/tour/#northern" data-id="northern" data-aos="fade-up" class="active dnp-s-m">北部</a>
                         </li>
                         <li class="locationItem">
-                            <a href="#central-south" data-aos="fade-up" class="dnp-s-m">中部・中南部</a>
+                            <a href="/tour/#central" data-id="central" data-aos="fade-up" class="dnp-s-m">中部・中南部</a>
                         </li>
                         <li class="locationItem">
-                            <a href="#south" data-aos="fade-up" class="dnp-s-m">南部</a>
+                            <a href="/tour/#southern" data-id="southern" data-aos="fade-up" class="dnp-s-m">南部</a>
                         </li>
                         <li class="locationItem">
-                            <a href="#southern-resort-area" data-aos="fade-up" class="dnp-s-m">南部リゾートエリア</a>
+                            <a href="/tour/#southern-resort" data-id="southern-resort" data-aos="fade-up" class="dnp-s-m">南部リゾートエリア</a>
                         </li>
                     </ul>
                 </div>
@@ -2413,20 +2413,20 @@ get_header();
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </ul>
-                            <ul class="list-thumbnailTour">
-                                <?php
-                                $images = get_field('image_slider');
-                                $size = 'full';
-                                if( $images ): ?>
-                                    <?php foreach( $images as $image_id ): ?>
+                            <?php
+                            $images = get_field('image_slider');
+                            $size = 'full';
+                            if ($images): ?>
+                                <ul class="list-thumbnailTour" data-count="<?php echo count($images); ?>">
+                                    <?php foreach ($images as $image_id): ?>
                                         <li class="item-thumbnailTour">
                                             <picture class="image">
                                                 <?php echo wp_get_attachment_image($image_id, $size); ?>
                                             </picture>
                                         </li>
                                     <?php endforeach; ?>
-                                <?php endif; ?>
-                            </ul>
+                                </ul>
+                            <?php endif; ?>
                         </div>
                         <div class="contentInfo" data-aos="fade-up">
                             <div class="text"><?php echo get_field("tour_description"); ?></div>
@@ -2435,7 +2435,7 @@ get_header();
                                 <p class="location"><?php echo get_field("popular_tourist_destination"); ?></p>
                             </div>
                             <div class="link-more">
-                                <a href="/tour/<?php echo get_field("read_more"); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                                <a href="/tour/#<?php echo $slug = get_post_field( 'post_name', get_post() ); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -2467,7 +2467,7 @@ get_header();
                             <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                             <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
                         </picture>
-                        <span class="ttl-ja dnp-s-m"><?php echo get_field('hotel_title_ja'); ?></span>
+                        <span class="ttl-ja dnp-s-m txt-color"><?php echo get_field('hotel_title_ja'); ?></span>
                         <span class="ttl-en c-g"><?php echo get_field('hotel_title_en'); ?></span>
                     </h2>
                     <div class="subTitle dnp-s-m"><?php echo get_field('hotel_description'); ?></div>
@@ -2508,7 +2508,7 @@ get_header();
                         }
                         ?>
                         <li class="areaItem" data-aos="fade-up">
-                            <a class="" href="/hotel/#<?php echo $slug; ?>">
+                            <a class="box-shadow" href="/hotel/#<?php echo $slug; ?>">
                                 <picture class="image">
                                     <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
                                     <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
@@ -2607,8 +2607,8 @@ get_header();
                     <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png 2x">
                     <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/icon_heading_block.png" alt="">
                 </picture>
-                <span class="ttl-ja dnp-s-m">各種手配</span>
-                <span class="ttl-en c-g">Arrangement</span>
+                <span class="ttl-ja dnp-s-m"><?php echo get_field('arrangement_heading_ja'); ?></span>
+                <span class="ttl-en c-g"><?php echo get_field('arrangement_heading_en'); ?></span>
             </h2>
             <ul class="arrangement-list">
                 <?php if (have_rows('arrangement_list')):?>
@@ -2631,7 +2631,7 @@ get_header();
                     <?php endwhile; ?>
                 <?php endif; ?>
             </ul>
-            <p class="text-note dnp-s-m " data-aos="fade-up">各種様々な予約・手配もご案内可能です。お気軽にご相談ください。</p>
+            <p class="text-note dnp-s-m " data-aos="fade-up"><?php echo get_field('arrangement_description'); ?></p>
             <div class="link-more" data-aos="fade-up">
                 <a href="/contact/" class="btn-link btn-green c-g"><span>contact</span><i class="fa-light fa-angle-right"></i></a>
             </div>

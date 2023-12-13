@@ -373,7 +373,7 @@ body.header-open .bg-headerOpen{
     visibility: visible;
 }
 .cf7sr-g-recaptcha>div{
-    margin: auto;
+    margin: 0 auto 60px;
 }
 .cf7sr-recaptcha .wpcf7-not-valid-tip{
     text-align: center;
@@ -604,6 +604,7 @@ body:not(.home) #header-menu .header-nav{
     display: flex;
     align-items: center;
     position: relative;
+    color: #6B5D54;
 }
 #navList-menu .menu-item a:after{
     content: "";
@@ -642,6 +643,9 @@ body:not(.home) #header-menu .header-nav{
     display: block;
     color: #6A5D54;
     margin-bottom: 19px;
+}
+.heading-block .ttl-ja.txt-color{
+    color: #53313A;
 }
 
 

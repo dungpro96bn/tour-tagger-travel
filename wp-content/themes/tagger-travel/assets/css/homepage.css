@@ -246,6 +246,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
 }
 .bannerSlider .bannerContent .newsTop .list-news{
     width: calc(100% - 136px);
@@ -451,6 +452,7 @@
     font-weight: 500;
     width: 132px;
     position: relative;
+    color: #6A5D54;
 }
 .vietnam-tour .popular-tourist-destination .title:after{
     content: "";
@@ -581,35 +583,35 @@
     left: 43.3%;
     transform: translate(-50%, -50%);
 }
-.vietnam-tour[data-map="north"] svg .star-01,
-.vietnam-tour[data-map="north"] svg .item-01{
+.vietnam-tour[data-map="northern"] svg .star-01,
+.vietnam-tour[data-map="northern"] svg .item-01{
     fill: #CB4667;
 }
-.vietnam-tour[data-map="north"] svg .dots-01{
+.vietnam-tour[data-map="northern"] svg .dots-01{
     stroke: #CB4667;
 }
 
-.vietnam-tour[data-map="central-south"] svg .star-02,
-.vietnam-tour[data-map="central-south"] svg .item-02{
+.vietnam-tour[data-map="central"] svg .star-02,
+.vietnam-tour[data-map="central"] svg .item-02{
     fill: #CB4667;
 }
-.vietnam-tour[data-map="central-south"] svg .dots-02{
+.vietnam-tour[data-map="central"] svg .dots-02{
     stroke: #CB4667;
 }
 
-.vietnam-tour[data-map="south"] svg .star-03,
-.vietnam-tour[data-map="south"] svg .item-03{
+.vietnam-tour[data-map="southern"] svg .star-03,
+.vietnam-tour[data-map="southern"] svg .item-03{
     fill: #CB4667;
 }
-.vietnam-tour[data-map="south"] svg .dots-03{
+.vietnam-tour[data-map="southern"] svg .dots-03{
     stroke: #CB4667;
 }
 
-.vietnam-tour[data-map="southern-resort-area"] svg .star-04,
-.vietnam-tour[data-map="southern-resort-area"] svg .item-04{
+.vietnam-tour[data-map="southern-resort"] svg .star-04,
+.vietnam-tour[data-map="southern-resort"] svg .item-04{
     fill: #CB4667;
 }
-.vietnam-tour[data-map="southern-resort-area"] svg .dots-04{
+.vietnam-tour[data-map="southern-resort"] svg .dots-04{
     stroke: #CB4667;
 }
 .vietnam-tour .slick-dots{
@@ -878,6 +880,7 @@
     text-align: center;
     color: #6A5D54;
     margin-bottom: 38px;
+    font-weight: 500;
 }
 
 
@@ -910,7 +913,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 300;
+    font-weight: bold;
     padding-bottom: 4px;
     position: relative;
     margin: 0 auto 42px;
@@ -994,6 +997,7 @@
     padding-top: 27px;
     padding-bottom: 29px;
     color: #6A5D54;
+    font-weight: 500;
 }
 .news-block .newsItem .date{
     width: 90px;
@@ -1854,6 +1858,9 @@
         margin-bottom: 42px;
         line-height: 35px;
         padding: 0 20px;
+    }
+    .overseas-tour .overseasTour-info .subTitle br{
+        display: none;
     }
     .overseas-tour .overseasTour-info .heading-block {
         margin-bottom: 42px;
