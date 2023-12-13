@@ -605,6 +605,7 @@ body:not(.home) #header-menu .header-nav{
     align-items: center;
     position: relative;
     color: #6B5D54;
+    font-weight: 500;
 }
 #navList-menu .menu-item a:after{
     content: "";
