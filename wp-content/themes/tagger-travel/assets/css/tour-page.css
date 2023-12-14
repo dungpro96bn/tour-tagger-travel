@@ -325,7 +325,7 @@
     bottom: 0;
 }
 .post-template .columns-page .columns-sidebar.hide-sidebar .sidebar-content{
-    bottom: 0;
+    bottom: -150px;
     top: unset;
 }
 .post-template:after{
@@ -356,6 +356,7 @@
     width: 100%;
     top: 0;
     right: 0;
+    background: #fff;
 }
 .admin-bar .post-template .columns-page .columns-sidebar .sidebar-content{
     top: 126px;

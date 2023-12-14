@@ -367,7 +367,7 @@ jQuery(function ($) {
             var windowHeight = $(window).height();
             var subfooter = $("#footer").offset().top;
 
-            if (scroll > subfooter - windowHeight + Y - headerBottom) {
+            if (scroll > subfooter - windowHeight + Y + 5) {
                 $('.columns-sidebar').addClass("hide-sidebar");
             } else {
                 $('.columns-sidebar').removeClass("hide-sidebar");
