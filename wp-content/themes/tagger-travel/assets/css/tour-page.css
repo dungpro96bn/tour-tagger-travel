@@ -303,9 +303,30 @@
 /*Tour single*/
 /*=======================================*/
 .post-template{
-    padding-top: 114px;
     position: relative;
-    padding-bottom: 145px;
+}
+.post-template .header-top{
+    height: 114px;
+    display: block;
+}
+.post-template .header-bottom{
+    height: 145px;
+    display: block;
+}
+.post-template .columns-page .columns-sidebar.sidebar-scroll .columns-sidebar-inner{
+    position: fixed;
+    width: 100%;
+    max-width: 321px;
+    transition: .3s;
+    top: 114px;
+}
+.post-template .columns-page .columns-sidebar.sidebar-scroll.hide-sidebar .columns-sidebar-inner{
+    position: absolute;
+    bottom: 0;
+}
+.post-template .columns-page .columns-sidebar.hide-sidebar .sidebar-content{
+    bottom: 0;
+    top: unset;
 }
 .post-template:after{
     content: "";
@@ -331,8 +352,10 @@
     position: relative;
 }
 .post-template .columns-page .columns-sidebar .sidebar-content{
-    position: sticky;
-    top: 90px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
 }
 .admin-bar .post-template .columns-page .columns-sidebar .sidebar-content{
     top: 126px;
@@ -888,6 +911,14 @@
         right: calc((100% - 1040px) / 2 + 40px);
     }
 
+    .post-template .columns-page .columns-sidebar{
+        width: 268px;
+    }
+    .post-template .columns-page .columns-main {
+        width: calc(100% - 268px);
+        margin-right: 0px;
+        padding-right: 50px;
+    }
 
 
     .tourList-area .tourItem-area .text{
@@ -931,7 +962,9 @@
     }
 
 
-
+    .post-template .columns-page .columns-sidebar.sidebar-scroll .columns-sidebar-inner{
+        max-width: 268px;
+    }
 
 
 
@@ -1064,11 +1097,14 @@
     /*Tour single*/
     /*================================*/
     .post-template .columns-page .columns-main {
-        width: 67%;
-        margin-right: 3%;
+        width: calc(100% - 220px);
+        padding-right: 30px;
     }
     .post-template .columns-page .columns-sidebar {
-        width: 30%;
+        width: 220px;
+    }
+    .post-template .columns-page .columns-sidebar.sidebar-scroll .columns-sidebar-inner{
+        max-width: 220px;
     }
     .columns-sidebar .filter-item{
         padding: 20px 15px 20px;
@@ -1094,15 +1130,6 @@
     .areaList-search .areaItem-search .title-item{
         padding-top: 3px;
     }
-
-    .post-template .columns-page .columns-sidebar .sidebar-content{
-        position: sticky;
-        top: 100px;
-    }
-    .admin-bar .post-template .columns-page .columns-sidebar .sidebar-content{
-        top: 136px;
-    }
-
 
     .post-template .tour-schedule-list:before{
         left: 100px;
@@ -1403,6 +1430,12 @@
         padding-top: 70px;
         padding-bottom: 0px;
     }
+    .post-template .header-top{
+        height: 0;
+    }
+    .post-template .header-bottom{
+        height: 0;
+    }
     .post-template:after{
         height: 320px;
     }
@@ -1410,6 +1443,11 @@
         width: 100%;
         margin-right: 0;
         margin-bottom: 48px;
+        padding-right: 0;
+    }
+    .post-template .columns-page .columns-sidebar .columns-sidebar-inner{
+        position: static !important;
+        max-width: 100% !important;
     }
     .post-template .columns-page .columns-sidebar {
         width: calc(100% + 32px);

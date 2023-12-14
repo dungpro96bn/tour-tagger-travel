@@ -4,6 +4,8 @@ global $post;
 
     <div id="tour-single" class="post-template tour-single-page">
 
+        <div class="header-top"></div>
+
         <div class="inner">
             <div class="columns-page">
 
@@ -242,6 +244,8 @@ global $post;
 
             </div>
         </div>
+
+        <div class="header-bottom"></div>
 
     </div><!-- #new -->
 

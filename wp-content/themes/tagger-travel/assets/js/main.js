@@ -343,5 +343,36 @@ jQuery(function ($) {
     });
 
 
+    $(document).ready(function () {
+        $(window).on('scroll', function () {
+            var checkCl = $('.header-top');
+            if (checkCl.length) {
+                var nav = $('.header-top').offset().top;
+            }
+            // var heightBlockP2 = $("#data-scroll-01").height();
+            // $("#welfare .block-main .block-img .max-width-img").css("height", heightBlockP2);
+
+            var top = $('.header-top').outerHeight();
+
+            if ($(window).scrollTop() >= nav) {
+                $('.columns-sidebar').addClass("sidebar-scroll");
+            } else {
+                $('.columns-sidebar').removeClass("sidebar-scroll");
+            }
+
+            var Y = $(window).height() - $(".sidebar-content").height() - top;
+            var headerBottom = $(".header-bottom").height();
+
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var subfooter = $("#footer").offset().top;
+
+            if (scroll > subfooter - windowHeight + Y - headerBottom) {
+                $('.columns-sidebar').addClass("hide-sidebar");
+            } else {
+                $('.columns-sidebar').removeClass("hide-sidebar");
+            }
+        });
+    });
 
 });
