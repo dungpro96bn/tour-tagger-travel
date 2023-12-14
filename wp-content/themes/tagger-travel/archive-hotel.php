@@ -232,7 +232,12 @@
                                                         <p class="price"><?php echo get_field('hotel_price') ?> <span>VND</span></p>
                                                         <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
                                                         <div class="hotel-contact">
-                                                            <a class="btn-contact dnp-s-m" data-id="<?php echo get_the_ID(); ?>" href="#">お問い合わせ<i class="fa-light fa-angle-right"></i></a>
+                                                            <form method="POST" action="/contact/">
+                                                                <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                                                <div class="submit-contact">
+                                                                    <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="お問い合わせ"><i class="fa-light fa-angle-right"></i>
+                                                                </div>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -288,7 +293,12 @@
                                                         <p class="price"><?php echo get_field('hotel_price') ?> <span>VND</span></p>
                                                         <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
                                                         <div class="hotel-contact">
-                                                            <a class="btn-contact dnp-s-m" data-id="<?php echo get_the_ID(); ?>" href="#">お問い合わせ<i class="fa-light fa-angle-right"></i></a>
+                                                            <form method="POST" action="/contact/">
+                                                                <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                                                <div class="submit-contact">
+                                                                    <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="お問い合わせ"><i class="fa-light fa-angle-right"></i>
+                                                                </div>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </li>
@@ -343,7 +353,12 @@
                                                         <p class="price"><?php echo get_field('hotel_price') ?> <span>VND</span></p>
                                                         <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
                                                         <div class="hotel-contact">
-                                                            <a class="btn-contact dnp-s-m" data-id="<?php echo get_the_ID(); ?>" href="#">お問い合わせ<i class="fa-light fa-angle-right"></i></a>
+                                                            <form method="POST" action="/contact/">
+                                                                <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                                                <div class="submit-contact">
+                                                                    <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="お問い合わせ"><i class="fa-light fa-angle-right"></i>
+                                                                </div>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </li>

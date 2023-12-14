@@ -168,17 +168,29 @@
     border-radius: 40px;
     margin: 0 0 0 auto;
     padding-bottom: 4px;
+    transition: .3s;
+    cursor: pointer;
 }
 .hotel-by-rating .hotel_item .btn-contact:hover{
     background: #fff;
     color: #007545;
 }
-.hotel-by-rating .hotel_item .btn-contact i{
+.hotel-by-rating .hotel_item .submit-contact{
+    display: flex;
+    position: relative;
+}
+.hotel-by-rating .hotel_item .submit-contact i{
     position: absolute;
     font-size: 13px;
     top: 50%;
     right: 21px;
     transform: translateY(-50%);
+    color: #fff;
+    transition: .3s;
+}
+.hotel-by-rating .hotel_item .submit-contact:hover i{
+    color: #007545;
+    right: 10px;
 }
 .navigation-more{
     padding-top: 96px;
@@ -471,7 +483,10 @@
         margin: auto;
     }
 
-
+    .hotel-by-rating .hotel_item .submit-contact {
+        max-width: 240px;
+        margin: auto;
+    }
 
 
 
