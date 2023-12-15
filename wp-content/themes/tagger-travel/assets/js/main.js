@@ -196,11 +196,8 @@ jQuery(function ($) {
             return false;
         });
 
-        $('.locationItem a').hover(function(event){
-            if($(window).width() < 768) {
-                event.preventDefault();
-            }
-            // event.preventDefault();
+        $('.locationItem a').click(function(event){
+            event.preventDefault();
             var url = $(this).attr('data-id');
             // var dest = url.split('#');
             var target = url;

@@ -407,6 +407,9 @@
     transition: .3s;
     width: auto !important;
 }
+.list-thumbnailTour{
+    cursor: pointer;
+}
 .vietnam-tour .tourInfo .list-thumbnailTour .slick-slide.slick-current{
     opacity: 1;
 }

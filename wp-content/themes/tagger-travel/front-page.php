@@ -2633,7 +2633,7 @@ get_header();
             </ul>
             <p class="text-note dnp-s-m " data-aos="fade-up"><?php echo get_field('arrangement_description'); ?></p>
             <div class="link-more" data-aos="fade-up">
-                <a href="/contact/" class="btn-link btn-green c-g"><span>contact</span><i class="fa-light fa-angle-right"></i></a>
+                <a href="<?php echo get_field('arrangement_contact'); ?>" class="btn-link btn-green c-g"><span>contact</span><i class="fa-light fa-angle-right"></i></a>
             </div>
         </div>
     </div>

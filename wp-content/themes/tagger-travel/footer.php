@@ -30,7 +30,7 @@
                 </a>
             </div>
             <div class="btn-contact btn-email">
-                <a href="#" target="_blank">
+                <a href="/request-advice/">
                     <picture class="icon">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_email_sp.png 2x">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_email_pc.png 2x">

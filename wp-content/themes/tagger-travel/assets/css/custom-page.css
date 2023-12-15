@@ -1175,6 +1175,9 @@ body .wp-pagenavi a:hover{
     #guide-page {
         /*padding-bottom: 92px;*/
     }
+    #guide-page .header-pageEntry{
+        background-image: url("/wp-content/uploads/guide_banner_header_sp.png");
+    }
     
     .tabs-guide {
         padding-top: 64px;

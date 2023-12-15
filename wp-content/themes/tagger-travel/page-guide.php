@@ -416,9 +416,10 @@ $post_slug = $post->post_name;
                                             <div class="banner-item">
                                                 <?php
                                                 $image = get_sub_field('banner_local_specialties_northern');
+                                                $size = 'full'; // (thumbnail, medium, large, full or custom size)
                                                 if( !empty( $image ) ): ?>
                                                     <picture class="image">
-                                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                        <?php  echo wp_get_attachment_image($image, $size); ?>
                                                     </picture>
                                                 <?php endif; ?>
                                                 <p class="ttl dnp-s-m"><?php echo get_sub_field('title_local_specialties_northern'); ?></p>
@@ -443,9 +444,10 @@ $post_slug = $post->post_name;
                                             <div class="banner-item">
                                                 <?php
                                                 $image = get_sub_field('banner_recommended_restaurants_northern');
+                                                $size = 'full'; // (thumbnail, medium, large, full or custom size)
                                                 if( !empty( $image ) ): ?>
                                                     <picture class="image">
-                                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                        <?php  echo wp_get_attachment_image($image, $size); ?>
                                                     </picture>
                                                 <?php endif; ?>
                                                 <p class="ttl dnp-s-m"><?php echo get_sub_field('title_recommended_restaurants_northern'); ?></p>
@@ -494,9 +496,10 @@ $post_slug = $post->post_name;
                                         <div class="banner-item">
                                             <?php
                                             $image = get_sub_field('banner_sightseeing_spots');
+                                            $size = 'full'; // (thumbnail, medium, large, full or custom size)
                                             if( !empty( $image ) ): ?>
                                                 <picture class="image">
-                                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                    <?php  echo wp_get_attachment_image($image, $size); ?>
                                                 </picture>
                                             <?php endif; ?>
                                             <p class="ttl dnp-s-m"><?php echo get_sub_field('title_sightseeing_spots'); ?></p>
@@ -604,9 +607,10 @@ $post_slug = $post->post_name;
                                             <div class="banner-item">
                                                 <?php
                                                 $image = get_sub_field('banner_local_specialties_northern');
+                                                $size = 'full'; // (thumbnail, medium, large, full or custom size)
                                                 if( !empty( $image ) ): ?>
                                                     <picture class="image">
-                                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                        <?php  echo wp_get_attachment_image($image, $size); ?>
                                                     </picture>
                                                 <?php endif; ?>
                                                 <p class="ttl dnp-s-m"><?php echo get_sub_field('title_local_specialties_northern'); ?></p>
@@ -631,9 +635,10 @@ $post_slug = $post->post_name;
                                             <div class="banner-item">
                                                 <?php
                                                 $image = get_sub_field('banner_recommended_restaurants_northern');
+                                                $size = 'full'; // (thumbnail, medium, large, full or custom size)
                                                 if( !empty( $image ) ): ?>
                                                     <picture class="image">
-                                                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                        <?php  echo wp_get_attachment_image($image, $size); ?>
                                                     </picture>
                                                 <?php endif; ?>
                                                 <p class="ttl dnp-s-m"><?php echo get_sub_field('title_recommended_restaurants_northern'); ?></p>
@@ -682,9 +687,10 @@ $post_slug = $post->post_name;
                                         <div class="banner-item">
                                             <?php
                                             $image = get_sub_field('banner_sightseeing_spots');
+                                            $size = 'full'; // (thumbnail, medium, large, full or custom size)
                                             if( !empty( $image ) ): ?>
                                                 <picture class="image">
-                                                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                                                    <?php  echo wp_get_attachment_image($image, $size); ?>
                                                 </picture>
                                             <?php endif; ?>
                                             <p class="ttl dnp-s-m"><?php echo get_sub_field('title_sightseeing_spots'); ?></p>

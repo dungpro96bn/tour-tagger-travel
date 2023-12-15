@@ -26,7 +26,7 @@
                     );
                     $areas = get_categories($args); ?>
                     <?php foreach ($areas as $area) : ?>
-                    <li class="nationItem">
+                    <li class="nationItem" data-aos="fade-up">
                         <a class="scroll" data-id="<?php echo $area->term_id; ?>" href="#<?php echo $area->slug; ?>">
                             <p class="ttl-ja dnp-s-m"><?php echo $area->name; ?></p>
                             <p class="ttl-en gp-p"><?php echo $area->slug; ?></p>
