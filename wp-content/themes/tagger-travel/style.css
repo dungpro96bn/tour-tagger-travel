@@ -319,6 +319,30 @@ body::-webkit-scrollbar-thumb:hover{
     font-family: 'League Spartan', sans-serif;
 }
 
+.field-group .wpcf7-not-valid-tip,
+.field-group .valid-confirm{
+    font-size: 14px;
+    line-height: 28px;
+    display: flex;
+    background: #FFEAEA;
+    height: 40px;
+    align-items: center;
+    margin-top: 16px;
+    padding-left: 16px;
+    color: #ED2B2B;
+}
+.field-group [data-name="tour-name"] .wpcf7-not-valid-tip{
+    font-size: 0;
+}
+.field-group [data-name="tour-name"] .wpcf7-not-valid-tip:after{
+    content: "ツアー名が入力されていません";
+    position: relative;
+    font-size: 14px;
+    line-height: 28px;
+}
+.field-group .input-field .ttl-number-of-participants{
+    display: none;
+}
 
 
 .inner{
@@ -381,6 +405,8 @@ body.header-open .bg-headerOpen{
 .cf7sr-recaptcha .wpcf7-not-valid-tip{
     text-align: center;
     margin-top: 10px;
+    font-size: 14px;
+    color: #ED2B2B;
 }
 
 .box-shadow{
@@ -388,6 +414,17 @@ body.header-open .bg-headerOpen{
 }
 .box-shadow:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,.20);
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+    background: #FFEAEA;
+    border: 0;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 10px 16px;
+    color: #ED2B2B;
 }
 
 
@@ -1084,7 +1121,13 @@ body:not(.home) #footer {
         max-width: 900px;
     }
 
-
+    .field-group .wpcf7-not-valid-tip,
+    .field-group .valid-confirm{
+        font-size: 12px;
+        line-height: 28px;
+        height: 36px;
+        padding-left: 10px;
+    }
 
 
 
@@ -1350,6 +1393,14 @@ body:not(.home) #footer {
     }
     .heading-block .ttl-ja {
 
+    }
+
+    .field-group .wpcf7-not-valid-tip,
+    .field-group .valid-confirm{
+        font-size: 14px;
+        line-height: 28px;
+        height: 40px;
+        padding-left: 16px;
     }
 
 

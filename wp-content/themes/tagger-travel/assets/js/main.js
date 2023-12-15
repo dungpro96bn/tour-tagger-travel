@@ -371,4 +371,25 @@ jQuery(function ($) {
         });
     });
 
+    setTimeout(function(){
+        var checkUrl = location.hash;
+        if(checkUrl){
+            var url = window.location.href.split('#')[0];
+            window.history.pushState(location.hash,'', url);
+        }
+    },2000);
+
+    $("input#email-address-confirmation").change(function () {
+        var valCheck = $("input#email-address").val(),
+            valConfirmation = $(this).val();
+        if(valConfirmation != valCheck && $(this).val().length !== 0){
+            $(".valid-confirm").remove();
+            $('<span class="valid-confirm" aria-hidden="true">Email does not match.</span>').appendTo($('span[data-name="email-address-confirmation"]'));
+        } else if( $(this).val().length === 0 || $(this).val().length === null ) {
+            $(".valid-confirm").remove();
+        } else {
+            $(".valid-confirm").remove();
+        }
+    })
+
 });

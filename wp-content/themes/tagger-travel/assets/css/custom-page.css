@@ -104,7 +104,19 @@
     top: 2px;
 }
 .field-group .input-field .wpcf7-form-control-wrap[data-name="number-of-participants"]{
+    width: 100%;
+    position: relative;
+}
+.field-group .input-field .wpcf7-form-control-wrap[data-name="number-of-participants"] input{
     width: 80px;
+}
+.field-group .input-field .wpcf7-form-control-wrap[data-name="number-of-participants"]:after{
+    position: absolute;
+    content: "名様";
+    font-size: 16px;
+    line-height: 28px;
+    left: 96px;
+    top: 10px;
 }
 .field-group .input-field{
     display: flex;
