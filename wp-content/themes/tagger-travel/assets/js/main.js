@@ -312,7 +312,6 @@ jQuery(function ($) {
     $('.navigation-more a').click(function(e){
         e.preventDefault();
         total += 1;
-
         var dataMax = $(this).attr('data-max');
         if(total >= dataMax){
             $(this).addClass("is-stop");
@@ -321,7 +320,7 @@ jQuery(function ($) {
         $(this).addClass('is-loading');
         var classParents = $(this).parents('.hotel-by-rating').attr('data-class');
 
-        var link = window.location;
+        var link = window.location.href.split('#')[0];
         var urlPage = link + 'page/' + total;
 
         $.ajax({
