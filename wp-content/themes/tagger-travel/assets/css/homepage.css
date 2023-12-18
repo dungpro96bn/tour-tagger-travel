@@ -234,7 +234,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 5;
+    /*z-index: 5;*/
     width: 100%;
     height: 72px;
 }
@@ -301,6 +301,7 @@
     background: #F8F8F8;
     position: relative;
     overflow: hidden;
+    z-index: 3;
 }
 .vietnam-tour .bg-map svg{
     position: absolute;
@@ -323,11 +324,11 @@
     margin-bottom: 22px;
 }
 .vietnam-tour .vietnam-tourContent{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 .vietnam-tour .tourInfo{
-    overflow: hidden;
+    width: 50%;
     padding-top: 20px;
     position: relative;
 }
@@ -378,6 +379,9 @@
     background: #fff;
     padding: 32px;
     position: relative;
+}
+.vietnam-tour .tourInfo .tourInfo-item .close-popup{
+    display: none;
 }
 .vietnam-tour .tourInfo .list-thumbnailTour .image{
     position: relative;
@@ -538,8 +542,9 @@
     color: #6A5D54;
 }
 .vietnam-tour .map-tour{
+    width: 50%;
     position: relative;
-    padding-bottom: 123%;
+    padding-bottom: 61.5%;
 }
 .vietnam-tour .map-tour .locationItem{
     display: flex;
@@ -1066,7 +1071,7 @@
 
 
     .vietnam-tour .map-tour{
-        padding-bottom: 140%;
+        padding-bottom: 70%;
     }
     .vietnam-tour .map-tour .locationItem:nth-child(1){
         top: 34.8%;
@@ -1160,7 +1165,7 @@
         width: 2500px;
     }
     .vietnam-tour .map-tour {
-        padding-bottom: 130%;
+        padding-bottom: 65%;
     }
     .vietnam-tour .map-tour .locationItem a{
         font-size: 16px;
@@ -1425,7 +1430,7 @@
         right: 154px !important;
     }
     .vietnam-tour .map-tour {
-        padding-bottom: 145%;
+        padding-bottom: 73%;
     }
 
 
@@ -1668,10 +1673,6 @@
 
 
     /*vietnam-tour*/
-    .vietnam-tour .vietnam-tourContent {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
     .vietnam-tour .tourInfo .list-imageTour .slick-arrow{
         width: 16px;
         height: 40px;
@@ -1708,30 +1709,36 @@
     .vietnam-tour .map-tour{
         min-height: auto;
         padding-top: 313px;
-        margin-bottom: 16px;
+        margin-bottom: 0px;
         padding-bottom: 0;
+        width: 100%;
+    }
+    .vietnam-tour .tourInfo{
+        width: 100%;
+        padding: 0;
     }
     .vietnam-tour .tourInfo .tag-location .ttl{
-        font-size: 18px;
+        font-size: 16px;
         min-width: 160px;
-        height: 40px;
+        height: 30px;
     }
     .vietnam-tour .tourInfo .tourInfo-inner {
-        padding: 31px 24px;
+        padding: 30px 16px 20px;
     }
     .vietnam-tour .contentInfo .text {
-        font-size: 15px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 12px;
     }
     .vietnam-tour .popular-tourist-destination .title {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 14px;
+        line-height: 23px;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 3px;
     }
     .vietnam-tour .popular-tourist-destination .location {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 20px;
         width: 100%;
         padding-left: 0;
         position: relative;
@@ -1741,22 +1748,70 @@
         display: none;
     }
     .vietnam-tour .sliderInfo-tour {
-        margin-bottom: 23px;
+        margin-bottom: 10px;
     }
     .vietnam-tour .popular-tourist-destination {
-        padding: 16px 16px 18px;
-        margin-bottom: 34px;
+        padding: 8px 16px 10px;
+        margin-bottom: 20px;
     }
     .vietnam-tour .contentInfo .link-more {
         padding-left: 0;
     }
     .link-more .btn-link {
         width: 240px;
-        height: 64px;
-        font-size: 20px;
+        height: 48px;
+        font-size: 16px;
     }
     .vietnam-tour{
-        padding-bottom: 80px;
+        padding-bottom: 60px;
+    }
+    .vietnam-tour .tourInfo .tourInfo-item{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.20);
+        top: 0px;
+        left: 0;
+        display: flex !important;
+        align-items: center;
+        padding: 0 16px;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s;
+        pointer-events: none;
+    }
+    .vietnam-tour .tourInfo .tourInfo-item.is-open{
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        pointer-events: unset;
+    }
+    .vietnam-tour .tourInfo .tourInfo-item .innerContent{
+        display: block;
+        width: 100%;
+        position: relative;
+        transition: .4s;
+        transform: scale(0.7);
+    }
+    .vietnam-tour .tourInfo .tourInfo-item.is-open .innerContent{
+        transform: scale(1);
+    }
+    .vietnam-tour .tourInfo .tag-location{
+        top: -15px;
+    }
+    .vietnam-tour .tourInfo .tourInfo-item .close-popup{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -15px;
+        right: -14px;
+        border-radius: 50%;
+        font-size: 16px;
+        background: #CB4667;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 

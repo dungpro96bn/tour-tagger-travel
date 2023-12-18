@@ -2396,46 +2396,49 @@ get_header();
                     <?php while ( $result->have_posts() ) : $result->the_post(); ?>
                     <?php $num = $number++; ?>
                 <div id="<?php echo $slug = get_post_field( 'post_name', get_post() ); ?>" class="tourInfo-item <?php if($num==1){echo "active";} ?>">
-                    <div class="tag-location dnp-s-m"><p class="ttl" data-aos="fade-up"><?php the_title(); ?></p></div>
-                    <div class="tourInfo-inner">
-                        <div class="sliderInfo-tour" data-aos="fade-up">
-                            <ul class="list-imageTour">
+                    <div class="innerContent">
+                        <div class="tag-location dnp-s-m"><p class="ttl" data-aos="fade-up"><?php the_title(); ?></p></div>
+                        <div class="tourInfo-inner">
+                            <span class="close-popup"><i class="fa-regular fa-xmark"></i></span>
+                            <div class="sliderInfo-tour" data-aos="fade-up">
+                                <ul class="list-imageTour">
+                                    <?php
+                                    $images = get_field('image_slider');
+                                    $size = 'full';
+                                    if( $images ): ?>
+                                        <?php foreach( $images as $image_id ): ?>
+                                            <li class="item-imageTour">
+                                                <picture class="image">
+                                                    <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                                </picture>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </ul>
                                 <?php
                                 $images = get_field('image_slider');
                                 $size = 'full';
-                                if( $images ): ?>
-                                    <?php foreach( $images as $image_id ): ?>
-                                        <li class="item-imageTour">
-                                            <picture class="image">
-                                                <?php echo wp_get_attachment_image($image_id, $size); ?>
-                                            </picture>
-                                        </li>
-                                    <?php endforeach; ?>
+                                if ($images): ?>
+                                    <ul class="list-thumbnailTour" data-count="<?php echo count($images); ?>">
+                                        <?php foreach ($images as $image_id): ?>
+                                            <li class="item-thumbnailTour">
+                                                <picture class="image">
+                                                    <?php echo wp_get_attachment_image($image_id, $size); ?>
+                                                </picture>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
                                 <?php endif; ?>
-                            </ul>
-                            <?php
-                            $images = get_field('image_slider');
-                            $size = 'full';
-                            if ($images): ?>
-                                <ul class="list-thumbnailTour" data-count="<?php echo count($images); ?>">
-                                    <?php foreach ($images as $image_id): ?>
-                                        <li class="item-thumbnailTour">
-                                            <picture class="image">
-                                                <?php echo wp_get_attachment_image($image_id, $size); ?>
-                                            </picture>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            <?php endif; ?>
-                        </div>
-                        <div class="contentInfo" data-aos="fade-up">
-                            <div class="text"><?php echo get_field("tour_description"); ?></div>
-                            <div class="popular-tourist-destination">
-                                <p class="title dnp-s-m">人気の観光地</p>
-                                <p class="location"><?php echo get_field("popular_tourist_destination"); ?></p>
                             </div>
-                            <div class="link-more">
-                                <a href="/tour/#<?php echo $slug = get_post_field( 'post_name', get_post() ); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                            <div class="contentInfo" data-aos="fade-up">
+                                <div class="text"><?php echo get_field("tour_description"); ?></div>
+                                <div class="popular-tourist-destination">
+                                    <p class="title dnp-s-m">人気の観光地</p>
+                                    <p class="location"><?php echo get_field("popular_tourist_destination"); ?></p>
+                                </div>
+                                <div class="link-more">
+                                    <a href="/tour/#<?php echo $slug = get_post_field( 'post_name', get_post() ); ?>" class="btn-link c-g"><span>Read More</span><i class="fa-light fa-angle-right"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>

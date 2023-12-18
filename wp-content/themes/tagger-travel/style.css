@@ -923,7 +923,7 @@ body:not(.home) #footer {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 5;
 }
 #line-contactBox .title-box{
     margin-bottom: 16px;
@@ -1674,6 +1674,7 @@ body:not(.home) #footer {
         left: 50%;
         transform: translateX(-50%);
         top: -16px;
+        z-index: 9;
     }
     #line-contactBox .btn-contact a .icon {
         width: auto;
