@@ -1785,6 +1785,7 @@
         visibility: visible;
         opacity: 1;
         pointer-events: unset;
+        z-index: 99;
     }
     .vietnam-tour .tourInfo .tourInfo-item .innerContent{
         display: block;
