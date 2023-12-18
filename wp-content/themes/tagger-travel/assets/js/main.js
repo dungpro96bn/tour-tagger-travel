@@ -4,6 +4,9 @@ jQuery(function ($) {
     $('.bannerSlider .sliderList-image').slick({
         autoplay: true,
         cssEase: 'linear',
+        pauseOnHover: false,
+        focusOnSelect: false,
+        pauseOnFocus: false,
         fade: true,
         autoplaySpeed: 4000,
         infinite: true,
