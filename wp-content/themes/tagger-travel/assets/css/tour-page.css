@@ -789,6 +789,7 @@
 .columns-sidebar .filter-item{
     border: 1px solid #A08953;
     padding: 26px 24px 32px;
+    background: #fff;
 }
 .columns-sidebar .filter-item .title{
     display: flex;

@@ -346,9 +346,27 @@
 #news .news-block .newsItem a{
     font-size: 16px;
     line-height: 28px;
-    padding: 28px;
+    padding: 28px 60px 28px 28px;
     border: 1px solid #D9D9D9;
     border-radius: 6px;
+}
+#news .news-block .newsItem a .icon-arrow{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+#news .news-block .newsItem a svg #Path_953,
+#news .news-block .newsItem a svg circle{
+    transition: .3s;
+}
+#news .news-block .newsItem a:hover svg #Ellipse_11>circle:nth-child(2){
+    fill: #6b5d54;
+}
+#news .news-block .newsItem a:hover svg #Path_953{
+    stroke: #fff;
 }
 #news .news-block .newsItem .date {
     width: 130px;
@@ -390,6 +408,65 @@ body .wp-pagenavi a:hover{
     background: #53313A;
     color: #fff;
 }
+
+.single-page .news-inner{
+    max-width: 1000px;
+    margin: auto;
+}
+.single-page .header-entryNews{
+    margin-bottom: 60px;
+}
+.single-page .date-time{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #6A5D54;
+    margin-bottom: 5px;
+}
+.single-page .post-main{
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+.single-page .heading-blockNews{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #6A5D54;
+}
+.single-page .info-content p{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 28px;
+}
+.single-page .info-content p:last-child{
+    margin-bottom: 0;
+}
+.single-page .link-page{
+    padding-top: 80px;
+}
+.single-page .link-page a{
+    height: 64px;
+    max-width: 240px;
+    background: #007545;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 1px solid #007545;
+    margin: auto;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+}
+.single-page .link-page a:hover{
+    background: #fff;
+    color: #007545;
+}
+
+
 
 
 
@@ -1171,14 +1248,32 @@ body .wp-pagenavi a:hover{
         width: 100%;
     }
     #news .news-block .newsItem a {
-        padding: 16px 16px 20px;
+        padding: 16px 60px 20px 16px;
         font-size: 15px;
         line-height: 22px;
     }
+    #news .news-block .newsItem a .icon-arrow{
+        right: 16px;
+    }
     #news .news-block {
+        padding-top: 60px;
+        padding-bottom: 120px;
+    }
+
+    .single-page .post-main {
         padding-top: 60px;
         padding-bottom: 80px;
     }
+    .single-page .heading-blockNews{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .single-page .date-time {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
 
 
 

@@ -22,19 +22,19 @@ global $post;
             <div class="news-inner">
                 <div class="post-main">
                     <div class="post-inner">
-                        <div class="date-tag" data-aos="fade-up">
-                            <p class="date-time en"><?php echo get_the_date(); ?></p>
+                        <div class="header-entryNews" data-aos="fade-up">
+                            <p class="date-time dnp-s-m"><?php echo get_the_date(); ?></p>
+                            <h2 class="heading-blockNews dnp-s-m"><?php the_title(); ?></h2>
                         </div>
-                        <h2 class="heading-block" data-aos="fade-up"><?php the_title(); ?></h2>
                         <div class="info-content" data-aos="fade-up">
                             <?php the_content(); ?>
                         </div>
                     </div>
+                    <div class="link-page" data-aos="fade-up">
+                        <a href="<?php echo home_url(); ?>/news/" class="btn-link dnp-s-m">一覧へ戻る</a>
+                    </div>
                 </div>
 
-                <div class="link-page" data-aos="fade-up">
-                    <a href="<?php echo home_url(); ?>/news/" class="btn-link en">一覧へ戻る</a>
-                </div>
             </div>
 
         </div>
