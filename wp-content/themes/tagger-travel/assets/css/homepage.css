@@ -1718,12 +1718,12 @@
         padding: 0;
     }
     .vietnam-tour .tourInfo .tag-location .ttl{
-        font-size: 16px;
-        min-width: 160px;
-        height: 30px;
+        font-size: 14px;
+        min-width: 150px;
+        height: 26px;
     }
     .vietnam-tour .tourInfo .tourInfo-inner {
-        padding: 30px 16px 20px;
+        padding: 20px 16px 20px;
     }
     .vietnam-tour .contentInfo .text {
         font-size: 12px;
@@ -1758,9 +1758,10 @@
         padding-left: 0;
     }
     .link-more .btn-link {
-        width: 240px;
-        height: 48px;
-        font-size: 16px;
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+        padding-bottom: 2px;
     }
     .vietnam-tour .bg-map{
         position: absolute;
@@ -1771,6 +1772,9 @@
         left: 0;
         pointer-events: none;
     }
+    .link-more .btn-link i {
+        font-size: 12px;
+    }
     .vietnam-tour{
         padding-bottom: 60px;
         overflow: visible;
@@ -1779,12 +1783,12 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,.20);
+        background: rgba(0,0,0,.60);
         top: 0px;
         left: 0;
         display: flex !important;
         align-items: center;
-        padding: 0 16px;
+        padding: 50px 16px 0;
         visibility: hidden;
         opacity: 0;
         transition: .4s;
@@ -1808,7 +1812,7 @@
         transform: scale(1);
     }
     .vietnam-tour .tourInfo .tag-location{
-        top: -15px;
+        top: -18px;
     }
     .vietnam-tour .tourInfo .tourInfo-item .close-popup{
         position: absolute;

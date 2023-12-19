@@ -126,7 +126,8 @@ body {
 }
 
 
-body.modal-on {
+body.modal-on,
+body.active{
     overflow: hidden;
 }
 body.header-open{

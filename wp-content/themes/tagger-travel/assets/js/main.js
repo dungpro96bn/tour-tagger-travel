@@ -10,7 +10,7 @@ jQuery(function ($) {
         fade: true,
         autoplaySpeed: 4000,
         infinite: true,
-        dots: true,
+        dots: false,
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -243,6 +243,7 @@ jQuery(function ($) {
                 $('#'+target).addClass("is-open");
                 $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
                 $('#'+target).addClass("active");
+                $('#line-contactBox').fadeOut();
                 $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
                 // AOS.refresh();
             });
@@ -275,6 +276,9 @@ jQuery(function ($) {
             $('#'+target).addClass("is-open");
             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
             $('#'+target).addClass("active");
+            $("body").addClass("active");
+            $('#line-contactBox').fadeOut();
+            $("#page-top").removeClass("is-open");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
             // AOS.refresh();
         });
@@ -282,6 +286,9 @@ jQuery(function ($) {
 
     $(".vietnam-tour .tourInfo-item .close-popup").click(function () {
         $(this).parents(".tourInfo-item").removeClass("is-open");
+        $('#line-contactBox').fadeIn();
+        $("body").removeClass("active");
+        $("#page-top").addClass("is-open");
     });
 
 
