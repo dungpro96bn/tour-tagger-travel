@@ -131,7 +131,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.hotel-by-rating .hotel_item .priceTour{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #6d6d6d;
+    text-align: right;
     margin-bottom: 27px;
+    padding-right: 8px;
 }
 .hotel-by-rating .hotel_item .price span{
     font-size: 18px;
@@ -459,7 +467,9 @@
     .hotel-by-rating .hotel_item .price {
         font-size: 24px;
         padding-right: 0px;
-        margin-bottom: 27px;
+    }
+    .hotel-by-rating .hotel_item .priceTour{
+        padding-right: 0;
     }
     .hotel-by-rating .hotel_item .text-info p {
         font-size: 15px;

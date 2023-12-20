@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header();
+
+$front_page_id = get_option('page_on_front');
+$price_vnd = get_field('exchange_rate_vnd', $front_page_id);
+$exchange_rate_vnd = str_replace(',', '', $price_vnd);
+
+?>
 
     <div id="tour-template" class="tour-page">
         <div class="header-pageEntry">
@@ -148,19 +154,24 @@
                                     <div class="tour-halfDay">
                                         <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>半日・1日ツアー</span></h3>
                                         <ul class="tourList-area">
-                                            <?php while ($result->have_posts()) : $result->the_post(); ?>
+                                            <?php while ($result->have_posts()) : $result->the_post();
+                                                $priceTour = get_field('tour_price');
+                                                $price = str_replace(',','',$priceTour);
+                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                ?>
                                                 <li class="tourItem-area" data-aos="fade-up">
                                                     <a href="<?php the_permalink(); ?>" class="box-shadow">
                                                         <div class="featured-image">
                                                             <picture class="image">
                                                                 <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
-                                                                <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                                                                <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                                                             </picture>
                                                             <span class="time-tour dnp-s-m"><?php echo get_field('tour_time'); ?></span>
                                                         </div>
                                                         <div class="infoTour">
                                                             <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
-                                                            <p class="price"><?php echo get_field('tour_price') ?> <span>VND</span></p>
+                                                            <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
+                                                            <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -208,19 +219,24 @@
                                     <div class="tour-overnight">
                                         <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>宿泊付ツアー</span></h3>
                                         <ul class="tourList-area">
-                                            <?php while ($result->have_posts()) : $result->the_post(); ?>
+                                            <?php while ($result->have_posts()) : $result->the_post();
+                                                $priceTour = get_field('tour_price');
+                                                $price = str_replace(',','',$priceTour);
+                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                ?>
                                                 <li class="tourItem-area" data-aos="fade-up">
                                                     <a href="<?php the_permalink(); ?>" class="box-shadow">
                                                         <div class="featured-image">
                                                             <picture class="image">
                                                                 <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
-                                                                <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                                                                <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
                                                             </picture>
                                                             <span class="time-tour dnp-s-m"><?php echo get_field('tour_time'); ?></span>
                                                         </div>
                                                         <div class="infoTour">
                                                             <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
-                                                            <p class="price"><?php echo get_field('tour_price') ?> <span>VND</span></p>
+                                                            <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
+                                                            <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                         </div>
                                                     </a>
                                                 </li>

@@ -132,6 +132,27 @@
                 <div class="contact-action">
                     <a class="contact-btn btn-green c-g" href="/contact/">Contact</a>
                 </div>
+                <div class="exchange-rate">
+                    <a href="javascript:void(0)" class="menu-item-exchange-rate dnp-s-m"><i class="fa-solid fa-dollar-sign"></i><span>弊社換算レート</span></a>
+                    <div class="exchangeRate-content">
+                        <div class="exchangeRate-time dnp-s-m">
+                            <p class="ttlTime">弊社換算レート</p>
+                            <?php
+                            $days = array('日', '月', '火', '水', '木', '金', '土');
+                            ?>
+                            <p class="date"><?php echo date("Y/m/d"); ?> <span class="day-week">(<?php echo $days[date('w')]; ?>)</span></p>
+                        </div>
+                        <?php $front_page_id = get_option('page_on_front'); ?>
+                        <div class="exchangeRate-List">
+                            <div class="exchangeRate-Item">
+                                <p class="exchangeRate-text"><span class="number">1&nbsp;&nbsp;</span>USD&nbsp;&nbsp;=&nbsp;&nbsp;<span class="number"><?php echo get_field('exchange_rate_jpy', $front_page_id); ?></span>&nbsp;&nbsp;JPY</p>
+                            </div>
+                            <div class="exchangeRate-Item">
+                                <p class="exchangeRate-text"><span class="number">1&nbsp;&nbsp;</span>USD&nbsp;&nbsp;=&nbsp;&nbsp;<span class="number"><?php echo get_field('exchange_rate_vnd', $front_page_id); ?></span>&nbsp;&nbsp;VND</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="btn-openMenu">
                 <p class="c-g"><small class="open">Menu</small><small class="close">Close</small></p>

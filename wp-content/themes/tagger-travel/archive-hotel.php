@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header();
+
+$front_page_id = get_option('page_on_front');
+$price_vnd = get_field('exchange_rate_vnd', $front_page_id);
+$exchange_rate_vnd = str_replace(',', '', $price_vnd);
+
+?>
 
     <div id="hotel-template" class="hotel-page">
         <div class="header-pageEntry">
@@ -218,7 +224,11 @@
                                 if ($result->have_posts()) : ?>
                                     <div id="<?php echo $terms; ?>-5star" data-class="<?php echo $terms; ?>-5star" class="hotel-by-rating active">
                                         <ul class="hotel_list">
-                                            <?php while ($result->have_posts()) : $result->the_post(); ?>
+                                            <?php while ($result->have_posts()) : $result->the_post();
+                                                $priceTour = get_field('hotel_price');
+                                                $price = str_replace(',','',$priceTour);
+                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                ?>
                                                 <li class="hotel_item" data-id="<?php echo get_the_ID(); ?>" data-aos="fade-up">
                                                     <div class="featured-image">
                                                         <picture class="image">
@@ -229,7 +239,8 @@
                                                     </div>
                                                     <div class="hotel_information">
                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                        <p class="price"><?php echo get_field('hotel_price') ?> <span>VND</span></p>
+                                                        <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
+                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                         <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
                                                         <div class="hotel-contact">
                                                             <form method="POST" action="/contact/">
@@ -279,7 +290,11 @@
                                 if ($result->have_posts()) : ?>
                                     <div id="<?php echo $terms; ?>-4star" data-class="<?php echo $terms; ?>-4star" class="hotel-by-rating">
                                         <ul class="hotel_list">
-                                            <?php while ($result->have_posts()) : $result->the_post(); ?>
+                                            <?php while ($result->have_posts()) : $result->the_post();
+                                                $priceTour = get_field('hotel_price');
+                                                $price = str_replace(',','',$priceTour);
+                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                ?>
                                                 <li class="hotel_item" data-id="<?php echo get_the_ID(); ?>" data-aos="fade-up">
                                                     <div class="featured-image">
                                                         <picture class="image">
@@ -290,7 +305,8 @@
                                                     </div>
                                                     <div class="hotel_information">
                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                        <p class="price"><?php echo get_field('hotel_price') ?> <span>VND</span></p>
+                                                        <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
+                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                         <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
                                                         <div class="hotel-contact">
                                                             <form method="POST" action="/contact/">
@@ -339,7 +355,11 @@
                                 if ($result->have_posts()) : ?>
                                     <div id="<?php echo $terms; ?>-3star" data-class="<?php echo $terms; ?>-3star" class="hotel-by-rating">
                                         <ul class="hotel_list">
-                                            <?php while ($result->have_posts()) : $result->the_post(); ?>
+                                            <?php while ($result->have_posts()) : $result->the_post();
+                                                $priceTour = get_field('hotel_price');
+                                                $price = str_replace(',','',$priceTour);
+                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                ?>
                                                 <li class="hotel_item" data-id="<?php echo get_the_ID(); ?>" data-aos="fade-up">
                                                     <div class="featured-image">
                                                         <picture class="image">
@@ -350,7 +370,8 @@
                                                     </div>
                                                     <div class="hotel_information">
                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                        <p class="price"><?php echo get_field('hotel_price') ?> <span>VND</span></p>
+                                                        <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
+                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                         <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
                                                         <div class="hotel-contact">
                                                             <form method="POST" action="/contact/">
