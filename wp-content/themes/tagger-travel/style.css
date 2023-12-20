@@ -708,7 +708,10 @@ body:not(.home) #header-menu .header-nav{
     font-size: 15px;
 }
 .exchange-rate .menu-item-exchange-rate i{
-    margin-right: 12px;
+    margin-right: 10px;
+    color: #CB4667;
+    position: relative;
+    bottom: -1px;
 }
 .exchange-rate .exchangeRate-content{
     position: absolute;
