@@ -222,13 +222,16 @@ jQuery(function ($) {
             $('.locationItem a').hover(function(){
                 var url = $(this).attr('data-id');
                 var target = url;
-                $(".tourInfo-item .aos-init").removeClass("aos-animate");
+                // $(".tourInfo-item .aos-init").removeClass("aos-animate");
                 $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
                 $(this).addClass("active");
                 $("#vietnam-tour").attr("data-map", target);
                 $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
                 $('#'+target).addClass("active");
+                var id ='#'+target;
+                $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
                 $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+                $('#'+target+ ' ' +".tourInfo-item .aos-init").removeClass("aos-animate");
                 AOS.refresh();
             });
         } else {
@@ -255,12 +258,13 @@ jQuery(function ($) {
         $('.locationItem a').hover(function(){
             var url = $(this).attr('data-id');
             var target = url;
-            $(".tourInfo-item .aos-init").removeClass("aos-animate");
             $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
             $(this).addClass("active");
             $("#vietnam-tour").attr("data-map", target);
             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
             $('#'+target).addClass("active");
+            var id ='#'+target;
+            $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
             AOS.refresh();
         });

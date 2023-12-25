@@ -342,7 +342,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 0;
+    top: -22px;
     width: 100%;
 }
 .vietnam-tour .tourInfo .tag-location .ttl{
