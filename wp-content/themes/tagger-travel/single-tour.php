@@ -11,6 +11,9 @@ global $post;
 
                 <div class="columns-main">
                     <h2 class="heading-single dnp-s-m" data-aos="fade-up"><?php the_title(); ?></h2>
+                    <?php
+                    $images = get_field('image_slider_tour');
+                    if($images) :?>
                     <div class="sliderImage-tour" data-aos="fade-up">
                         <ul class="list-imageTour">
                             <?php
@@ -41,6 +44,8 @@ global $post;
                             <?php endif; ?>
                         </ul>
                     </div>
+
+                    <?php endif; ?>
 
                     <div class="description-tour" data-aos="fade-up">
                         <?php echo get_field('tourist_destination_information') ?>

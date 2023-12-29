@@ -478,7 +478,19 @@ jQuery(function ($) {
         }
     })
 
-    var url = location.pathname;
-    console.log(url[1]);
+
+    var first = $(location).attr('pathname');
+    first.indexOf(1);
+    first.toLowerCase();
+    first = first.split("/")[1];
+    var pathName = '/'+first+'/';
+    $(".menu-item a").each(function () {
+        var href = $(this).attr('href');
+        if(href === pathName){
+            $(this).parents(".menu-item").addClass("current-menu-item");
+        }
+    })
+
+
 
 });
