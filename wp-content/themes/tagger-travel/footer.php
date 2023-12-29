@@ -83,8 +83,8 @@
                 <div class="footer-logo">
                     <a href="<?php echo home_url(); ?>">
                         <picture>
-                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_header.svg">
-                            <img class="sizes" width="325" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_header.svg" alt="<?php bloginfo('name'); ?>">
+                            <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_footer.svg">
+                            <img class="sizes" width="325" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_footer.svg" alt="<?php bloginfo('name'); ?>">
                         </picture>
                     </a>
                 </div>

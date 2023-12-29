@@ -3,7 +3,7 @@
 /*=================================*/
 .header-pageEntry{
     position: relative;
-    padding-bottom: 360px;
+    padding-bottom: 432px;
     background-color: #B2A098;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,7 @@
 .header-pageEntry .headingMain-entry{
     position: absolute;
     left: 0;
-    top: 50%;
+    top: calc(50% + 36px);
     width: 100%;
     transform: translateY(-50%);
 }
@@ -316,6 +316,7 @@
 /*=======================================*/
 .post-template{
     position: relative;
+    padding-top: 72px;
 }
 .post-template .header-top{
     height: 114px;
@@ -344,10 +345,11 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 360px;
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(249,246,245,1) 100%);
+    height: 432px;
+    background: #F9F6F5;
     top: 0;
     left: 0;
+    pointer-events: none;
 }
 .post-template .columns-page{
     display: flex;
@@ -1292,7 +1294,7 @@
     }
 
     .header-pageEntry .headingMain-entry{
-        top: 46.6%;
+        top: calc(46.6% + 24px);
     }
     .header-pageEntry .heading-entry .ttl-ja{
         font-size: 32px;
@@ -1303,7 +1305,7 @@
         width: 40px;
     }
     .header-pageEntry {
-        padding-bottom: 63.97%;
+        padding-bottom: 76.8%;
     }
     .header-pageEntry .heading-entry .ttl-en {
         font-size: 18px;
@@ -1437,7 +1439,7 @@
     /*Tour single*/
     /*=================================*/
     .post-template {
-        padding-top: 70px;
+        padding-top: 117px;
         padding-bottom: 0px;
     }
     .post-template .header-top{

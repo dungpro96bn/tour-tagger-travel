@@ -8,7 +8,7 @@ get_header();
     <div class="bannerSlider">
         <div class="bannerContent">
             <div class="left-slider" data-aos="fade-down">
-                <div class="titleTag"><p>Your Vietnam Adventure Starts Here</p></div>
+                <div class="titleTag"><a href="#vietnam-tour" class="scroll">Scroll</a></div>
             </div>
             <div class="right-slider">
                 <div class="sliderHomepage">

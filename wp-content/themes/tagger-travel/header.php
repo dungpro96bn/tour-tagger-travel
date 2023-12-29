@@ -109,13 +109,11 @@
             <div class="header-logo">
                 <a class="link-logo" href="<?php echo home_url(); ?>">
                     <picture class="logo-scroll">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_header_sp.svg">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_header.svg">
-                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_header.svg" alt="<?php bloginfo('name'); ?>">
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_scroll.svg">
+                        <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo_scroll.svg" alt="<?php bloginfo('name'); ?>">
                     </picture>
                     <picture class="logo">
-                        <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo_sp.svg">
-                        <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg">
+                        <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg">
                         <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/logo.svg" alt="<?php bloginfo('name'); ?>">
                     </picture>
                 </a>

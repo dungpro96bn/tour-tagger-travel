@@ -5,7 +5,7 @@
     padding-bottom: 160px;
 }
 #contact-page .header-pageEntry .headingMain-entry{
-    top: 44%;
+    top: calc(44% + 36px);
 }
 #contact-page .header-pageEntry{
     width: 100vw;
@@ -1104,7 +1104,7 @@ body .wp-pagenavi a:hover{
         padding-bottom: 120px;
     }
     #contact-page .header-pageEntry .headingMain-entry{
-        top: 46%;
+        top: calc(46% + 24px);
         padding: 0 20px;
     }
 

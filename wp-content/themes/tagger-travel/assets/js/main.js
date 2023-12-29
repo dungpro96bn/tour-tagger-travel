@@ -478,4 +478,7 @@ jQuery(function ($) {
         }
     })
 
+    var url = location.pathname;
+    console.log(url[1]);
+
 });
