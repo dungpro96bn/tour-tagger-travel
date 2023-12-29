@@ -439,13 +439,25 @@ body.header-open .bg-headerOpen{
     right: 0;
     z-index: 9;
     /*background: #fff;*/
-    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%);
+    /*background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%);*/
 }
-.single #header-menu,
-.page-confirm #header-menu,
-.page-contact #header-menu,
-.page-complete #header-menu,
-.page-request-advice #header-menu{
+#header-menu:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 114px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.single #header-menu:after,
+.page-confirm #header-menu:after,
+.page-contact #header-menu:after,
+.page-complete #header-menu:after,
+.page-request-advice #header-menu:after{
     background: transparent;
 }
 #header-menu .header-nav:after{
@@ -1286,6 +1298,9 @@ body:not(.home) #footer {
     #header-menu .header-nav .header-logo{
         width: 260px;
     }
+    #header-menu:after{
+        height: 100%;
+    }
     #header-menu .header-nav.scroll-header:after{
         height: 72px;
     }
@@ -1613,6 +1628,9 @@ body:not(.home) #footer {
     .page-complete #header-menu,
     .page-request-advice #header-menu{
         background: #fff;
+    }
+    #header-menu:after{
+        display: none;
     }
     #header-menu .header-nav .header-logo .logo{
         display: none;
