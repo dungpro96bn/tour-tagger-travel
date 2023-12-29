@@ -362,6 +362,26 @@ main{
     }
 }
 
+#page-not-found{
+    padding: 200px 0;
+}
+
+#page-not-found .not-found-box{
+    font-size: 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 400;
+    color: #6A5D54;
+}
+#page-not-found a{
+    text-decoration: underline;
+    font-weight: 500;
+    margin-top: 40px;
+    color: #6A5D54;
+    font-size: 20px;
+}
+
+
 #wpadminbar{
     position: fixed !important;
 }
@@ -1602,6 +1622,19 @@ body:not(.home) #footer {
     main{
         /*padding-top: 48px;*/
     }
+
+    #page-not-found{
+        padding: 160px 0 120px;
+    }
+    #page-not-found .not-found-box{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    #page-not-found a{
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
 
     .heading-block .ttl-en {
 
