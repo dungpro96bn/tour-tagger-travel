@@ -636,11 +636,11 @@ body:not(.home) #header-menu .header-nav{
     position: relative;
 }
 #navList-menu .menu-item:before{
-    /*content: "";*/
+    content: "";
     position: absolute;
     width: 2px;
     height: 15px;
-    border-right: 2px solid #DED8D4;
+    border-right: 2px solid transparent;
     top: 50%;
     left: -3px;
     transform: translateY(-50%);
@@ -665,6 +665,9 @@ body:not(.home) #header-menu .header-nav{
 .single #navList-menu .menu-item a,
 #footer #navList-menu .menu-item a{
     color: #6B5D54;
+}
+.single #navList-menu .menu-item:before{
+    border-right-color: #DED8D4;
 }
 .scroll-header #navList-menu .menu-item a:after,
 .single #navList-menu .menu-item a:after,
