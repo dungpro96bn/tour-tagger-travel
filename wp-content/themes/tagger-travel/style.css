@@ -576,6 +576,7 @@ body:not(.home) #header-menu .header-nav{
     left: 0;
     background: #fff;
     z-index: -1;
+    display: none;
 }
 #header-menu .header-nav .right-header {
     width: calc(100% - 280px);
@@ -704,7 +705,12 @@ body:not(.home) #header-menu .header-nav{
 .scroll-header #navList-menu .menu-item a:after,
 .single #navList-menu .menu-item a:after,
 #footer #navList-menu .menu-item a:after{
-    border-top-color: #6B5D54;
+    border-top-color: #A08953;
+}
+.scroll-header #navList-menu .menu-item:before,
+.single #navList-menu .menu-item:before,
+#footer #navList-menu .menu-item:before{
+    border-right-color: #DED8D4;
 }
 #navList-menu .menu-item a:after{
     content: "";
@@ -764,12 +770,13 @@ body:not(.home) #header-menu .header-nav{
     font-size: 15px;
 }
 .scroll-header .exchange-rate .menu-item-exchange-rate,
-.scroll-header .exchange-rate .menu-item-exchange-rate i,
-.single .exchange-rate .menu-item-exchange-rate,
-.single .exchange-rate .menu-item-exchange-rate i{
+.single .exchange-rate .menu-item-exchange-rate {
     color: #6B5D54;
 }
-
+.single .exchange-rate .menu-item-exchange-rate i,
+.scroll-header .exchange-rate .menu-item-exchange-rate i{
+    color: #B5A69F;
+}
 .single #header-menu .header-nav .header-logo .logo-scroll{
     opacity: 1;
     visibility: visible;
