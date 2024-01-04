@@ -14,6 +14,11 @@ add_shortcode('uploadPath', 'uploadPath');
 function homePath() { return home_url() . '/'; }
 add_shortcode('homePath', 'homePath');
 
+add_action( 'admin_enqueue_scripts', 'load_admin_style' );
+function load_admin_style() {
+    wp_enqueue_style( 'style-admin', get_template_directory_uri() . '/assets/css/style-admin.css', false, '1.0.0' );
+}
+
 //ウィジェット
 function my_theme_widgets_init() {
   register_sidebar( array(
