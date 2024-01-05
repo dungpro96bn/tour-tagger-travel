@@ -699,6 +699,36 @@ body:not(.home) #header-menu .header-nav{
 #footer #navList-menu .menu-item a{
     color: #6B5D54;
 }
+.single.single-news #navList-menu .menu-item a{
+    color: #fff;
+}
+.single.single-news .scroll-header #navList-menu .menu-item a{
+    color: #6B5D54;
+}
+.single.single-news #navList-menu .menu-item:before{
+    border-right-color: transparent;
+}
+.single.single-news .scroll-header #navList-menu .menu-item:before{
+    border-right-color: #DED8D4;
+}
+.single.single-news .exchange-rate .menu-item-exchange-rate,
+.single.single-news .exchange-rate .menu-item-exchange-rate i{
+    color: #fff;
+}
+.single.single-news .scroll-header .exchange-rate .menu-item-exchange-rate i{
+    color: #B5A69F;
+}
+.single.single-news .scroll-header .exchange-rate .menu-item-exchange-rate{
+    color: #6B5D54;
+}
+.single-news #header-menu .scroll-header.header-nav .header-logo .logo{
+    opacity: 0;
+    visibility: hidden;
+}
+.single.single-news #header-menu .scroll-header.header-nav .header-logo .logo-scroll{
+    opacity: 1;
+    visibility: visible;
+}
 .single #navList-menu .menu-item:before{
     border-right-color: #DED8D4;
 }
@@ -781,11 +811,15 @@ body:not(.home) #header-menu .header-nav{
     opacity: 1;
     visibility: visible;
 }
-.single #header-menu .header-nav .header-logo .logo{
+.single #header-menu .header-nav .header-logo .logo,
+.single.single-news #header-menu .header-nav .header-logo .logo-scroll{
     opacity: 0;
     visibility: hidden;
 }
-
+.single-news #header-menu .header-nav .header-logo .logo{
+    opacity: 1;
+    visibility: visible;
+}
 .exchange-rate .menu-item-exchange-rate i{
     margin-right: 14px;
     color: #fff;
