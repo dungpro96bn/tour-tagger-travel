@@ -20,7 +20,7 @@
             </div>
             <p class="text">WEBページのツアーをもう少しアレンジしたい、他のツアーも組みたい場合も可能です。<br/>お気軽にご相談ください。</p>
             <div class="btn-contact btn-line">
-                <a href="#" target="_blank">
+                <a href="https://line.me/ti/p/HiVOpcYzPC" target="_blank">
                     <picture class="icon">
                         <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_line_sp.png 2x">
                         <source media="(min-width: 768px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/icon_line_pc.png 2x">
