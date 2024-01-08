@@ -229,10 +229,10 @@ jQuery(function ($) {
                 $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
                 $('#'+target).addClass("active");
                 var id ='#'+target;
-                $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
+                // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
                 $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
-                $('#'+target+ ' ' +".tourInfo-item .aos-init").removeClass("aos-animate");
-                AOS.refresh();
+                // $('#'+target+ ' ' +".tourInfo-item .aos-init").removeClass("aos-animate");
+                // AOS.refresh();
             });
         } else {
             $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
@@ -264,9 +264,9 @@ jQuery(function ($) {
             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
             $('#'+target).addClass("active");
             var id ='#'+target;
-            $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
+            // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
-            AOS.refresh();
+            // AOS.refresh();
         });
     } else {
         $("#vietnam-tour").attr("data-map", "");
