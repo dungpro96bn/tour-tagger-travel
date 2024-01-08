@@ -18,7 +18,10 @@
 }
 
 
-
+.ac-tour [data-colname="Price"]{
+    color: #CB4667;
+    font-weight: bold;
+}
 
 
 
