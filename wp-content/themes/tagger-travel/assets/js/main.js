@@ -8,7 +8,7 @@ jQuery(function ($) {
         focusOnSelect: false,
         pauseOnFocus: false,
         fade: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2000,
         infinite: true,
         dots: false,
         arrows: false,

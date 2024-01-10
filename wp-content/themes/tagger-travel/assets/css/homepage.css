@@ -1562,7 +1562,7 @@
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.7px;
-        padding-left: 38px;
+        padding: 0;
     }
     .bannerSlider .heading-main .ttl-ja {
         font-size: 21px;
@@ -1674,12 +1674,13 @@
         font-size: 38px;
         line-height: 48px;
         letter-spacing: 1.5px;
-        padding-left: 36px;
+        padding-left: 0px;
         border-bottom: 0;
         margin-bottom: 16px;
         padding-bottom: 15px;
         position: relative;
         max-width: 250px;
+
     }
     .bannerSlider .heading-main .text-big:after{
         content: "";
@@ -1687,11 +1688,12 @@
         width: 204px;
         border-bottom: 1px solid #fff;
         bottom: 0;
-        left: calc(50% + 18px);
+        left: 50%;
         transform: translateX(-50%);
     }
     .bannerSlider .heading-main .ttl-ja{
         margin-bottom: 10px;
+        padding-left: 0;
     }
 
 
