@@ -170,8 +170,10 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                         </div>
                                                         <div class="infoTour">
                                                             <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
-                                                            <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
-                                                            <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
+                                                            <?php if($priceTour): ?>
+                                                                <p class="price"><?php echo number_format($priceAfterExchange, '0', '.', ','); ?>~ <span>VND</span></p>
+                                                                <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
+                                                            <?php endif; ?>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -211,6 +213,14 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                         array(
                                             'key' => 'tour_time',
                                             'value' => '2泊3日',
+                                        ),
+                                        array(
+                                            'key' => 'tour_time',
+                                            'value' => '3泊4日',
+                                        ),
+                                        array(
+                                            'key' => 'tour_time',
+                                            'value' => '4泊5日',
                                         )
                                     ),
                                 );
@@ -235,8 +245,17 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                         </div>
                                                         <div class="infoTour">
                                                             <h4 class="text dnp-s-m"><?php the_title(); ?></h4>
-                                                            <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
-                                                            <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
+                                                            <?php if ($priceTour): ?>
+                                                                <p class="price"><?php echo number_format($priceAfterExchange, '0', '.', ','); ?>~ <span>VND</span></p>
+                                                                <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
+                                                            <?php else: ?>
+                                                                <form method="POST" action="/contact/">
+                                                                    <input type="hidden" name="title" value="<?php the_title(); ?>">
+                                                                    <div class="submit-contact">
+                                                                        <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="料金はお問い合わせください" ><i class="fa-light fa-angle-right"></i>
+                                                                    </div>
+                                                                </form>
+                                                            <?php endif; ?>
                                                         </div>
                                                     </a>
                                                 </li>

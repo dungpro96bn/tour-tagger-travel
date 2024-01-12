@@ -283,9 +283,55 @@
 .tourList-area .tourItem-area .infoTour{
     padding: 33px 16px 29px;
 }
-
-
-
+.tourList-area .tourItem-area .infoTour .submit-contact input{
+    display: flex;
+    width: 100%;
+    max-width: 272px;
+    height: 48px;
+    background: #007545;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 1px solid #007545;
+    margin: auto;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 5px 10px rgba(0,0,0,.30);
+}
+.tourList-area .tourItem-area .infoTour .submit-contact:hover input{
+    background: #fff;
+    color: #007545;
+}
+.tourList-area .tourItem-area .infoTour .submit-contact i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+.tourList-area .tourItem-area .infoTour .submit-contact:hover i{
+    color: #007545;
+}
+.tourList-area .tourItem-area .infoTour .submit-contact{
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    max-width: 272px;
+    margin: auto;
+}
+.tourList-area .tourItem-area .infoTour form{
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    z-index: 9;
+}
 
 
 
@@ -996,7 +1042,9 @@
         max-width: 268px;
     }
 
-
+    .post-template .link-contact .btn-contact{
+        font-size: 12px;
+    }
 
 
 
@@ -1026,7 +1074,6 @@
         line-height: 34px;
         padding-bottom: 12px;
     }
-
 
 
 
@@ -1240,8 +1287,12 @@
         line-height: 20px;
     }
     .post-template .link-contact .btn-contact{
-        font-size: 14px;
-        padding-bottom: 2px;
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    .post-template .link-contact i{
+        font-size: 12px;
+        right: 6px;
     }
     .post-template .tour-notes .notice{
         padding: 23px 25px 26px;
@@ -1300,8 +1351,14 @@
     .post-template .payment-method .payment-method-item picture{
         padding-top: 20px;
     }
-
-
+    .tourList-area .tourItem-area .infoTour .submit-contact input{
+        font-size: 12px;
+        height: 40px;
+    }
+    .tourList-area .tourItem-area .infoTour .submit-contact i {
+        right: 12px;
+        font-size: 12px;
+    }
 
 
 
@@ -1690,6 +1747,10 @@
         font-size: 16px;
         padding-bottom: 5px;
     }
+    .post-template .link-contact i{
+        font-size: 14px;
+        right: 15px;
+    }
     .post-template .payment-method {
         padding-top: 63px;
     }
@@ -1711,7 +1772,14 @@
         padding-bottom: 11px;
     }
 
-
+    .tourList-area .tourItem-area .infoTour .submit-contact input{
+        font-size: 14px;
+        height: 48px;
+    }
+    .tourList-area .tourItem-area .infoTour .submit-contact i {
+        right: 15px;
+        font-size: 14px;
+    }
 
 
 

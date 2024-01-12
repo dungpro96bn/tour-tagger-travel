@@ -979,7 +979,7 @@
     text-align: center;
     margin-bottom: 26px;
 }
-.qa-block .titleContent .title span{
+.qa-block .titleContent .title p{
     display: block;
     font-size: 28px;
     line-height: 45px;
@@ -987,7 +987,7 @@
     margin-bottom: 2px;
     letter-spacing: 2.8px;
 }
-.qa-block .titleContent .title span small{
+.qa-block .titleContent .title p small{
     font-size: 30px;
     font-weight: 500;
 }
@@ -1288,7 +1288,7 @@
         height: 40px;
         margin: 0 auto 25px;
     }
-    .qa-block .titleContent .title span{
+    .qa-block .titleContent .title p{
         font-size: 22px;
         line-height: 1.6;
     }
@@ -2057,10 +2057,10 @@
         display: inline-block;
         margin-right: 6px;
     }
-    .qa-block .titleContent .title span small {
+    .qa-block .titleContent .title p small {
         font-size: 24px;
     }
-    .qa-block .titleContent .title span {
+    .qa-block .titleContent .title p {
         font-size: 24px;
         line-height: 38px;
         margin-bottom: 2px;
