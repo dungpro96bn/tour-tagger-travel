@@ -726,6 +726,28 @@ body .wp-pagenavi a:hover{
     display: flex;
     margin-top: 24px;
 }
+.itemDetails-banner .tag .btn-link{
+    display: flex;
+    width: 120px;
+    height: 32px;
+    background: #CB4667;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CB4667;
+    padding-bottom: 2px;
+}
+.itemDetails-banner .tag .btn-link i{
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    bottom: -2px;
+    margin-left: 10px;
+    transition: .3s;
+}
+.itemDetails-banner .tag .btn-link:hover i{
+    transform: translateX(10px);
+}
 .itemDetails-banner .tag span{
     display: flex;
     padding: 0 16px 4px 17px;
@@ -738,6 +760,7 @@ body .wp-pagenavi a:hover{
     font-family: "dnp-shuei-mincho-pr6";
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 .itemDetails-banner .link-action .btn-link{
     font-size: 18px;

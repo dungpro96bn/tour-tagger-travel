@@ -1,5 +1,8 @@
 <?php get_header();
 global $post;
+
+$tour_priceCheck = get_field('tour_price');
+
 ?>
 
     <div id="tour-single" class="post-template tour-single-page">
@@ -7,6 +10,9 @@ global $post;
         <div class="header-top"></div>
 
         <div class="inner">
+
+            <h2 class="title-1"><span class="dnp-s-m">国内ツアー / 国外ツアー 両方</span></h2>
+
             <div class="columns-page">
 
                 <div class="columns-main">
@@ -70,6 +76,16 @@ global $post;
                             <div class="tour-inner">
                                 <div class="tour-schedule">
                                     <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>ツアースケジュール</span></h3>
+
+                                    <?php
+                                    //if($tour_priceCheck):
+                                    $tour_time = get_field('tour_time');
+                                    if($tour_time == "半日" || $tour_time == "1日"):?>
+                                    <?php else: ?>
+                                        <p class="time-tourBox dnp-s-m" data-aos="fade-up"><?php echo $tour_time; ?></p>
+                                    <?php endif; ?>
+                                    <?php// endif; ?>
+
                                     <?php
                                     if (have_rows('tour_schedule')):?>
                                         <ul class="tour-schedule-list" data-aos="fade-up">
@@ -123,7 +139,7 @@ global $post;
                                     <form method="POST" action="/contact/">
                                         <input type="hidden" name="title" value="<?php the_title(); ?>">
                                         <div class="submit-contact">
-                                            <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="このツアーを予約する"><i class="fa-light fa-angle-right"></i>
+                                            <input class="btn-contact dnp-s-m" type="submit" name="submitTour" <?php if($tour_priceCheck){ echo 'value="このツアーを予約する"';} else{ echo 'value="料金はお問い合わせください"';} ?> ><i class="fa-light fa-angle-right"></i>
                                         </div>
                                     </form>
                                 </div>
@@ -172,7 +188,7 @@ global $post;
                                         <form method="POST" action="/contact/">
                                             <input type="hidden" name="title" value="<?php the_title(); ?>">
                                             <div class="submit-contact">
-                                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="このツアーを予約する"><i class="fa-light fa-angle-right"></i>
+                                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" <?php if($tour_priceCheck){ echo 'value="このツアーを予約する"';} else{ echo 'value="料金はお問い合わせください"';} ?> ><i class="fa-light fa-angle-right"></i>
                                             </div>
                                         </form>
                                     </div>
@@ -212,7 +228,7 @@ global $post;
                                         <form method="POST" action="/contact/">
                                             <input type="hidden" name="title" value="<?php the_title(); ?>">
                                             <div class="submit-contact">
-                                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="このツアーを予約する"><i class="fa-light fa-angle-right"></i>
+                                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" <?php if($tour_priceCheck){ echo 'value="このツアーを予約する"';} else{ echo 'value="料金はお問い合わせください"';} ?> ><i class="fa-light fa-angle-right"></i>
                                             </div>
                                         </form>
                                     </div>

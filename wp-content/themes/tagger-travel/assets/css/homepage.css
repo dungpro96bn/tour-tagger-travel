@@ -466,6 +466,20 @@
 .vietnam-tour .tourInfo .list-imageTour{
     margin-bottom: 2px;
 }
+.vietnam-tour .tourInfo .list-imageTour .item-imageTour .image{
+    position: relative;
+    padding-bottom: 52.6%;
+    display: block;
+}
+.vietnam-tour .tourInfo .list-imageTour .item-imageTour .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
 .vietnam-tour .sliderInfo-tour{
     margin-bottom: 20px;
 }

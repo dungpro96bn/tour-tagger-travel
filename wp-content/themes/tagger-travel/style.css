@@ -453,6 +453,9 @@ body.header-open .bg-headerOpen{
 
 }
 
+html :where(img[class*=wp-image-]){
+    width: 100%;
+}
 
 /*Header*/
 #header-menu{

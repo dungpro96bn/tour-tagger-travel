@@ -25,6 +25,11 @@ jQuery(function ($) {
         arrows: true,
         // fade: true,
         dots: true,
+        autoplay: true,
+        pauseOnHover: false,
+        focusOnSelect: false,
+        pauseOnFocus: false,
+        autoplaySpeed: 2000,
         asNavFor: '#northern .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -50,6 +55,11 @@ jQuery(function ($) {
         arrows: true,
         // fade: true,
         dots: true,
+        autoplay: true,
+        pauseOnHover: false,
+        focusOnSelect: false,
+        pauseOnFocus: false,
+        autoplaySpeed: 2000,
         asNavFor: '#central .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -75,6 +85,11 @@ jQuery(function ($) {
         arrows: true,
         // fade: true,
         dots: true,
+        autoplay: true,
+        pauseOnHover: false,
+        focusOnSelect: false,
+        pauseOnFocus: false,
+        autoplaySpeed: 2000,
         asNavFor: '#southern .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -100,6 +115,11 @@ jQuery(function ($) {
         arrows: true,
         // fade: true,
         dots: true,
+        autoplay: true,
+        pauseOnHover: false,
+        focusOnSelect: false,
+        pauseOnFocus: false,
+        autoplaySpeed: 2000,
         asNavFor: '#southern-resort .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -124,6 +144,7 @@ jQuery(function ($) {
         arrows: true,
         // fade: true,
         dots: false,
+        autoplaySpeed: 2000,
         asNavFor: '.post-template .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +

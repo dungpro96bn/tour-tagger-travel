@@ -267,14 +267,20 @@ $post_slug = $post->post_name;
                                                 <div class="info">
                                                     <?php echo get_sub_field('description_recommended_restaurants_northern'); ?>
                                                 </div>
-                                                <p class="tag">
+                                                <div class="tag">
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
-                                                        <?php foreach ($locations as $location): ?>
-                                                            <span><?php echo $location; ?></span>
+                                                        <?php foreach ($locations as $location):
+                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
-                                                </p>
+
+                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
+                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約 <i class="fa-solid fa-angle-right"></i></a>
+                                                    <?php endif; ?>
+                                                </div>
                                                 <div class="link-action">
                                                     <?php $view_map = get_sub_field('view_map_recommended_restaurants_northern');
                                                     if($view_map): ?>
@@ -286,10 +292,6 @@ $post_slug = $post->post_name;
                                                         <a target="_blank" class="btn-link dnp-s-m" href="<?php echo $official_site; ?>">オフィシャルサイト</a>
                                                     <?php endif; ?>
 
-                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
-                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
-                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                         </li>
@@ -457,14 +459,20 @@ $post_slug = $post->post_name;
                                                 <div class="info">
                                                     <?php echo get_sub_field('description_recommended_restaurants_northern'); ?>
                                                 </div>
-                                                <p class="tag">
+                                                <div class="tag">
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
-                                                        <?php foreach ($locations as $location): ?>
-                                                            <span><?php echo $location; ?></span>
+                                                        <?php foreach ($locations as $location):
+                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
-                                                </p>
+
+                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
+                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
+                                                    <?php endif; ?>
+                                                </div>
                                                 <div class="link-action">
                                                     <?php $view_map = get_sub_field('view_map_recommended_restaurants_northern');
                                                     if($view_map): ?>
@@ -474,11 +482,6 @@ $post_slug = $post->post_name;
                                                     <?php $official_site = get_sub_field('official_site_recommended_restaurants_northern');
                                                     if($official_site): ?>
                                                         <a target="_blank" class="btn-link dnp-s-m" href="<?php echo $official_site; ?>">オフィシャルサイト</a>
-                                                    <?php endif; ?>
-
-                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
-                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
@@ -648,14 +651,20 @@ $post_slug = $post->post_name;
                                                 <div class="info">
                                                     <?php echo get_sub_field('description_recommended_restaurants_northern'); ?>
                                                 </div>
-                                                <p class="tag">
+                                                <div class="tag">
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
-                                                        <?php foreach ($locations as $location): ?>
-                                                            <span><?php echo $location; ?></span>
+                                                        <?php foreach ($locations as $location):
+                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
-                                                </p>
+
+                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
+                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
+                                                    <?php endif; ?>
+                                                </div>
                                                 <div class="link-action">
                                                     <?php $view_map = get_sub_field('view_map_recommended_restaurants_northern');
                                                     if($view_map): ?>
@@ -665,11 +674,6 @@ $post_slug = $post->post_name;
                                                     <?php $official_site = get_sub_field('official_site_recommended_restaurants_northern');
                                                     if($official_site): ?>
                                                         <a target="_blank" class="btn-link dnp-s-m" href="<?php echo $official_site; ?>">オフィシャルサイト</a>
-                                                    <?php endif; ?>
-
-                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
-                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
@@ -837,14 +841,20 @@ $post_slug = $post->post_name;
                                                 <div class="info">
                                                     <?php echo get_sub_field('description_recommended_restaurants_northern'); ?>
                                                 </div>
-                                                <p class="tag">
+                                                <div class="tag">
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
-                                                        <?php foreach ($locations as $location): ?>
-                                                            <span><?php echo $location; ?></span>
+                                                        <?php foreach ($locations as $location):
+                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
-                                                </p>
+
+                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
+                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
+                                                    <?php endif; ?>
+                                                </div>
                                                 <div class="link-action">
                                                     <?php $view_map = get_sub_field('view_map_recommended_restaurants_northern');
                                                     if($view_map): ?>
@@ -854,11 +864,6 @@ $post_slug = $post->post_name;
                                                     <?php $official_site = get_sub_field('official_site_recommended_restaurants_northern');
                                                     if($official_site): ?>
                                                         <a target="_blank" class="btn-link dnp-s-m" href="<?php echo $official_site; ?>">オフィシャルサイト</a>
-                                                    <?php endif; ?>
-
-                                                    <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
-                                                    if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>

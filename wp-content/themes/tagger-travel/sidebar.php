@@ -19,7 +19,13 @@
                     <form method="POST" action="/contact/">
                         <input type="hidden" name="title" value="<?php the_title(); ?>">
                         <div class="submit-contact">
-                            <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="予約する"><i class="fa-light fa-angle-right"></i>
+                            <?php
+                            if ( get_post_type() === 'tour' ):
+                                $tour_priceCheck = get_field('tour_price'); ?>
+                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" <?php if($tour_priceCheck){ echo 'value="予約する"';} else{ echo 'value="料金はお問い合わせください"';} ?> ><i class="fa-light fa-angle-right"></i>
+                            <?php else: ?>
+                                <input class="btn-contact dnp-s-m" type="submit" name="submitTour" value="予約する"><i class="fa-light fa-angle-right"></i>
+                            <?php endif; ?>
                         </div>
                     </form>
                 </div>
