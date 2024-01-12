@@ -271,7 +271,7 @@ $post_slug = $post->post_name;
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
                                                         <?php foreach ($locations as $location):
-                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            $tag_id = get_term_by('id', $location, 'restaurant_location'); ?>
                                                             <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
@@ -463,14 +463,14 @@ $post_slug = $post->post_name;
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
                                                         <?php foreach ($locations as $location):
-                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            $tag_id = get_term_by('id', $location, 'restaurant_location'); ?>
                                                             <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
 
                                                     <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
                                                     if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約 <i class="fa-solid fa-angle-right"></i></a>
                                                     <?php endif; ?>
                                                 </div>
                                                 <div class="link-action">
@@ -655,14 +655,14 @@ $post_slug = $post->post_name;
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
                                                         <?php foreach ($locations as $location):
-                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            $tag_id = get_term_by('id', $location, 'restaurant_location'); ?>
                                                             <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
 
                                                     <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
                                                     if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約 <i class="fa-solid fa-angle-right"></i></a>
                                                     <?php endif; ?>
                                                 </div>
                                                 <div class="link-action">
@@ -845,14 +845,14 @@ $post_slug = $post->post_name;
                                                     <?php $locations = get_sub_field('location_recommended_restaurants_northern');
                                                     if ($locations): ?>
                                                         <?php foreach ($locations as $location):
-                                                            $tag_id = get_term_by('id', $location, 'location'); ?>
+                                                            $tag_id = get_term_by('id', $location, 'restaurant_location'); ?>
                                                             <span><?php echo $tag_id->name; ?></span>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
 
                                                     <?php $free_reservation = get_sub_field('free_reservation_recommended_restaurants_northern');
                                                     if($free_reservation && in_array('Yes', $free_reservation)): ?>
-                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約</a>
+                                                        <a target="_blank" class="btn-link dnp-s-m" href="/request-advice/">無料予約 <i class="fa-solid fa-angle-right"></i></a>
                                                     <?php endif; ?>
                                                 </div>
                                                 <div class="link-action">

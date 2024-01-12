@@ -11,7 +11,7 @@ $tour_priceCheck = get_field('tour_price');
 
         <div class="inner">
 
-            <h2 class="title-1"><span class="dnp-s-m">国内ツアー / 国外ツアー 両方</span></h2>
+            <h2 class="title-1" data-aos="fade-up"><span class="dnp-s-m">国内ツアー / 国外ツアー 両方</span></h2>
 
             <div class="columns-page">
 
