@@ -101,6 +101,9 @@
     margin-top: -13px;
     padding-left: 25px;
 }
+.bannerSlider .slider-with-text .heading-main{
+    display: none !important;
+}
 
 .bannerSlider .scroll-action{
     position: absolute;
@@ -248,7 +251,22 @@
 .bannerSlider .sliderHomepage .slick-dots li.slick-active button{
     background: #fff;
 }
-
+.bannerSlider .sliderHomepage .sliderItem-image .image{
+    position: relative;
+    /*padding-bottom: 60.42%;*/
+    display: block;
+    height: 58vw;
+    max-height: 1080px;
+}
+.bannerSlider .sliderHomepage .sliderItem-image .image img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+}
 
 
 .bannerSlider .bannerContent .newsTop{
@@ -1566,6 +1584,10 @@
 
 
     /*bannerSlider*/
+    .bannerSlider .sliderHomepage .sliderItem-image .image{
+        padding-bottom: 177.9%;
+        height: auto;
+    }
     .bannerSlider .heading-main .img-heading-main img {
         height: auto;
     }
@@ -1599,12 +1621,6 @@
         padding-left: 23px;
     }
 
-
-    .bannerSlider .bannerContent .sliderItem-image .image img{
-        height: 620px;
-        object-fit: cover;
-        object-position: center;
-    }
     .bannerSlider .bannerContent .left-slider {
         display: none;
     }

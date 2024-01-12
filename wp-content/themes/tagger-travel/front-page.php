@@ -10,6 +10,11 @@ get_header();
             <div class="left-slider" data-aos="fade-down">
                 <div class="titleTag"><a href="#vietnam-tour" class="scroll">Scroll</a></div>
             </div>
+            <?php
+            $str = get_field("image_slider_with_text");
+            $myArray = explode(',', $str);
+            $array1 = $myArray;
+            ?>
             <div class="right-slider">
                 <div class="sliderHomepage">
                     <div class="slider-inner">
@@ -17,12 +22,22 @@ get_header();
                             <?php
                             $images = get_field('slider_banner');
                             $size = 'full';
+                            $num = 1;
                             if( $images ): ?>
-                                <?php foreach( $images as $image_id ): ?>
-                                    <li class="sliderItem-image">
+                                <?php foreach( $images as $image_id ):
+                                    $number = $num++;
+                                    ?>
+                                    <li class="sliderItem-image <?php if(in_array($number, $array1)){ echo "slider-text-".$number." slider-with-text"; } ?>">
                                         <picture class="image">
                                             <?php echo wp_get_attachment_image($image_id, $size); ?>
                                         </picture>
+                                        <div class="heading-main">
+                                            <h1 class="heading" data-aos="fade-up">
+                                                <span class="ttl-ja dnp-s-m"><?php echo get_field('heading_banner_01'); ?></span>
+                                                <span class="text-big"><?php echo get_field('heading_banner_02'); ?></span>
+                                                <span class="ttl-sub"><?php echo get_field('heading_banner_03'); ?></span>
+                                            </h1>
+                                        </div>
                                     </li>
                                 <?php endforeach; ?>
                             <?php endif; ?>
@@ -61,13 +76,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="heading-main">
-            <h1 class="heading" data-aos="fade-up">
-                <span class="ttl-ja dnp-s-m"><?php echo get_field('heading_banner_01'); ?></span>
-                <span class="text-big"><?php echo get_field('heading_banner_02'); ?></span>
-                <span class="ttl-sub"><?php echo get_field('heading_banner_03'); ?></span>
-            </h1>
-        </div>
+
 <!--        <div class="scroll-action"><a href="#vietnam-tour" class="scroll gp-p">Scroll Down</a></div>-->
     </div>
 
