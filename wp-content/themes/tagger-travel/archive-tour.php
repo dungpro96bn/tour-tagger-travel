@@ -157,7 +157,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                             <?php while ($result->have_posts()) : $result->the_post();
                                                 $priceTour = get_field('tour_price');
                                                 $price = str_replace(',','',$priceTour);
-                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                $priceAfterExchange = (float)$exchange_rate_vnd * (float)$price;
                                                 ?>
                                                 <li class="tourItem-area" data-aos="fade-up">
                                                     <a href="<?php the_permalink(); ?>" class="box-shadow">
@@ -239,7 +239,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                             <?php while ($result->have_posts()) : $result->the_post();
                                                 $priceTour = get_field('tour_price');
                                                 $price = str_replace(',','',$priceTour);
-                                                $priceAfterExchange = (int)$exchange_rate_vnd * (int)$price;
+                                                $priceAfterExchange = (float)$exchange_rate_vnd * (float)$price;
                                                 ?>
                                                 <li class="tourItem-area" data-aos="fade-up">
                                                     <a href="<?php the_permalink(); ?>" class="box-shadow">
