@@ -367,6 +367,7 @@
 .vietnam-tour .vietnam-tourContent{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 .vietnam-tour .tourInfo{
     width: 50%;
