@@ -653,7 +653,8 @@
 }
 .post-template .tour-schedule-item .inner-info{
     background: #F9F6F5;
-    display: inline-block;
+    display: block;
+    width: 100%;
     padding: 20px;
     position: relative;
 }
