@@ -641,10 +641,12 @@
     display: none;
 }
 .post-template .tour-schedule-item .tour-schedule-info p{
-    display: inline-block;
+    display: block;
     font-size: 15px;
     line-height: 22px;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    overflow: hidden;
 }
 .post-template .tour-schedule-item .tour-schedule-info p:last-child{
     margin-bottom: 0;
@@ -654,6 +656,12 @@
     display: inline-block;
     padding: 20px;
     position: relative;
+}
+.post-template .tour-schedule-item .inner-info img{
+    max-width: 240px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 .post-template .tour-schedule-item .inner-info:before{
     content: "";
