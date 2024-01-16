@@ -1,3 +1,5 @@
+// import {al} from "../../../../plugins/all-in-one-seo-pack/dist/Lite/assets/js/vue.runtime.esm-bundler.4a881941";
+
 jQuery(function ($) {
 
     //Slider banner homepage
@@ -510,7 +512,12 @@ jQuery(function ($) {
         if(href === pathName){
             $(this).parents(".menu-item").addClass("current-menu-item");
         }
-    })
+    });
+
+    $("#schedule-start").change(function () {
+        var valTime = $(this).val();
+        $(".tour-schedule-list").attr("data-time", valTime);
+    });
 
 
 

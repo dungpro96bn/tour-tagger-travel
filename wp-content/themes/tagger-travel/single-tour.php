@@ -88,10 +88,32 @@ $tour_priceCheck = get_field('tour_price');
 
                                     <?php
                                     if (have_rows('tour_schedule')):?>
-                                        <ul class="tour-schedule-list" data-aos="fade-up">
+                                        <?php if($tour_time == "半日"):
+                                            $num = 1;?>
+                                            <?php while (have_rows('tour_schedule')) : the_row();
+                                                $number = $num++; ?>
+                                            <?php
+                                            if($number == 1){
+                                               $schedule_time_morning = get_sub_field('schedule_time');
+                                               $schedule_time_afternoon = get_sub_field('schedule_time_afternoon');
+                                            } ?>
+                                            <?php endwhile; ?>
+                                            <div class="select-schedule-start" data-aos="fade-up">
+                                                <p class="title dnp-s-m">開始時間</p>
+                                                <div class="select-time">
+                                                    <select id="schedule-start" name="schedule-start" class="dnp-s-m">
+                                                        <option value="schedule_time_morning"><?php echo $schedule_time_morning; ?></option>
+                                                        <option value="schedule_time_afternoon"><?php echo $schedule_time_afternoon; ?></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                        <ul class="tour-schedule-list" data-time="<?php if($tour_time == "半日"){ echo "schedule_time_morning"; }?>" data-aos="fade-up">
                                             <?php while (have_rows('tour_schedule')) : the_row(); ?>
                                                 <li class="tour-schedule-item">
-                                                    <p class="title-time"><span class="c-g"><?php echo get_sub_field('schedule_time'); ?></span>頃</p>
+                                                    <p class="title-time">
+                                                        <span class="c-g time-morning"><?php echo get_sub_field('schedule_time'); ?></span>
+                                                        <span class="c-g time-afternoon"><?php echo get_sub_field('schedule_time_afternoon'); ?></span>頃</p>
                                                     <div class="tour-schedule-info">
                                                         <div class="inner-info">
                                                             <?php echo get_sub_field('schedule_content'); ?>

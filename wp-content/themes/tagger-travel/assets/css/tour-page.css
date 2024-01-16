@@ -631,6 +631,15 @@
     font-weight: bold;
     margin-right: 8px;
 }
+.post-template .tour-schedule-list[data-time="schedule_time_morning"] .tour-schedule-item .time-afternoon {
+    display: none;
+}
+.post-template .tour-schedule-list[data-time="schedule_time_afternoon"] .tour-schedule-item .time-afternoon {
+    display: inline-block;
+}
+.post-template .tour-schedule-list[data-time="schedule_time_afternoon"] .tour-schedule-item .time-morning{
+    display: none;
+}
 .post-template .tour-schedule-item .tour-schedule-info p{
     display: inline-block;
     font-size: 15px;
@@ -954,10 +963,46 @@
 }
 
 
-
-
-
-
+.select-schedule-start{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+.select-schedule-start .title{
+    font-size: 20px;
+    line-height: 30px;
+    color: #866C2E;
+    font-weight: 500;
+    position: relative;
+}
+.select-schedule-start .select-time{
+    position: relative;
+}
+.select-schedule-start .select-time:after{
+    content: "\f107";
+    position: absolute;
+    font-family: "Font Awesome 6 Pro";
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #866C2E;
+    font-size: 16px;
+    font-weight: 400;
+}
+.select-schedule-start .select-time select{
+    width: 110px;
+    padding-left: 15px;
+    height: 40px;
+    border: 1px solid #DED8D4;
+    font-size: 18px;
+    font-weight: 500;
+    color: #866C2E;
+    -webkit-appearance: none;
+    padding-bottom: 2px;
+}
 
 
 
