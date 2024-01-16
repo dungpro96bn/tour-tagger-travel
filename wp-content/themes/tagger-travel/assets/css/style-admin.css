@@ -23,6 +23,12 @@
     font-weight: bold;
 }
 
+body .html-active .switch-html,
+body .tmce-active .switch-tmce{
+    background: #2271b1;
+    color: #fff;
+    border-bottom-color: #2271b1;
+}
 
 
 
