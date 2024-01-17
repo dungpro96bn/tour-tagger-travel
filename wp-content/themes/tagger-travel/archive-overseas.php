@@ -100,10 +100,18 @@
                                             <li class="overseas_item" data-id="<?php echo get_the_ID(); ?>" data-aos="fade-up">
                                                 <a href="<?php echo $area->slug."/".$post->post_name; ?>" class="box-shadow">
                                                     <div class="featured-image">
-                                                        <picture class="image">
-                                                            <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
-                                                            <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-                                                        </picture>
+                                                        <?php $image = get_the_post_thumbnail_url();
+                                                        if($image): ?>
+                                                            <picture class="image">
+                                                                <source srcset="<?php echo get_the_post_thumbnail_url(); ?>">
+                                                                <img class="sizes" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+                                                            </picture>
+                                                        <?php else: ?>
+                                                            <picture class="image">
+                                                                <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/no-image.jpg">
+                                                                <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/no-image.jpg" alt="<?php the_title(); ?>">
+                                                            </picture>
+                                                        <?php endif; ?>
                                                         <span class="time-tour dnp-s-m"><?php echo get_field('tour_time'); ?></span>
                                                     </div>
                                                     <div class="hotel_information">
