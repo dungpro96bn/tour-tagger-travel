@@ -522,13 +522,13 @@
     position: relative;
     color: #6A5D54;
 }
-.vietnam-tour .popular-tourist-destination .title:after{
+.vietnam-tour .popular-tourist-destination .location:after{
     content: "";
     position: absolute;
-    height: 15px;
+    height: calc(100% - 15px);
     border-left: 2px solid #C3C1C2;
     top: 54%;
-    right: -2px;
+    left: 0px;
     transform: translateY(-50%);
 }
 .vietnam-tour .popular-tourist-destination .location{
