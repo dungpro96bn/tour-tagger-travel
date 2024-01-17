@@ -35,11 +35,13 @@ $tour_priceCheck = get_field('tour_price');
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         </ul>
-                        <ul class="list-thumbnailTour">
-                            <?php
-                            $images = get_field('image_slider_tour');
-                            $size = 'full';
-                            if( $images ): ?>
+
+                        <?php
+                        $images = get_field('image_slider_tour');
+                        $countImage = count($images);
+                        $size = 'full';
+                        if( $images ): ?>
+                            <ul class="list-thumbnailTour <?php if($countImage < 6){ echo "listImage-min";} ?>">
                                 <?php foreach( $images as $image_id ): ?>
                                     <li class="item-thumbnailTour">
                                         <picture class="image">
@@ -47,8 +49,9 @@ $tour_priceCheck = get_field('tour_price');
                                         </picture>
                                     </li>
                                 <?php endforeach; ?>
-                            <?php endif; ?>
-                        </ul>
+                            </ul>
+                        <?php endif; ?>
+
                     </div>
 
                     <?php endif; ?>

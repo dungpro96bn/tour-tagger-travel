@@ -32,6 +32,7 @@ jQuery(function ($) {
         focusOnSelect: false,
         pauseOnFocus: false,
         autoplaySpeed: 2000,
+        infinite: true,
         asNavFor: '#northern .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -41,13 +42,13 @@ jQuery(function ($) {
             "</svg>\n</button>",
     });
     $('#northern .list-thumbnailTour').slick({
-        slidesToShow: count1,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '#northern .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
-        infinite: false,
+        infinite: true,
     });
 
     var count2 = $('#central .list-imageTour').attr("data-count");
@@ -62,6 +63,7 @@ jQuery(function ($) {
         focusOnSelect: false,
         pauseOnFocus: false,
         autoplaySpeed: 2000,
+        infinite: true,
         asNavFor: '#central .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -71,13 +73,13 @@ jQuery(function ($) {
             "</svg>\n</button>",
     });
     $('#central .list-thumbnailTour').slick({
-        slidesToShow: count2,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '#central .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
-        infinite: false,
+        infinite: true,
     });
 
     var count3 = $('#southern .list-imageTour').attr("data-count");
@@ -92,6 +94,7 @@ jQuery(function ($) {
         focusOnSelect: false,
         pauseOnFocus: false,
         autoplaySpeed: 2000,
+        infinite: true,
         asNavFor: '#southern .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -101,13 +104,13 @@ jQuery(function ($) {
             "</svg>\n</button>",
     });
     $('#southern .list-thumbnailTour').slick({
-        slidesToShow: count3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '#southern .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
-        infinite: false,
+        infinite: true,
     });
 
     var count4 = $('#southern-resort .list-imageTour').attr("data-count");
@@ -122,6 +125,7 @@ jQuery(function ($) {
         focusOnSelect: false,
         pauseOnFocus: false,
         autoplaySpeed: 2000,
+        infinite: true,
         asNavFor: '#southern-resort .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -131,13 +135,13 @@ jQuery(function ($) {
             "</svg>\n</button>",
     });
     $('#southern-resort .list-thumbnailTour').slick({
-        slidesToShow: count4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '#southern-resort .list-imageTour',
         dots: false,
         arrows: false,
         focusOnSelect: true,
-        infinite: false,
+        infinite: true,
     });
 
     $('.post-template .list-imageTour').slick({
@@ -147,6 +151,7 @@ jQuery(function ($) {
         // fade: true,
         dots: false,
         autoplaySpeed: 2000,
+        infinite: true,
         asNavFor: '.post-template .list-thumbnailTour',
         prevArrow:"<button type='button' class='slick-prev pull-left'><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"5.561\" height=\"9.707\" viewBox=\"0 0 5.561 9.707\">\n" +
             "  <path id=\"Path_957\" data-name=\"Path 957\" d=\"M1025.725,1702.412l-4.5,4.5,4.5,4.5\" transform=\"translate(-1020.518 -1702.058)\" fill=\"none\" stroke=\"#fff\" stroke-width=\"1\"/>\n" +
@@ -162,7 +167,7 @@ jQuery(function ($) {
         dots: false,
         arrows: false,
         focusOnSelect: true,
-        infinite: false,
+        infinite: true,
     });
 
 
@@ -254,6 +259,7 @@ jQuery(function ($) {
                 var id ='#'+target;
                 // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
                 $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+                $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
                 // $('#'+target+ ' ' +".tourInfo-item .aos-init").removeClass("aos-animate");
                 // AOS.refresh();
             });
@@ -272,6 +278,7 @@ jQuery(function ($) {
                 $('#'+target).addClass("active");
                 $('#line-contactBox').fadeOut();
                 $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+                $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
                 // AOS.refresh();
             });
         }
@@ -289,6 +296,7 @@ jQuery(function ($) {
             var id ='#'+target;
             // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+            $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
             // AOS.refresh();
         });
     } else {
@@ -309,6 +317,7 @@ jQuery(function ($) {
             $('#line-contactBox').fadeOut();
             $("#page-top").removeClass("is-open");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+            $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
             // AOS.refresh();
         });
     }

@@ -1118,9 +1118,9 @@ get_header();
                         <text id="ダナン" class="item-02" transform="translate(818 1816)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダナン</tspan></text>
                         <text id="ホイアン" class="item-02" transform="translate(842 1849)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホイアン</tspan></text>
                         <text id="ニャチャン" class="item-03" transform="translate(848 2035)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ニャチャン</tspan></text>
-                        <text id="ダラット" class="item-03" transform="translate(774.488 2073)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
-                        <text id="コンダオ島" class="item-04" transform="translate(774.488 2114.185)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
-                        <text id="カントー" class="item-04" transform="translate(507.665 2125)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
+                        <text id="ダラット" class="item-03" transform="translate(802 2058)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
+                        <text id="コンダオ島" class="item-04" transform="translate(767.487 2149.898)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
+                        <text id="カントー" class="item-03" transform="translate(507.665 2125)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
                         <text id="フーコック島" class="item-04" transform="translate(420 2093)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フーコック島</tspan></text>
                         <text id="ホーチミン" class="item-03" transform="translate(420 2030)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホーチミン</tspan></text>
                         <text id="ハロン湾" class="item-01" transform="translate(768 1630)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ハロン湾</tspan></text>
@@ -1169,7 +1169,7 @@ get_header();
                             <path id="Path_934-6" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                             <g id="Group_29-6" data-name="Group 29">
                                 <g id="Group_28-6" data-name="Group 28" clip-path="url(#clip-path-5)">
-                                    <path id="Path_935-6" class="star-04" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                    <path id="Path_935-6" class="star-03" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
                                 </g>
                             </g>
                         </g>
@@ -1224,15 +1224,25 @@ get_header();
                         <path id="Path_936" class="dots-01" data-name="Path 936" d="M598.025,1625,556,1580.705" transform="translate(5.003 -8.705)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_937" class="dots-01" data-name="Path 937" d="M578.557,1586.788l-50.974,32.985" transform="translate(182.142 43.599)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_945" class="dots-03" data-name="Path 945" d="M527.583,1586.788l50.974,32.985" transform="translate(265.391 403.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_946" class="dots-03" data-name="Path 946" d="M555.839,1569.432l22.718,50.341" transform="translate(191.879 441.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_947" class="dots-04" data-name="Path 947" d="M555.839,1569.432l66.438,9.7" transform="translate(145.443 528.753)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
-                        <path id="Path_948" class="dots-04" data-name="Path 948" d="M555.839,1569.432l-65.574,37" transform="translate(90.251 509.199)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_946" class="dots-03" data-name="Path 946" d="M555.839,1569.432l22.718,50.341" transform="matrix(0.899, -0.438, 0.438, 0.899, -430.065, 845.623)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_947" class="dots-04" data-name="Path 947" d="M555.839,1569.432l66.438,9.7" transform="translate(684.352 433.203) rotate(19)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_948" class="dots-03" data-name="Path 948" d="M555.839,1569.432l-65.574,37" transform="translate(90.251 509.199)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_949" class="dots-04" data-name="Path 949" d="M555.839,1569.432l-65.574,37" transform="translate(36.406 480.566)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_942" class="dots-02" data-name="Path 942" d="M578.557,1586.788l-50.974,32.985" transform="translate(214.417 201.212)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_943" class="dots-02" data-name="Path 943" d="M578.557,1586.788l-50.974,32.985" transform="translate(233.116 226.72)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_944" class="dots-02" data-name="Path 944" d="M578.557,1586.788l-50.974,32.985" transform="translate(254.93 255.712)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_938" class="dots-01" data-name="Path 938" d="M598.025,1625H529.691" transform="translate(41.975 64.599)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
                         <path id="Path_950" class="dots-03" data-name="Path 950" d="M598.025,1625H433.764" transform="translate(73.337 399.414)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <path id="Path_4850" class="dots-03" data-name="Path 4850" d="M555.839,1569.432l22.718,50.341" transform="translate(-293.448 743.432) rotate(-19)" fill="none" stroke="#918569" stroke-width="2" stroke-dasharray="4"/>
+                        <g id="Group_672" data-name="Group 672" transform="translate(718.211 2018)">
+                            <path id="Path_934-13" data-name="Path 934" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                            <g id="Group_29-13" data-name="Group 29">
+                                <g id="Group_28-13" data-name="Group 28" clip-path="url(#clip-path-2)">
+                                    <path id="Path_935-13" class="star-03" data-name="Path 935" d="M13.409,1.618l2.8,8.624h9.068l-7.336,5.33,2.8,8.624-7.336-5.33L6.073,24.2l2.8-8.624-7.336-5.33h9.068Z" transform="translate(-1.422 -1.495)" fill="#918569"/>
+                                </g>
+                            </g>
+                        </g>
+                        <text id="ファンティエット" class="item-03" transform="translate(786 2104)" fill="#918569" font-size="16" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ファンティエット</tspan></text>
                     </g>
                 </g>
             </svg>
@@ -2331,7 +2341,7 @@ get_header();
                         </g>
                         <g id="Group_210" data-name="Group 210" transform="translate(158.716 1382)">
                             <g id="Group_28-6" data-name="Group 28" transform="translate(12.784 58)" clip-path="url(#clip-path-8)">
-                                <path id="Path_935-6" class="star-04" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                                <path id="Path_935-6" class="star-03" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
                             </g>
                         </g>
                         <g id="Group_211" data-name="Group 211" transform="translate(210.026 1344.641)">
@@ -2351,17 +2361,24 @@ get_header();
                         </g>
                         <text id="ニャチャン" class="item-03" transform="translate(285.145 1402)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ニャチャン</tspan></text>
                         <text id="ダラット" class="item-03" transform="translate(285.729 1425.588)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダラット</tspan></text>
-                        <text id="コンダオ島" class="item-04" transform="translate(242 1457)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
-                        <text id="カントー" class="item-04" transform="translate(74 1469)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
+                        <text id="コンダオ島" class="item-04" transform="translate(249 1467)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">コンダオ島</tspan></text>
+                        <text id="カントー" class="item-03" transform="translate(74 1469)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">カントー</tspan></text>
                         <text id="フーコック島" class="item-04" transform="translate(31 1445)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フーコック島</tspan></text>
                         <text id="ホーチミン" class="item-03" transform="translate(55 1421)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホーチミン</tspan></text>
                         <path id="Path_1934" class="star-04" data-name="Path 1934" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(145.33 1429.084)" fill="#918569"/>
-                        <path id="Path_1936" class="dots-04" data-name="Path 1936" d="M566.655,1571.311l-36.425,6.447" transform="translate(-327.126 -117.847)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
-                        <path id="Path_1937" class="dots-04" data-name="Path 1937" d="M566.655,1571.311l-44,15.824" transform="translate(-395.155 -122.535)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1936" class="dots-04" data-name="Path 1936" d="M566.655,1571.311l-36.425,6.447" transform="translate(44.995 -196.28) rotate(13)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
+                        <path id="Path_1937" class="dots-03" data-name="Path 1937" d="M566.655,1571.311l-44,15.824" transform="translate(-395.155 -122.535)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
                         <path id="Path_1938" class="dots-04" data-name="Path 1938" d="M566.655,1571.311l-38.6,2.789" transform="translate(-419.786 -133.223)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
                         <text id="フエ" class="item-02" transform="translate(257 1305)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">フエ</tspan></text>
                         <text id="ダナン" class="item-02" transform="translate(272 1321)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ダナン</tspan></text>
                         <text id="ホイアン" class="item-02" transform="translate(283 1341)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ホイアン</tspan></text>
+                        <g id="star-new" transform="translate(199.758 1361.246)">
+                            <g id="Group_28-10" data-name="Group 28" transform="translate(12.784 58)" clip-path="url(#clip-path-4)">
+                                <path id="Path_935-10" class="star-03" data-name="Path 935" d="M7.444,1.618l1.394,4.29h4.511L9.7,8.56l1.394,4.29L7.444,10.2,3.794,12.85,5.188,8.56,1.539,5.908H6.05Z" transform="translate(-1.481 -1.557)" fill="#918569"/>
+                            </g>
+                        </g>
+                        <text id="ファンティエット" class="item-03" transform="translate(258 1443.917)" fill="#918569" font-size="12" font-family="DNPShueiMinPr6-M, DNPShueiMinPr6"><tspan x="0" y="0">ファンティエット</tspan></text>
+                        <path id="dots-new" class="dots-03" d="M560.813,1577.758H530.23" transform="matrix(0.956, 0.292, -0.292, 0.956, 179.351, -235.52)" fill="none" stroke="#918569" stroke-width="1" stroke-dasharray="2 2"/>
                     </g>
                 </g>
             </svg>
@@ -2427,9 +2444,10 @@ get_header();
                                     </ul>
                                     <?php
                                     $images = get_field('image_slider');
+                                    $countImage = count($images);
                                     $size = 'full';
                                     if ($images): ?>
-                                        <ul class="list-thumbnailTour" data-count="<?php echo count($images); ?>">
+                                        <ul class="list-thumbnailTour <?php if($countImage < 6){ echo "listImage-min";} ?>" data-count="<?php echo count($images); ?>">
                                             <?php foreach ($images as $image_id): ?>
                                                 <li class="item-thumbnailTour">
                                                     <picture class="image">

@@ -438,11 +438,14 @@
     object-position: center;
 }
 .vietnam-tour .tourInfo .list-thumbnailTour .slick-track{
+    display: flex;
+    /*grid-template-columns: repeat(5,1fr);*/
+    column-gap: 2px;
+}
+.vietnam-tour .tourInfo .list-thumbnailTour.listImage-min .slick-track{
     transform: unset !important;
     width: 100% !important;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    column-gap: 2px;
+    justify-content: center;
 }
 .vietnam-tour .tourInfo .list-thumbnailTour .slick-track:before,
 .vietnam-tour .tourInfo .list-thumbnailTour .slick-track:after{
@@ -451,7 +454,7 @@
 .vietnam-tour .tourInfo .list-thumbnailTour .slick-slide{
     opacity: .3;
     transition: .3s;
-    width: auto !important;
+    /*width: auto !important;*/
 }
 .list-thumbnailTour{
     cursor: pointer;
@@ -507,6 +510,7 @@
     border-radius: 6px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     padding: 9px 32px 13px;
     margin-bottom: 32px;
 }
