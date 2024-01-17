@@ -40,58 +40,29 @@
                 </div>
                 <?php if ( get_post_type() == 'tour' ):?>
                     <ul class="areaList-search">
-                        <li class="areaItem-search">
-                            <a class="" href="/tour/#northern">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image01_pc.png">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image01_pc.png" alt="">
-                                </picture>
-                                <div class="title-item">
-                                    <p class="area-ja dnp-s-m">北部エリア</p>
-                                    <p class="area-en gp-p">Northern</p>
-                                </div>
-                                <i class="fa-light fa-angle-right"></i>
-                            </a>
-                        </li>
-                        <li class="areaItem-search">
-                            <a class="" href="/tour/#central">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image02_pc.png">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image02_pc.png" alt="">
-                                </picture>
-                                <div class="title-item">
-                                    <p class="area-ja dnp-s-m">中部エリア</p>
-                                    <p class="area-en gp-p">Central</p>
-                                </div>
-                                <i class="fa-light fa-angle-right"></i>
-                            </a>
-                        </li>
-                        <li class="areaItem-search">
-                            <a class="" href="/tour/#southern">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image03_pc.png">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image03_pc.png" alt="">
-                                </picture>
-                                <div class="title-item">
-                                    <p class="area-ja dnp-s-m">南部エリア</p>
-                                    <p class="area-en gp-p">Southern</p>
-                                </div>
-                                <i class="fa-light fa-angle-right"></i>
-                            </a>
-                        </li>
-                        <li class="areaItem-search">
-                            <a class="" href="/tour/#southern-resort">
-                                <picture class="image">
-                                    <source srcset="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image04_pc.png">
-                                    <img class="sizes" src="<?php bloginfo('template_directory'); ?>/assets/images/area_search_image04_pc.png" alt="">
-                                </picture>
-                                <div class="title-item">
-                                    <p class="area-ja dnp-s-m">南部リゾートエリア</p>
-                                    <p class="area-en gp-p">Southern Resort</p>
-                                </div>
-                                <i class="fa-light fa-angle-right"></i>
-                            </a>
-                        </li>
+                        <?php
+                        $args = array(
+                            'taxonomy' => 'area',
+                            'hide_empty' => false,
+                            'orderby' => 'term_id',
+                            'parent' => 0
+                        );
+                        $areas = get_categories($args); ?>
+                        <?php foreach ($areas as $area) : ?>
+                            <li class="areaItem-search" <?php if($area->count == 0){ echo 'style: pointer-events: none;';} ?>>
+                                <a class="" data-id="<?php echo $area->term_id; ?>" href="/tour/#<?php echo $area->slug; ?>">
+                                    <picture class="image">
+                                        <source srcset="<?php echo $area->category_description; ?>">
+                                        <img class="sizes" src="<?php echo $area->category_description; ?>" alt="">
+                                    </picture>
+                                    <div class="title-item">
+                                        <p class="area-ja dnp-s-m"><?php echo $area->name; ?></p>
+                                        <p class="area-en gp-p"><?php echo str_replace('-', ' ', $area->slug) ?></p>
+                                    </div>
+                                    <i class="fa-light fa-angle-right"></i>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
                     </ul>
                 <?php elseif (get_post_type() == 'overseas'): ?>
                     <ul class="areaList-search">
