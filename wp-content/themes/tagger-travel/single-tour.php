@@ -224,11 +224,11 @@ $tour_priceCheck = get_field('tour_price');
                                         <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>お支払い方法</span></h3>
                                         <ul class="payment-method-list">
                                             <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">●銀行振込</p>
+                                                <p class="ttl dnp-s-m">● 銀行振込</p>
                                                 <p class="text">期日までに指定の口座にご入金お願い致します。<br/>ご入金確認ができませんとキャンセルとみなすこともございますのでご了承ください。</p>
                                             </li>
                                             <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">●現地、ホーチミンまたはハノイのツアーデスクにてお支払い</p>
+                                                <p class="ttl dnp-s-m">● 現地、ホーチミンまたはハノイのツアーデスクにてお支払い</p>
                                                 <p class="text">ホーチミン、ハノイにおいて、下記弊社ツアーデスクにてお支払いいただけます。ご来店予定日時がお決まりになりましたら、手配担当者へお知らせください。手配担当者からツアーデスクのスタッフへお客様のご来店日時やお支払い料金を引継ぎます。<br/><br/>
                                                     ***********************************************************<br/>
                                                     TAGGER TRAVEL CO., LTD.<br/>
@@ -247,7 +247,7 @@ $tour_priceCheck = get_field('tour_price');
                                                     ***********************************************************</p>
                                             </li>
                                             <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">●ガイドさんへお支払い</p>
+                                                <p class="ttl dnp-s-m">● ガイドさんへお支払い</p>
                                                 <p class="text">ツアーご参加時に弊社の日本語ガイドに直接お支払いくださいませ。<br/>お支払いには、現金（USドル、日本円*、ベトナムドン）がご利用いただけます。</p><br/>
                                                 <p class="text">※日本円へ換算する際、振込当日の弊社のレートを適応させていただきます。<br/>弊社のレートはホームページから確認できます。</p>
                                             </li>

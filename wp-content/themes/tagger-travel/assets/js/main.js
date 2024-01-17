@@ -150,6 +150,7 @@ jQuery(function ($) {
         arrows: true,
         // fade: true,
         dots: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         infinite: true,
         asNavFor: '.post-template .list-thumbnailTour',
