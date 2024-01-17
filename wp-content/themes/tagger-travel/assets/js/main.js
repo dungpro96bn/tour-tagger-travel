@@ -529,6 +529,29 @@ jQuery(function ($) {
         $(".tour-schedule-list").attr("data-time", valTime);
     });
 
+    var checkImg = $(".post-template .inner-info p img");
+    if(checkImg.length){
+        checkImg.each(function () {
+            $(this).parents("p").addClass("contentImg");
+        });
+    }
+
+    var checkUl = $(".post-template .inner-info ul");
+    if(checkUl.length){
+        checkUl.each(function () {
+            $(this).addClass("contentUl");
+        });
+    }
+
+    $(".post-template .inner-info").each(function () {
+        var checkImg1 = $(this).find("p img");
+        var checkUl1 = $(this).find("ul");
+        if(checkUl1.length && checkImg1.length){
+            $(this).addClass("image-text");
+        }
+    });
+
+
 
 
 });

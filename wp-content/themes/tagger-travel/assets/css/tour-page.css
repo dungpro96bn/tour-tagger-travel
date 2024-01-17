@@ -650,7 +650,8 @@
 .post-template .tour-schedule-list[data-time="schedule_time_afternoon"] .tour-schedule-item .time-morning{
     display: none;
 }
-.post-template .tour-schedule-item .tour-schedule-info p{
+.post-template .tour-schedule-item .tour-schedule-info p,
+.post-template .tour-schedule-item .tour-schedule-info li{
     display: block;
     font-size: 15px;
     line-height: 22px;
@@ -667,6 +668,21 @@
     width: 100%;
     padding: 20px;
     position: relative;
+}
+.post-template .tour-schedule-item .inner-info.image-text .contentImg{
+    width: 260px;
+    float: left;
+}
+.post-template .tour-schedule-item .inner-info.image-text .contentUl{
+    width: calc(100% - 260px);
+    margin-bottom: 15px;
+    float: left;
+}
+.post-template .tour-schedule-item .inner-info.image-text .contentUl li{
+    margin-bottom: 15px;
+}
+.post-template .tour-schedule-item .inner-info.image-text .contentUl li:last-child{
+    margin-bottom: 0;
 }
 .post-template .tour-schedule-item .inner-info img{
     max-width: 240px;
@@ -1323,7 +1339,8 @@
         margin-bottom: 20px;
     }
 
-    .post-template .tour-schedule-item .tour-schedule-info p{
+    .post-template .tour-schedule-item .tour-schedule-info p,
+    .post-template .tour-schedule-item .tour-schedule-info li{
         font-size: 13px;
         line-height: 20px;
     }
@@ -1696,7 +1713,8 @@
         padding-left: 36px;
         width: calc(100% - 40px);
     }
-    .post-template .tour-schedule-item .tour-schedule-info p {
+    .post-template .tour-schedule-item .tour-schedule-info p,
+    .post-template .tour-schedule-item .tour-schedule-info li{
         font-size: 15px;
         line-height: 22px;
     }
