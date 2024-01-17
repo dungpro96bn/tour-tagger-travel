@@ -150,12 +150,14 @@ $tour_priceCheck = get_field('tour_price');
                                         <div class="tour-notes-content" data-aos="fade-up">
                                             <?php echo $tour_notes; ?>
                                         </div>
+                                        <?php if($notice): ?>
                                         <div class="notice" data-aos="fade-up">
                                             <p class="ttl dnp-s-m">お知らせ</p>
                                             <div class="notice-content">
                                                 <?php echo $notice; ?>
                                             </div>
                                         </div>
+                                        <?php endif; ?>
                                     </div>
                                 <?php endif; ?>
 
