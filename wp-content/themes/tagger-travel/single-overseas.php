@@ -70,8 +70,7 @@ global $post;
                                         <ul class="tour-schedule-list">
                                             <?php while (have_rows('tour_schedule')) : the_row(); ?>
                                                 <li class="tour-schedule-item" data-aos="fade-up">
-                                                    <p class="title-time"><span
-                                                                class="c-g"><?php echo get_sub_field('schedule_time'); ?></span>頃
+                                                    <p class="title-time"><span class="c-g"><?php echo get_sub_field('schedule_time'); ?></span>頃
                                                     </p>
                                                     <div class="tour-schedule-info">
                                                         <div class="inner-info">
@@ -106,12 +105,14 @@ global $post;
                                         <div class="tour-notes-content" data-aos="fade-up">
                                             <?php echo $tour_notes; ?>
                                         </div>
-                                        <div class="notice" data-aos="fade-up">
-                                            <p class="ttl dnp-s-m">お知らせ</p>
-                                            <div class="notice-content">
-                                                <?php echo $notice; ?>
+                                        <?php if($notice): ?>
+                                            <div class="notice" data-aos="fade-up">
+                                                <p class="ttl dnp-s-m">お知らせ</p>
+                                                <div class="notice-content">
+                                                    <?php echo $notice; ?>
+                                                </div>
                                             </div>
-                                        </div>
+                                        <?php endif; ?>
                                     </div>
                                 <?php endif; ?>
 
@@ -178,28 +179,32 @@ global $post;
                                         <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>お支払い方法</span></h3>
                                         <ul class="payment-method-list">
                                             <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">銀行振込（日本国内・先払い）</p>
-                                                <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                                <p class="ttl dnp-s-m">● 銀行振込</p>
+                                                <p class="text">期日までに指定の口座にご入金お願い致します。<br/>ご入金確認ができませんとキャンセルとみなすこともございますのでご了承ください。</p>
                                             </li>
                                             <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">Paypalでのお支払い</p>
-                                                <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                                                <picture class="icon-paypal">
-                                                    <source srcset="/wp-content/uploads/icon_paypal.png 2x">
-                                                    <img class="sizes" src="/wp-content/uploads/icon_paypal.png" alt="">
-                                                </picture>
+                                                <p class="ttl dnp-s-m">● 現地、ホーチミンまたはハノイのツアーデスクにてお支払い</p>
+                                                <p class="text">ホーチミン、ハノイにおいて、下記弊社ツアーデスクにてお支払いいただけます。ご来店予定日時がお決まりになりましたら、手配担当者へお知らせください。手配担当者からツアーデスクのスタッフへお客様のご来店日時やお支払い料金を引継ぎます。<br/><br/>
+                                                    ***********************************************************<br/>
+                                                    TAGGER TRAVEL CO., LTD.<br/>
+                                                    HO CHI MINH OFFICE<br/>
+                                                    【営業時間】月～金　09:30～12:30 //13:30～17:30<br/>
+                                                    土・日・祝日：定休<br/>
+                                                    【住所】TAGGER TRAVEL, 5F HBT Tower,<br/>
+                                                    456-458 Hai Ba Trung St., Dist.1, Ho Chi Minh City<br/>
+                                                    【TEL】(84)28-3848-1390<br/>
+                                                    HANOI OFFICE<br/>
+                                                    【営業時間】月～金　09:30～12:30 //13:30～17:30<br/>
+                                                    土・日・祝日：定休<br/>
+                                                    【住所】TAGGER TRAVEL, Room 201 - 8F Detech Tower II,<br/>
+                                                    107 Nguyen Phong Sac Street, Cau Giay District, Hanoi<br/>
+                                                    【TEL】(84)903 491 513<br/>
+                                                    ***********************************************************</p>
                                             </li>
                                             <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">現地、ホーチミンまたはハノイのツアーデスクにてお支払い</p>
-                                                <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                                                <picture class="icon-paypal">
-                                                    <source srcset="/wp-content/uploads/icon_paypal.png 2x">
-                                                    <img class="sizes" src="/wp-content/uploads/icon_paypal.png" alt="">
-                                                </picture>
-                                            </li>
-                                            <li class="payment-method-item" data-aos="fade-up">
-                                                <p class="ttl dnp-s-m">ガイドに直接お支払い（ガイド付きツアーのみ可能）</p>
-                                                <p class="text">ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                                                <p class="ttl dnp-s-m">● ガイドさんへお支払い</p>
+                                                <p class="text">ツアーご参加時に弊社の日本語ガイドに直接お支払いくださいませ。<br/>お支払いには、現金（USドル、日本円*、ベトナムドン）がご利用いただけます。</p><br/>
+                                                <p class="text">※日本円へ換算する際、振込当日の弊社のレートを適応させていただきます。<br/>弊社のレートはホームページから確認できます。</p>
                                             </li>
                                         </ul>
                                     </div>
