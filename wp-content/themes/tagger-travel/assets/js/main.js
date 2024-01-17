@@ -533,6 +533,7 @@ jQuery(function ($) {
     if(checkImg.length){
         checkImg.each(function () {
             $(this).parents("p").addClass("contentImg");
+            $(this).parents("p").attr("data-image", "hasImage");
         });
     }
 
@@ -546,9 +547,14 @@ jQuery(function ($) {
     $(".post-template .inner-info").each(function () {
         var checkImg1 = $(this).find("p img");
         var checkUl1 = $(this).find("ul");
-        if(checkUl1.length && checkImg1.length){
-            $(this).addClass("image-text");
+        $this = $(this);
+        if(checkUl1.length){
+            var checkDataImg = checkUl1.prev().attr("data-image");
+            if(checkDataImg === "hasImage"){
+                $this.addClass("image-text");
+            }
         }
+
     });
 
 
