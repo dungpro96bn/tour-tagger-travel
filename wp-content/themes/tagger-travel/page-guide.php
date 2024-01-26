@@ -206,8 +206,10 @@ $post_slug = $post->post_name;
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>基本情報</span></h2>
                             <?php if (have_rows('basic_information_northern')):?>
                                 <ul class="listDetails-info">
+                                    <?php $num = 1; ?>
                                     <?php while (have_rows('basic_information_northern')) : the_row(); ?>
-                                        <li class="itemDetails-info" data-aos="fade-up">
+                                    <?php $number = $num++; ?>
+                                        <li class="itemDetails-info" id="<?php if($number == 2){ echo "guide-02-info-02"; } elseif ($number == 3){ echo "guide-02-info-03"; } ?>" data-aos="fade-up">
                                             <div class="title">
                                                 <p class="ttl"><?php echo get_sub_field('title_basic_information'); ?></p>
                                             </div>
@@ -219,7 +221,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-02-info-02" class="guideDetails-item item-align">
+                        <div id="guide-02-info-04" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>ローカル名物料理</span></h2>
                             <?php if (have_rows('local_specialties_northern')):?>
                                 <ul class="listDetails-banner">
@@ -246,7 +248,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-02-info-03" class="guideDetails-item">
+                        <div id="guide-02-info-05" class="guideDetails-item">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめレストラン</span></h2>
                             <?php if (have_rows('recommended_restaurants_northern')):?>
                                 <ul class="listDetails-banner">
@@ -299,7 +301,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-02-info-04" class="guideDetails-item item-align">
+                        <div id="guide-02-info-06" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめ観光地</span></h2>
                             <?php if (have_rows('sightseeing_spots_northern')):?>
                                 <ul class="listDetails-banner">
@@ -396,8 +398,10 @@ $post_slug = $post->post_name;
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>基本情報</span></h2>
                             <?php if (have_rows('basic_information_southern')):?>
                                 <ul class="listDetails-info">
+                                    <?php $num = 1; ?>
                                     <?php while (have_rows('basic_information_southern')) : the_row(); ?>
-                                        <li class="itemDetails-info" data-aos="fade-up">
+                                    <?php $number = $num++; ?>
+                                        <li class="itemDetails-info" id="<?php if($number == 2){ echo "guide-03-info-02"; } elseif ($number == 3){ echo "guide-03-info-03"; } ?>" data-aos="fade-up">
                                             <div class="title">
                                                 <p class="ttl"><?php echo get_sub_field('title_basic_information'); ?></p>
                                             </div>
@@ -409,7 +413,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-03-info-02" class="guideDetails-item item-align">
+                        <div id="guide-03-info-04" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>ローカル名物料理</span></h2>
                             <?php if (have_rows('local_specialties_southern')):?>
                                 <ul class="listDetails-banner">
@@ -437,7 +441,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-03-info-03" class="guideDetails-item">
+                        <div id="guide-03-info-05" class="guideDetails-item">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめレストラン</span></h2>
                             <?php if (have_rows('recommended_restaurants_southern')):?>
                                 <ul class="listDetails-banner">
@@ -490,7 +494,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-03-info-04" class="guideDetails-item item-align">
+                        <div id="guide-03-info-06" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめ観光地</span></h2>
                             <?php if (have_rows('sightseeing_spots_southern')):?>
                                 <ul class="listDetails-banner">
@@ -588,8 +592,10 @@ $post_slug = $post->post_name;
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>基本情報</span></h2>
                             <?php if (have_rows('basic_information_central')):?>
                                 <ul class="listDetails-info">
+                                    <?php $num = 1; ?>
                                     <?php while (have_rows('basic_information_central')) : the_row(); ?>
-                                        <li class="itemDetails-info" data-aos="fade-up">
+                                        <?php $number = $num++; ?>
+                                        <li class="itemDetails-info" id="<?php if($number == 2){ echo "guide-04-info-02"; } elseif ($number == 3){ echo "guide-04-info-03"; } ?>" data-aos="fade-up">
                                             <div class="title">
                                                 <p class="ttl"><?php echo get_sub_field('title_basic_information'); ?></p>
                                             </div>
@@ -601,7 +607,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-04-info-02" class="guideDetails-item item-align">
+                        <div id="guide-04-info-04" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>ローカル名物料理</span></h2>
                             <?php if (have_rows('local_specialties_central')):?>
                                 <ul class="listDetails-banner">
@@ -629,7 +635,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-04-info-03" class="guideDetails-item">
+                        <div id="guide-04-info-05" class="guideDetails-item">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめレストラン</span></h2>
                             <?php if (have_rows('recommended_restaurants_central')):?>
                                 <ul class="listDetails-banner">
@@ -682,7 +688,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-04-info-04" class="guideDetails-item item-align">
+                        <div id="guide-04-info-06" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめ観光地</span></h2>
                             <?php if (have_rows('sightseeing_spots_central')):?>
                                 <ul class="listDetails-banner">
@@ -779,9 +785,11 @@ $post_slug = $post->post_name;
                         <div id="guide-05-info-01" class="guideDetails-item">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>基本情報</span></h2>
                             <?php if (have_rows('basic_information_southern_resort')):?>
+                            <?php $num = 1; ?>
                                 <ul class="listDetails-info">
                                     <?php while (have_rows('basic_information_southern_resort')) : the_row(); ?>
-                                        <li class="itemDetails-info" data-aos="fade-up">
+                                    <?php $number = $num++; ?>
+                                        <li class="itemDetails-info" id="<?php if($number == 2){ echo "guide-05-info-02"; } elseif ($number == 3){ echo "guide-05-info-03"; } ?>" data-aos="fade-up">
                                             <div class="title">
                                                 <p class="ttl"><?php echo get_sub_field('title_basic_information'); ?></p>
                                             </div>
@@ -793,7 +801,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-05-info-02" class="guideDetails-item item-align">
+                        <div id="guide-05-info-04" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>ローカル名物料理</span></h2>
                             <?php if (have_rows('local_specialties_southern_resort')):?>
                                 <ul class="listDetails-banner">
@@ -820,7 +828,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-05-info-03" class="guideDetails-item">
+                        <div id="guide-05-info-05" class="guideDetails-item">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめレストラン</span></h2>
                             <?php if (have_rows('recommended_restaurants_southern_resort')):?>
                                 <ul class="listDetails-banner">
@@ -872,7 +880,7 @@ $post_slug = $post->post_name;
                                 </ul>
                             <?php endif; ?>
                         </div>
-                        <div id="guide-05-info-04" class="guideDetails-item item-align">
+                        <div id="guide-05-info-06" class="guideDetails-item item-align">
                             <h2 class="heading-item dnp-s-m" data-aos="fade-up"><span>おすすめ観光地</span></h2>
                             <?php if (have_rows('sightseeing_spots_southern_resort')):?>
                                 <ul class="listDetails-banner">
