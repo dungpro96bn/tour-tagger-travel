@@ -105,8 +105,12 @@ $tour_priceCheck = get_field('tour_price');
                                                 <p class="title dnp-s-m">開始時間</p>
                                                 <div class="select-time">
                                                     <select id="schedule-start" name="schedule-start" class="dnp-s-m">
+                                                        <?php if($schedule_time_morning): ?>
                                                         <option value="schedule_time_morning"><?php echo $schedule_time_morning; ?></option>
+                                                        <?php endif; ?>
+                                                        <?php if($schedule_time_afternoon): ?>
                                                         <option value="schedule_time_afternoon"><?php echo $schedule_time_afternoon; ?></option>
+                                                        <?php endif; ?>
                                                     </select>
                                                 </div>
                                             </div>
@@ -115,8 +119,15 @@ $tour_priceCheck = get_field('tour_price');
                                             <?php while (have_rows('tour_schedule')) : the_row(); ?>
                                                 <li class="tour-schedule-item">
                                                     <p class="title-time">
-                                                        <span class="c-g time-morning"><?php echo get_sub_field('schedule_time'); ?></span>
-                                                        <span class="c-g time-afternoon"><?php echo get_sub_field('schedule_time_afternoon'); ?></span>頃</p>
+                                                        <?php $timeMorning = get_sub_field('schedule_time');
+                                                        if($timeMorning):?>
+                                                        <span class="c-g time-morning"><?php echo get_sub_field('schedule_time'); ?><small>頃</small></span>
+                                                        <?php endif; ?>
+                                                        <?php $timeAfternoon = get_sub_field('schedule_time_afternoon');
+                                                        if($timeAfternoon):?>
+                                                        <span class="c-g time-afternoon"><?php echo get_sub_field('schedule_time_afternoon'); ?><small>頃</small></span>
+                                                        <?php endif; ?>
+                                                    </p>
                                                     <div class="tour-schedule-info">
                                                         <div class="inner-info">
                                                             <?php echo get_sub_field('schedule_content'); ?>
