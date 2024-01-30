@@ -70,7 +70,11 @@ global $post;
                                         <ul class="tour-schedule-list">
                                             <?php while (have_rows('tour_schedule')) : the_row(); ?>
                                                 <li class="tour-schedule-item" data-aos="fade-up">
-                                                    <p class="title-time"><span class="c-g"><?php echo get_sub_field('schedule_time'); ?></span>頃
+                                                    <p class="title-time">
+                                                        <?php $scheduleTime = get_sub_field('schedule_time');
+                                                        if($scheduleTime):?>
+                                                        <span class="c-g"><?php echo get_sub_field('schedule_time'); ?><small>頃</small></span>
+                                                        <?php endif; ?>
                                                     </p>
                                                     <div class="tour-schedule-info">
                                                         <div class="inner-info">
