@@ -478,9 +478,11 @@
 }
 .post-template .sliderImage-tour .list-imageTour .image img{
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .post-template .list-thumbnailTour{
     position: relative;
