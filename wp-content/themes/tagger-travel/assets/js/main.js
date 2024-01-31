@@ -446,8 +446,7 @@ jQuery(function ($) {
             url: urlPage ,
             type:'GET',
             success: function(data){
-                var thisHtml =  $(data).find('#'+classParents + ' .hotel_list');
-                console.log(thisHtml);
+                var thisHtml =  $(data).find('#' + classParents + ' .hotel_list');
                 thisHtml.each(function(){
                     var a = $(this).html();
                     $('#'+classParents + ' .hotel_list').append(a);
