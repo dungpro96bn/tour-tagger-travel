@@ -689,7 +689,7 @@ body:not(.home) #header-menu .header-nav{
     display: none;
 }
 #navList-menu .menu-item a{
-    padding: 0 25px;
+    padding: 0 18px;
     border-bottom: 1px solid transparent;
     font-family: "dnp-shuei-mincho-pr6", sans-serif;
     text-transform: uppercase;
@@ -706,35 +706,53 @@ body:not(.home) #header-menu .header-nav{
 #footer #navList-menu .menu-item a{
     color: #6B5D54;
 }
-.single.single-news #navList-menu .menu-item a{
+.single.single-news #navList-menu .menu-item a,
+.single.single-our-story #navList-menu .menu-item a{
     color: #fff;
 }
-.single.single-news .scroll-header #navList-menu .menu-item a{
+.single.single-news .scroll-header #navList-menu .menu-item a,
+.single.single-our-story .scroll-header #navList-menu .menu-item a{
     color: #6B5D54;
 }
-.single.single-news #navList-menu .menu-item:before{
+.single.single-news #navList-menu .menu-item:before,
+.single.single-our-story #navList-menu .menu-item:before{
     border-right-color: transparent;
 }
-.single.single-news .scroll-header #navList-menu .menu-item:before{
+.single.single-news .scroll-header #navList-menu .menu-item:before,
+.single.single-our-story .scroll-header #navList-menu .menu-item:before{
     border-right-color: #DED8D4;
 }
 .single.single-news .exchange-rate .menu-item-exchange-rate,
-.single.single-news .exchange-rate .menu-item-exchange-rate i{
+.single.single-news .exchange-rate .menu-item-exchange-rate i,
+.single.single-our-story .exchange-rate .menu-item-exchange-rate,
+.single.single-our-story .exchange-rate .menu-item-exchange-rate i{
     color: #fff;
 }
-.single.single-news .scroll-header .exchange-rate .menu-item-exchange-rate i{
+.single.single-news .scroll-header .exchange-rate .menu-item-exchange-rate i,
+.single.single-our-story .scroll-header .exchange-rate .menu-item-exchange-rate i{
     color: #B5A69F;
 }
-.single.single-news .scroll-header .exchange-rate .menu-item-exchange-rate{
+.single.single-news .scroll-header .exchange-rate .menu-item-exchange-rate,
+.single.single-our-story .scroll-header .exchange-rate .menu-item-exchange-rate{
     color: #6B5D54;
 }
-.single-news #header-menu .scroll-header.header-nav .header-logo .logo{
+.single-news #header-menu .scroll-header.header-nav .header-logo .logo,
+.single-our-story #header-menu .scroll-header.header-nav .header-logo .logo{
     opacity: 0;
     visibility: hidden;
 }
-.single.single-news #header-menu .scroll-header.header-nav .header-logo .logo-scroll{
+.single.single-news #header-menu .scroll-header.header-nav .header-logo .logo-scroll,
+.single.single-our-story #header-menu .scroll-header.header-nav .header-logo .logo-scroll{
     opacity: 1;
     visibility: visible;
+}
+.single.single-our-story #navList-menu .menu-item a:after,
+.single.single-news #navList-menu .menu-item a:after{
+    border-top-color: #fff;
+}
+.single.single-our-story .scroll-header #navList-menu .menu-item a:after,
+.single.single-news .scroll-header #navList-menu .menu-item a:after{
+    border-top-color: #A08953;
 }
 .single #navList-menu .menu-item:before{
     border-right-color: #DED8D4;
@@ -819,11 +837,13 @@ body:not(.home) #header-menu .header-nav{
     visibility: visible;
 }
 .single #header-menu .header-nav .header-logo .logo,
-.single.single-news #header-menu .header-nav .header-logo .logo-scroll{
+.single.single-news #header-menu .header-nav .header-logo .logo-scroll,
+.single.single-our-story #header-menu .header-nav .header-logo .logo-scroll{
     opacity: 0;
     visibility: hidden;
 }
-.single-news #header-menu .header-nav .header-logo .logo{
+.single-news #header-menu .header-nav .header-logo .logo,
+.single-our-story #header-menu .header-nav .header-logo .logo{
     opacity: 1;
     visibility: visible;
 }
@@ -1236,14 +1256,17 @@ body:not(.home) #footer {
         margin-left: 0px;
     }
     #header-menu .header-nav #navList-menu .menu-item a{
-        font-size: 14px;
-        padding: 0 20px;
+        font-size: 13px;
+        padding: 0px 14px;
     }
     #header-menu .header-nav .language-site .item-language{
         font-size: 14px;
     }
     .exchange-rate .menu-item-exchange-rate{
         font-size: 14px;
+    }
+    .exchange-rate{
+        padding: 0 40px 0 30px;
     }
 
     /*footer*/
@@ -1303,8 +1326,8 @@ body:not(.home) #footer {
         width: calc(100% - 300px);
     }
     #header-menu .header-nav #navList-menu .menu-item a{
-        padding: 0px 15px;
-        font-size: 13px;
+        padding: 0px 10px;
+        font-size: 12px;
     }
 
     .exchange-rate{
@@ -1845,6 +1868,12 @@ body:not(.home) #footer {
     }
     .exchange-rate .exchangeRate-content{
         padding: 10px 16px 12px;
+    }
+    .single #header-menu .header-nav .header-logo .logo,
+    .single.single-news #header-menu .header-nav .header-logo .logo-scroll,
+    .single.single-our-story #header-menu .header-nav .header-logo .logo-scroll{
+        opacity: 1;
+        visibility: visible;
     }
 
 

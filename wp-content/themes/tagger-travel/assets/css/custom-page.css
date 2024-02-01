@@ -432,6 +432,7 @@ body .wp-pagenavi a:hover{
     line-height: 48px;
     font-weight: bold;
     color: #6A5D54;
+    text-transform: capitalize;
 }
 .single-page .info-content p{
     font-size: 15px;
@@ -910,6 +911,113 @@ body .wp-pagenavi a:hover{
 
 
 
+/*Our Story*/
+/*====================================*/
+.ourStory-block{
+    background: #F8F8F8;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+.ourStory-block .description p{
+    font-size: 22px;
+    line-height: 40px;
+    color: #6A5D54;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.ourStory-list .ourStory-item{
+    margin-bottom: 48px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+}
+.ourStory-list .ourStory-item .ourStory-inner{
+    padding: 40px;
+    border: 1px solid #D5D5D5;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px;
+}
+.ourStory-list .ourStory-item .featured-image {
+    width: 33.2%;
+}
+.ourStory-list .ourStory-item .featured-image .image{
+    display: block;
+    position: relative;
+    padding-bottom: 72.93%;
+}
+.ourStory-list .ourStory-item .featured-image .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.ourStory-list .ourStory-item .ourStory_information {
+    width: 66.8%;
+    padding-left: 32px;
+    padding-top: 2px;
+}
+.ourStory-list .ourStory-item .title {
+    font-size: 22px;
+    line-height: 28px;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+.ourStory-list .ourStory-item .text-info p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    min-height: 66px;
+}
+.ourStory-list .ourStory-item .btn-readMore {
+    display: flex;
+    height: 64px;
+    width: 100%;
+    max-width: 240px;
+    background: #53313A;
+    border: 1px solid #53313A;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 40px;
+    margin: 0 0 0 auto;
+    padding-bottom: 4px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.ourStory-list .ourStory-item .btn-readMore:hover{
+    background: #fff;
+    color: #53313A;
+}
+.ourStory-list .ourStory-item .btn-readMore i {
+    position: absolute;
+    font-size: 13px;
+    top: 50%;
+    right: 21px;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: .3s;
+}
+.ourStory-list .ourStory-item .btn-readMore:hover i{
+    color: #53313A;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1113,6 +1221,47 @@ body .wp-pagenavi a:hover{
         column-gap: 20px;
         row-gap: 30px;
     }
+
+
+    /*Our Story*/
+    /*=======================================*/
+    .ourStory-block .description p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .ourStory-list .ourStory-item .ourStory-inner{
+        padding: 20px;
+    }
+    .ourStory-list .ourStory-item .featured-image {
+        width: 35%;
+    }
+    .ourStory-list .ourStory-item .ourStory_information{
+        width: 65%;
+        padding-left: 25px;
+        padding-top: 0;
+    }
+    .ourStory-list .ourStory-item .title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .ourStory-list .ourStory-item .text-info p{
+        font-size: 13px;
+        line-height: 21px;
+    }
+    .ourStory-list .ourStory-item .btn-readMore{
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1509,6 +1658,52 @@ body .wp-pagenavi a:hover{
     .itemDetails-banner .infoItem .ttl{
         display: none;
     }
+
+
+
+    /*Our Story*/
+    /*=======================================*/
+    .ourStory-block{
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
+    .ourStory-list .ourStory-item{
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    .ourStory-block .description p{
+        margin-bottom: 38px;
+    }
+    .ourStory-list .ourStory-item .ourStory-inner{
+        padding: 30px 20px 40px;
+    }
+    .ourStory-list .ourStory-item .featured-image {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .ourStory-list .ourStory-item .ourStory_information{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .ourStory-list .ourStory-item .title {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 11px;
+    }
+    .ourStory-list .ourStory-item .text-info p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .ourStory-list .ourStory-item .btn-readMore{
+        height: 64px;
+        font-size: 18px;
+        margin: auto;
+    }
+
+
+
+
 
 
 
