@@ -854,8 +854,12 @@ body .wp-pagenavi a:hover{
 }
 .related_tours .tourItem-area .infoTour{
     width: 62%;
-    padding-top: 23px;
+    padding-top: 0;
     padding-left: 16px;
+}
+.related_tours .tourItem-area .infoTour .priceTour{
+    text-align: right;
+    font-size: 14px;
 }
 .related_tours .tourItem-area .time-tour{
     display: flex;
@@ -880,6 +884,13 @@ body .wp-pagenavi a:hover{
     font-weight: bold;
     transition: .3s;
     margin-bottom: 15px;
+    min-height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .related_tours .tourItem-area a:hover .title{
     text-decoration: underline;
@@ -1046,11 +1057,12 @@ body .wp-pagenavi a:hover{
     }
 
     .related_tours .tourItem-area .infoTour{
-        padding-top: 10px;
+        /*padding-top: 10px;*/
     }
     .related_tours .tourItem-area .title{
         font-size: 13px;
         line-height: 21px;
+        min-height: 63px;
     }
     .related_tours .tourItem-area .price{
         font-size: 20px;
@@ -1625,6 +1637,7 @@ body .wp-pagenavi a:hover{
     .related_tours .tourItem-area .title {
         font-size: 16px;
         line-height: 24px;
+        min-height: auto;
     }
     .related_tours .tourItem-area .price {
         font-size: 24px;

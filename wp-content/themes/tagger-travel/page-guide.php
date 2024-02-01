@@ -1,6 +1,11 @@
 <?php get_header();
 global $post, $page;
 $post_slug = $post->post_name;
+
+$front_page_id = get_option('page_on_front');
+$price_vnd = get_field('exchange_rate_vnd', $front_page_id);
+$exchange_rate_vnd = str_replace(',', '', $price_vnd);
+
 ?>
 
     <div id="guide-page" class="<?php echo $post_slug; ?>-pageContent">
@@ -334,6 +339,11 @@ $post_slug = $post->post_name;
                                                             <?php
                                                             $post = $post_object;
                                                             setup_postdata($post);
+
+                                                            $priceTour = get_field('tour_price');
+                                                            $price = str_replace(',','',$priceTour);
+                                                            $priceAfterExchange = (float)$exchange_rate_vnd * (float)$price;
+
                                                             ?>
                                                             <li class="tourItem-area">
                                                                 <a href="<?php the_permalink(); ?>">
@@ -348,8 +358,8 @@ $post_slug = $post->post_name;
                                                                     </div>
                                                                     <div class="infoTour">
                                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                                        <p class="price"><?php echo get_field('tour_price') ?>
-                                                                            <span>VND</span></p>
+                                                                        <p class="price"><?php echo number_format($priceAfterExchange, '0', '.', ','); ?>~ <span>VND</span></p>
+                                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                                     </div>
                                                                 </a>
                                                             </li>
@@ -528,6 +538,10 @@ $post_slug = $post->post_name;
                                                             <?php
                                                             $post = $post_object;
                                                             setup_postdata($post);
+
+                                                            $priceTour = get_field('tour_price');
+                                                            $price = str_replace(',','',$priceTour);
+                                                            $priceAfterExchange = (float)$exchange_rate_vnd * (float)$price;
                                                             ?>
                                                             <li class="tourItem-area">
                                                                 <a href="<?php the_permalink(); ?>">
@@ -542,8 +556,8 @@ $post_slug = $post->post_name;
                                                                     </div>
                                                                     <div class="infoTour">
                                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                                        <p class="price"><?php echo get_field('tour_price') ?>
-                                                                            <span>VND</span></p>
+                                                                        <p class="price"><?php echo number_format($priceAfterExchange, '0', '.', ','); ?>~ <span>VND</span></p>
+                                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                                     </div>
                                                                 </a>
                                                             </li>
@@ -722,6 +736,10 @@ $post_slug = $post->post_name;
                                                             <?php
                                                             $post = $post_object;
                                                             setup_postdata($post);
+
+                                                            $priceTour = get_field('tour_price');
+                                                            $price = str_replace(',','',$priceTour);
+                                                            $priceAfterExchange = (float)$exchange_rate_vnd * (float)$price;
                                                             ?>
                                                             <li class="tourItem-area">
                                                                 <a href="<?php the_permalink(); ?>">
@@ -736,8 +754,8 @@ $post_slug = $post->post_name;
                                                                     </div>
                                                                     <div class="infoTour">
                                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                                        <p class="price"><?php echo get_field('tour_price') ?>
-                                                                            <span>VND</span></p>
+                                                                        <p class="price"><?php echo number_format($priceAfterExchange, '0', '.', ','); ?>~ <span>VND</span></p>
+                                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                                     </div>
                                                                 </a>
                                                             </li>
@@ -913,6 +931,10 @@ $post_slug = $post->post_name;
                                                             <?php
                                                             $post = $post_object;
                                                             setup_postdata($post);
+
+                                                            $priceTour = get_field('tour_price');
+                                                            $price = str_replace(',','',$priceTour);
+                                                            $priceAfterExchange = (float)$exchange_rate_vnd * (float)$price;
                                                             ?>
                                                             <li class="tourItem-area">
                                                                 <a href="<?php the_permalink(); ?>">
@@ -927,8 +949,8 @@ $post_slug = $post->post_name;
                                                                     </div>
                                                                     <div class="infoTour">
                                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
-                                                                        <p class="price"><?php echo get_field('tour_price') ?>
-                                                                            <span>VND</span></p>
+                                                                        <p class="price"><?php echo number_format($priceAfterExchange, '0', '.', ','); ?>~ <span>VND</span></p>
+                                                                        <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
                                                                     </div>
                                                                 </a>
                                                             </li>
