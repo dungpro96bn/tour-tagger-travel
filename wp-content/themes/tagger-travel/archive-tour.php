@@ -123,13 +123,13 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                     <span class="ttl-en c-g"><?php echo $title_en; ?></span>
                                 </h2>
                                 <?php
-                                //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                                 $args = array(
                                     'post_type' => 'tour',
                                     'post_status' => 'publish',
                                     'order' => 'DESC',
-//                                    'paged' => $paged,
-                                    'posts_per_page' => '10',
+                                    'paged' => $paged,
+                                    'posts_per_page' => '9',
                                     'tax_query' => array(
                                         array(
                                             'taxonomy' => 'area',
@@ -151,7 +151,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                 );
                                 $result = new WP_Query($args);
                                 if ($result->have_posts()) : ?>
-                                    <div class="tour-halfDay">
+                                    <div class="tour-halfDay tourArea <?php echo $terms; ?>-tour-halfDay" data-tour="<?php echo $terms; ?>-tour-halfDay">
                                         <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>半日・1日ツアー</span></h3>
                                         <ul class="tourList-area">
                                             <?php while ($result->have_posts()) : $result->the_post();
@@ -194,6 +194,11 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                 </li>
                                             <?php endwhile; ?>
                                         </ul>
+                                        <?php if ($result->max_num_pages > 1):?>
+                                            <div class="navigation-more" data-aos="fade-up">
+                                                <a class="btn-load-navigation dnp-s-m" data-after-load="1" data-check="<?php echo $terms; ?>-tour-halfDay" data-max="<?php echo $result->max_num_pages; ?>" href="#">More<i class="fa-light fa-angle-down"></i></a>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
 
                                 <?php endif;
@@ -205,13 +210,13 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                 ?>
 
                                 <?php
-                                //$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+                                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                                 $args = array(
                                     'post_type' => 'tour',
                                     'post_status' => 'publish',
                                     'order' => 'DESC',
-//                                    'paged' => $paged,
-                                    'posts_per_page' => '10',
+                                    'paged' => $paged,
+                                    'posts_per_page' => '9',
                                     'tax_query' => array(
                                         array(
                                             'taxonomy' => 'area',
@@ -241,7 +246,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                 );
                                 $result = new WP_Query($args);
                                 if ($result->have_posts()) : ?>
-                                    <div class="tour-overnight">
+                                    <div class="tour-overnight tourArea <?php echo $terms; ?>-tour-overnight" data-tour="<?php echo $terms; ?>-tour-overnight">
                                         <h3 class="title-block dnp-s-m" data-aos="fade-up"><span>宿泊付ツアー</span></h3>
                                         <ul class="tourList-area">
                                             <?php while ($result->have_posts()) : $result->the_post();
@@ -284,6 +289,11 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                 </li>
                                             <?php endwhile; ?>
                                         </ul>
+                                        <?php if ($result->max_num_pages > 1):?>
+                                            <div class="navigation-more" data-aos="fade-up">
+                                                <a class="btn-load-navigation dnp-s-m" data-after-load="1" data-check="<?php echo $terms; ?>-tour-overnight" data-max="<?php echo $result->max_num_pages; ?>" href="#">More<i class="fa-light fa-angle-down"></i></a>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
 
                                 <?php endif;

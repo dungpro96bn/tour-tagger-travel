@@ -1,4 +1,4 @@
-// import {al} from "../../../../plugins/all-in-one-seo-pack/dist/Lite/assets/js/vue.runtime.esm-bundler.4a881941";
+
 
 jQuery(function ($) {
 
@@ -428,7 +428,7 @@ jQuery(function ($) {
 
     //pagination ajax
     var total = 1;
-    $('.navigation-more a').click(function(e){
+    $('.hotel-by-rating .navigation-more a').click(function(e){
         e.preventDefault();
         total += 1;
         var dataMax = $(this).attr('data-max');
@@ -450,6 +450,41 @@ jQuery(function ($) {
                 thisHtml.each(function(){
                     var a = $(this).html();
                     $('#'+classParents + ' .hotel_list').append(a);
+                });
+                $(".navigation-more a").removeClass('is-loading');
+            }
+        });
+    });
+
+
+    // navigation tourArea
+    // var totaltourArea = 1;
+    $("body").delegate('.tourArea .navigation-more a', "click", function(e) {
+        e.preventDefault();
+        var num = $(this).attr("data-after-load");
+        var totaltourArea = parseInt(num);
+        var number = totaltourArea += 1;
+        var dataMax = $(this).attr('data-max');
+        if(number >= dataMax){
+            console.log(num);
+            $(this).addClass("is-stop");
+        }
+
+        $(this).attr("data-after-load", number);
+        $(this).addClass('is-loading');
+        var classParents = $(this).parents('.tourArea').attr('data-tour');
+
+        var link = window.location.href.split('#')[0];
+        var urlPage = link + 'page/' + totaltourArea;
+
+        $.ajax({
+            url: urlPage ,
+            type:'GET',
+            success: function(data){
+                var thisHtml =  $(data).find('.tourArea[data-tour="'+classParents + '"] .tourList-area');
+                thisHtml.each(function(){
+                    var a = $(this).html();
+                    $('.tourArea[data-tour="'+classParents + '"] .tourList-area').append(a);
                 });
                 $(".navigation-more a").removeClass('is-loading');
             }
