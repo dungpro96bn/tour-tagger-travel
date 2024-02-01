@@ -957,14 +957,18 @@ body .wp-pagenavi a:hover{
 .ourStory-list .ourStory-item .ourStory_information {
     width: 66.8%;
     padding-left: 32px;
-    padding-top: 2px;
+}
+.ourStory-list .ourStory-item .ourStory_information .date-time{
+    color: #6A5D54;
+    font-size: 16px;
+    margin-bottom: 3px;
 }
 .ourStory-list .ourStory-item .title {
     font-size: 22px;
     line-height: 28px;
     color: #6A5D54;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     text-transform: capitalize;
 }
 .ourStory-list .ourStory-item .text-info p {

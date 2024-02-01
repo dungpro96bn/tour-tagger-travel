@@ -51,6 +51,7 @@
                                         <span class="time-tour dnp-s-m"><?php echo get_field('tour_time'); ?></span>
                                     </div>
                                     <div class="ourStory_information">
+                                        <p class="date-time dnp-s-m"><?php echo get_the_date(); ?></p>
                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
                                         <div class="text-info"><p><?php echo get_field('short_description'); ?></p></div>
                                         <div class="ourStory-contact">
