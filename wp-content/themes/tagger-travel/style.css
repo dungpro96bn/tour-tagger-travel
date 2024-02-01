@@ -689,7 +689,7 @@ body:not(.home) #header-menu .header-nav{
     display: none;
 }
 #navList-menu .menu-item a{
-    padding: 0 18px;
+    padding: 0 25px;
     border-bottom: 1px solid transparent;
     font-family: "dnp-shuei-mincho-pr6", sans-serif;
     text-transform: uppercase;
@@ -1231,7 +1231,14 @@ body:not(.home) #footer {
 
 
 
+@media (max-width: 1550px) {
 
+    #navList-menu .menu-item a{
+        padding: 0 18px;
+    }
+
+
+}
 
 
 
