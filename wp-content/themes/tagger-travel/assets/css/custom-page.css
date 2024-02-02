@@ -931,6 +931,7 @@ body .wp-pagenavi a:hover{
 /*====================================*/
 #ourStory .header-pageEntry{
     background-image: url("/wp-content/uploads/our-story-banner.png");
+    background-position: right;
 }
 .ourStory-block{
     background: #F8F8F8;
