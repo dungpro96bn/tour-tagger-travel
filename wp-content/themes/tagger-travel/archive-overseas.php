@@ -66,7 +66,7 @@
                         $terms = $area->slug;
                         ?>
 
-                        <div id="<?php echo $terms; ?>" class="overseas-colItem" data-aos="fade-up">
+                        <div id="<?php echo $terms; ?>" class="overseas-colItem tourOverseas <?php echo $terms; ?>-tour-overseas" data-tour="<?php echo $terms; ?>-tour-overseas" data-aos="fade-up">
                             <div class="inner">
                                 <h2 class="heading-block" data-aos="fade-up">
                                     <picture class="icon-heading">
@@ -84,7 +84,7 @@
                                     'post_status' => 'publish',
                                     'order' => 'DESC',
                                     'paged' => $paged,
-                                    'posts_per_page' => '9',
+                                    'posts_per_page' => '3',
                                     'tax_query' => array(
                                         array(
                                             'taxonomy' => 'nation',
@@ -121,6 +121,11 @@
                                             </li>
                                         <?php endwhile; ?>
                                     </ul>
+                                    <?php if ($result->max_num_pages > 1):?>
+                                        <div class="navigation-more" data-aos="fade-up">
+                                            <a class="btn-load-navigation dnp-s-m" data-after-load="1" data-check="<?php echo $terms; ?>-tour-overseas" data-max="<?php echo $result->max_num_pages; ?>" href="#">More<i class="fa-light fa-angle-down"></i></a>
+                                        </div>
+                                    <?php endif; ?>
                                 <?php endif;
                                 wp_reset_postdata(); ?>
 

@@ -255,7 +255,9 @@
 .navigation-more a.is-stop{
     pointer-events: none;
 }
-
+.navigation-more a.is-opacity{
+    opacity: .6;
+}
 
 
 

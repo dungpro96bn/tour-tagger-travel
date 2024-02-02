@@ -430,11 +430,13 @@ jQuery(function ($) {
     var total = 1;
     $('.hotel-by-rating .navigation-more a').click(function(e){
         e.preventDefault();
-        total += 1;
+        var number = total += 1;
         var dataMax = $(this).attr('data-max');
         if(total >= dataMax){
             $(this).addClass("is-stop");
         }
+
+        $this = $(this);
 
         $(this).addClass('is-loading');
         var classParents = $(this).parents('.hotel-by-rating').attr('data-class');
@@ -452,6 +454,9 @@ jQuery(function ($) {
                     $('#'+classParents + ' .hotel_list').append(a);
                 });
                 $(".navigation-more a").removeClass('is-loading');
+                if(number >= dataMax){
+                    $this.addClass("is-opacity");
+                }
             }
         });
     });
@@ -466,9 +471,10 @@ jQuery(function ($) {
         var number = totaltourArea += 1;
         var dataMax = $(this).attr('data-max');
         if(number >= dataMax){
-            console.log(num);
             $(this).addClass("is-stop");
         }
+
+        $this = $(this);
 
         $(this).attr("data-after-load", number);
         $(this).addClass('is-loading');
@@ -487,6 +493,46 @@ jQuery(function ($) {
                     $('.tourArea[data-tour="'+classParents + '"] .tourList-area').append(a);
                 });
                 $(".navigation-more a").removeClass('is-loading');
+                if(number >= dataMax){
+                    $this.addClass("is-opacity");
+                }
+            }
+        });
+    });
+
+    // navigation tourOverseas
+    $("body").delegate('.tourOverseas .navigation-more a', "click", function(e) {
+        e.preventDefault();
+        var num = $(this).attr("data-after-load");
+        var totaltourArea = parseInt(num);
+        var number = totaltourArea += 1;
+        var dataMax = $(this).attr('data-max');
+        if(number >= dataMax){
+            $(this).addClass("is-stop");
+        }
+
+        $this = $(this);
+
+        $(this).attr("data-after-load", number);
+        $(this).addClass('is-loading');
+        var classParents = $(this).parents('.tourOverseas').attr('data-tour');
+
+        var link = window.location.href.split('#')[0];
+        var urlPage = link + 'page/' + totaltourArea;
+
+        $.ajax({
+            url: urlPage ,
+            type:'GET',
+            success: function(data){
+                var thisHtml =  $(data).find('.tourOverseas[data-tour="'+classParents + '"] .overseas_list');
+                thisHtml.each(function(){
+                    var a = $(this).html();
+                    $('.tourOverseas[data-tour="'+classParents + '"] .overseas_list').append(a);
+                });
+                $(".navigation-more a").removeClass('is-loading');
+                if(number >= dataMax){
+                    $this.addClass("is-opacity");
+                }
             }
         });
     });
