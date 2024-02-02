@@ -84,7 +84,7 @@
                                     'post_status' => 'publish',
                                     'order' => 'DESC',
                                     'paged' => $paged,
-                                    'posts_per_page' => '3',
+                                    'posts_per_page' => '9',
                                     'tax_query' => array(
                                         array(
                                             'taxonomy' => 'nation',
