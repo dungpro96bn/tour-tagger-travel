@@ -414,9 +414,21 @@ jQuery(function ($) {
         $(".post-template .tourContent-info").removeClass("active");
         $(".tab-action").removeClass("active");
         $(".guide-infoContent").removeClass("active");
-        $(".hotel-colItem .aos-init").removeClass("aos-animate");
         $(".tourContent-infoInner .aos-init").removeClass("aos-animate");
         $(".guide-infoContent .aos-init").removeClass("aos-animate");
+        var url = $(this).attr('href');
+        var dest = url.split('#');
+        var target = dest[1];
+        $('#'+target).addClass("active");
+        $(this).addClass("active");
+        AOS.refresh();
+    });
+
+    $(".tab-action-hotel").click(function (event) {
+        event.preventDefault();
+        var idParents = $(this).parents(".hotel-colItem").attr("data-hotel");
+        $('[data-hotel="'+ idParents +'"] .tab-action-hotel').removeClass("active");
+        $(".hotel-colItem .aos-init").removeClass("aos-animate");
         $(this).parents(".hotel-colItem").find(".hotel-by-rating").removeClass("active");
         var url = $(this).attr('href');
         var dest = url.split('#');

@@ -113,7 +113,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                         }
                         ?>
 
-                        <div id="<?php echo $terms; ?>" class="hotel-colItem" data-aos="fade-up">
+                        <div id="<?php echo $terms; ?>" class="hotel-colItem" data-hotel="<?php echo $terms; ?>-hotel-colItem" data-aos="fade-up">
                             <div class="inner">
                                 <h2 class="heading-block" data-aos="fade-up">
                                     <picture class="icon-heading">
@@ -127,7 +127,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                 <div class="hotel-rating">
                                     <ul class="rating_list">
                                         <li class="rating_item" data-aos="fade-up">
-                                            <a class="tab-action active" href="#<?php echo $terms; ?>-5star">
+                                            <a class="tab-action-hotel active" href="#<?php echo $terms; ?>-5star">
                                                 <span class="ttl dnp-s-m">5つ星</span>
                                                 <picture class="icon-star">
                                                     <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/5_star_sp.png 2x">
@@ -150,7 +150,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                             </a>
                                         </li>
                                         <li class="rating_item" data-aos="fade-up">
-                                            <a class="tab-action" href="#<?php echo $terms; ?>-4star">
+                                            <a class="tab-action-hotel" href="#<?php echo $terms; ?>-4star">
                                                 <span class="ttl dnp-s-m">4つ星</span>
                                                 <picture class="icon-star">
                                                     <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/4_star_sp.png 2x">
@@ -173,7 +173,7 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                             </a>
                                         </li>
                                         <li class="rating_item" data-aos="fade-up">
-                                            <a class="tab-action" href="#<?php echo $terms; ?>-3star">
+                                            <a class="tab-action-hotel" href="#<?php echo $terms; ?>-3star">
                                                 <span class="ttl dnp-s-m">3つ星</span>
                                                 <picture class="icon-star">
                                                     <source media="(max-width: 767px)" srcset="<?php bloginfo('template_directory'); ?>/assets/images/3_star_sp.png 2x">
