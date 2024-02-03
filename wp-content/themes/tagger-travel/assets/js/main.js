@@ -294,7 +294,7 @@ jQuery(function ($) {
             $("#vietnam-tour").attr("data-map", target);
             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
             $('#'+target).addClass("active");
-            var id ='#'+target;
+            // var id ='#'+target;
             // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
             $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
@@ -323,7 +323,7 @@ jQuery(function ($) {
         });
     }
 
-    $(".vietnam-tour .tourInfo-item .close-popup").click(function () {
+    $(".vietnam-tour .tourInfo-item .close-popup, .vietnam-tour .tourInfo .bg-tourInfo").click(function () {
         $(this).parents(".tourInfo-item").removeClass("is-open");
         $('#line-contactBox').fadeIn();
         $("body").removeClass("active");

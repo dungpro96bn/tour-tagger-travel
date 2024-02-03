@@ -1843,7 +1843,7 @@
         position: fixed;
         width: 100%;
         height: 100%;
-        background: rgba(0,0,0,.60);
+        /*background: rgba(0,0,0,.60);*/
         top: 0px;
         left: 0;
         display: flex !important;
@@ -1853,6 +1853,24 @@
         opacity: 0;
         transition: .4s;
         pointer-events: none;
+    }
+    .vietnam-tour .tourInfo .bg-tourInfo{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.60);
+        top: 0px;
+        left: 0;
+        display: flex !important;
+        align-items: center;
+        padding: 50px 16px 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s;
+    }
+    .vietnam-tour .tourInfo .tourInfo-item.is-open .bg-tourInfo{
+        visibility: visible;
+        opacity: 1;
     }
     .vietnam-tour .tourInfo .tourInfo-item.is-open{
         top: 0;
@@ -1887,6 +1905,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 99;
     }
 
 

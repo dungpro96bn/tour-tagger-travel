@@ -2422,6 +2422,7 @@ get_header();
                     <?php while ( $result->have_posts() ) : $result->the_post(); ?>
                     <?php $num = $number++; ?>
                 <div id="<?php echo $slug = get_post_field( 'post_name', get_post() ); ?>" class="tourInfo-item <?php if($num==1){echo "active";} ?>">
+                    <div class="bg-tourInfo"></div>
                     <div class="innerContent">
                         <div data-aos="fade-up">
                             <div class="tag-location dnp-s-m"><p class="ttl" ><?php the_title(); ?></p></div>
