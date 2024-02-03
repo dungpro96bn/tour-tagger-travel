@@ -246,44 +246,44 @@ jQuery(function ($) {
         // });
     });
 
-    window.addEventListener('resize', function(event){
-        if ($(window).width() > 767) {
-            $('.locationItem a').hover(function(){
-                var url = $(this).attr('data-id');
-                var target = url;
-                // $(".tourInfo-item .aos-init").removeClass("aos-animate");
-                $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
-                $(this).addClass("active");
-                $("#vietnam-tour").attr("data-map", target);
-                $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
-                $('#'+target).addClass("active");
-                var id ='#'+target;
-                // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
-                $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
-                $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
-                // $('#'+target+ ' ' +".tourInfo-item .aos-init").removeClass("aos-animate");
-                // AOS.refresh();
-            });
-        } else {
-            $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
-            $('.locationItem a').click(function(event){
-                event.preventDefault();
-                var url = $(this).attr('data-id');
-                var target = url;
-                $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
-                $(this).addClass("active");
-                $("#vietnam-tour").attr("data-map", target);
-                $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("is-open");
-                $('#'+target).addClass("is-open");
-                $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
-                $('#'+target).addClass("active");
-                $('#line-contactBox').fadeOut();
-                $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
-                $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
-                // AOS.refresh();
-            });
-        }
-    });
+    // window.addEventListener('resize', function(event){
+    //     if ($(window).width() > 767) {
+    //         $('.locationItem a').hover(function(){
+    //             var url = $(this).attr('data-id');
+    //             var target = url;
+    //             // $(".tourInfo-item .aos-init").removeClass("aos-animate");
+    //             $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
+    //             $(this).addClass("active");
+    //             $("#vietnam-tour").attr("data-map", target);
+    //             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
+    //             $('#'+target).addClass("active");
+    //             var id ='#'+target;
+    //             // $(id + ".tourInfo-item .aos-init").removeClass("aos-animate");
+    //             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+    //             $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
+    //             // $('#'+target+ ' ' +".tourInfo-item .aos-init").removeClass("aos-animate");
+    //             // AOS.refresh();
+    //         });
+    //     } else {
+    //         $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
+    //         $('.locationItem a').click(function(event){
+    //             event.preventDefault();
+    //             var url = $(this).attr('data-id');
+    //             var target = url;
+    //             $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
+    //             $(this).addClass("active");
+    //             $("#vietnam-tour").attr("data-map", target);
+    //             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("is-open");
+    //             $('#'+target).addClass("is-open");
+    //             $(".vietnam-tour .tourInfo .tourInfo-item").removeClass("active");
+    //             $('#'+target).addClass("active");
+    //             $('#line-contactBox').fadeOut();
+    //             $(".vietnam-tour .tourInfo .list-imageTour").slick("refresh");
+    //             $(".vietnam-tour .tourInfo .list-thumbnailTour").slick("refresh");
+    //             // AOS.refresh();
+    //         });
+    //     }
+    // });
 
     if ($(window).width() > 767) {
         $('.locationItem a').hover(function(){
