@@ -303,6 +303,7 @@ jQuery(function ($) {
     } else {
         $("#vietnam-tour").attr("data-map", "");
         $(".vietnam-tour .map-tour .locationItem a").removeClass("active");
+        $(".tourInfo-item div").removeAttr("data-aos");
         $('.locationItem a').click(function(event){
             event.preventDefault();
             var url = $(this).attr('data-id');
