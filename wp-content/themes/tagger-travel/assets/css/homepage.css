@@ -386,7 +386,7 @@
     position: absolute;
     top: -22px;
     width: 100%;
-    pointer-events: none;
+    /*pointer-events: none;*/
 }
 .vietnam-tour .tourInfo .tag-location .ttl{
     background: #CB4667;

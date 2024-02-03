@@ -324,7 +324,7 @@ jQuery(function ($) {
         });
     }
 
-    $(".vietnam-tour .tourInfo-item .close-popup, .vietnam-tour .tourInfo .bg-tourInfo").click(function () {
+    $(".vietnam-tour .tourInfo-item .close-popup, .vietnam-tour .tourInfo .bg-tourInfo,.vietnam-tour .tourInfo .tag-location").click(function () {
         $(this).parents(".tourInfo-item").removeClass("is-open");
         $('#line-contactBox').fadeIn();
         $("body").removeClass("active");
