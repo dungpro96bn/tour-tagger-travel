@@ -1790,6 +1790,8 @@
         font-size: 12px;
         line-height: 20px;
         margin-bottom: 12px;
+        max-height: 120px;
+        overflow-y: auto;
     }
     .vietnam-tour .popular-tourist-destination .title {
         font-size: 14px;
