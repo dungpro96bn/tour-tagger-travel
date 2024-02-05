@@ -65,12 +65,12 @@
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/slick.css">
     <link rel="stylesheet" media="all" href="<?php bloginfo('stylesheet_url'); ?>?ver=<?php echo rand(); ?>">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/tour-page.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/hotel.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/overseas.css">
-    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom-page.css">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom.css?ver=<?php echo rand(); ?>">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/homepage.css?ver=<?php echo rand(); ?>">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/tour-page.css?ver=<?php echo rand(); ?>">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/hotel.css?ver=<?php echo rand(); ?>">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/overseas.css?ver=<?php echo rand(); ?>">
+    <link rel="stylesheet" media="all" href="<?php bloginfo('template_directory'); ?>/assets/css/custom-page.css?ver=<?php echo rand(); ?>">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/pro.js" crossorigin="anonymous"></script>
