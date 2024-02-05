@@ -1793,6 +1793,22 @@
         max-height: 120px;
         overflow-y: auto;
     }
+    .vietnam-tour .contentInfo .text::-webkit-scrollbar{
+        width: 10px;
+    }
+    .vietnam-tour .contentInfo .text::-webkit-scrollbar-track:hover{
+        background: #ccc;
+    }
+    .vietnam-tour .contentInfo .text::-webkit-scrollbar-track{
+        background: #fff;
+    }
+    .vietnam-tour .contentInfo .text::-webkit-scrollbar-thumb{
+        background: #777777;
+        border-radius: 10px;
+        border: 3.5px solid transparent;
+        background-clip: content-box;
+        cursor: pointer;
+    }
     .vietnam-tour .popular-tourist-destination .title {
         font-size: 14px;
         line-height: 23px;
