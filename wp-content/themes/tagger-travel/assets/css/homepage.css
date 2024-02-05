@@ -1790,7 +1790,7 @@
         font-size: 12px;
         line-height: 20px;
         margin-bottom: 12px;
-        max-height: 120px;
+        max-height: 110px;
         overflow-y: auto;
     }
     .vietnam-tour .contentInfo .text::-webkit-scrollbar{
