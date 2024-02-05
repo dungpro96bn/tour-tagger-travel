@@ -83,7 +83,7 @@
     <!--file js-->
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/aos.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/assets/js/slick.min.js"></script>
-    <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+    <script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js?ver=<?php echo rand(); ?>"></script>
 
 
     <?php if (is_admin_bar_showing()): ?>
