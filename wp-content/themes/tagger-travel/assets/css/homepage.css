@@ -1823,7 +1823,7 @@
         position: relative;
         padding-top: 0;
     }
-    .vietnam-tour .popular-tourist-destination .title:after{
+    .vietnam-tour .popular-tourist-destination .location:after{
         display: none;
     }
     .vietnam-tour .sliderInfo-tour {
