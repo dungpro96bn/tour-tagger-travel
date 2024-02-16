@@ -249,7 +249,11 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
                                                         <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
                                                         <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
-                                                        <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
+                                                        <?php $hotel_information = get_field('hotel_information');
+                                                        if($hotel_information):?>
+                                                            <div class="text-info"><?php echo $hotel_information; ?></div>
+                                                            <button class="btn-seeMore" value="<?php the_title(); ?>">See More</button>
+                                                        <?php endif; ?>
                                                         <div class="hotel-contact">
                                                             <form method="POST" action="/contact/">
                                                                 <input type="hidden" name="title" value="<?php the_title(); ?>">
@@ -323,7 +327,11 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
                                                         <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
                                                         <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
-                                                        <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
+                                                        <?php $hotel_information = get_field('hotel_information');
+                                                        if($hotel_information):?>
+                                                            <div class="text-info"><?php echo $hotel_information; ?></div>
+                                                            <button class="btn-seeMore" value="<?php the_title(); ?>">See More</button>
+                                                        <?php endif; ?>
                                                         <div class="hotel-contact">
                                                             <form method="POST" action="/contact/">
                                                                 <input type="hidden" name="title" value="<?php the_title(); ?>">
@@ -396,7 +404,11 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
                                                         <h4 class="title dnp-s-m"><?php the_title(); ?></h4>
                                                         <p class="price"><?php echo number_format($priceAfterExchange,'0', '.', ','); ?>~ <span>VND</span></p>
                                                         <p class="priceTour">(USD<?php echo $priceTour; ?>)</p>
-                                                        <div class="text-info"><?php echo get_field('hotel_information'); ?></div>
+                                                        <?php $hotel_information = get_field('hotel_information');
+                                                        if($hotel_information):?>
+                                                            <div class="text-info"><?php echo $hotel_information; ?></div>
+                                                            <button class="btn-seeMore" value="<?php the_title(); ?>">See More</button>
+                                                        <?php endif; ?>
                                                         <div class="hotel-contact">
                                                             <form method="POST" action="/contact/">
                                                                 <input type="hidden" name="title" value="<?php the_title(); ?>">
@@ -427,5 +439,18 @@ $exchange_rate_vnd = str_replace(',', '', $price_vnd);
 
         </div>
     </div>
+
+
+<div id="hotel_popup">
+    <div class="popup-inner">
+        <div class="popupContent">
+            <h3 class="title-popup dnp-s-m"></h3>
+            <div class="popupInfo">
+            </div>
+            <div class="close-popup"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+    <div class="mask-popup"></div>
+</div>
 
 <?php get_footer(); ?>

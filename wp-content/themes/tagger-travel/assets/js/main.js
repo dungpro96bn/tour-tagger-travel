@@ -650,7 +650,17 @@ jQuery(function ($) {
 
     });
 
+    $(".hotel-by-rating .hotel_item .hotel_information .btn-seeMore").click(function () {
+        var title = $(this).val();
+        var popupInfo = $(this).prev().html();
+        $("#hotel_popup .title-popup").html(title);
+        $("#hotel_popup .popupInfo").html(popupInfo);
+        $("#hotel_popup").addClass("is-open");
+    });
 
+    $("#hotel_popup .mask-popup, #hotel_popup .close-popup").click(function () {
+        $("#hotel_popup").removeClass("is-open");
+    })
 
 
 });

@@ -149,13 +149,42 @@
     top: -2px;
 }
 .hotel-by-rating .hotel_item .text-info{
-    padding-right: 10px;
     margin-bottom: 23px;
+    height: 48px;
+    overflow: hidden;
+}
+.hotel-by-rating .hotel_item .text-info img{
+    display: none;
 }
 .hotel-by-rating .hotel_item .text-info p{
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 22px;
+}
+.hotel-by-rating .hotel_item .hotel_information .btn-seeMore{
+    display: flex;
+    height: 48px;
+    width: 100%;
+    max-width: 180px;
+    background: #53313A;
+    border: 1px solid #53313A;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 40px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.hotel-by-rating .hotel_item .hotel_information .btn-seeMore:hover{
+    background: #fff;
+    color: #53313A;
 }
 .hotel-by-rating .hotel_item .text-info p:last-child{
     margin-bottom: 0;
@@ -260,6 +289,129 @@
 }
 
 
+#hotel_popup{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hotel_popup.is-open{
+    opacity: 1;
+    visibility: visible;
+}
+#hotel_popup .mask-popup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+}
+#hotel_popup .popup-inner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px 20px 40px 40px;
+    background: #fff;
+}
+#hotel_popup .popupContent{
+    margin: auto;
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    background: #fff;
+    width: 100%;
+    padding-right: 20px;
+}
+#hotel_popup .popupContent::-webkit-scrollbar{
+    width: 10px;
+}
+#hotel_popup .popupContent::-webkit-scrollbar-track:hover{
+    background: #ccc;
+}
+#hotel_popup .popupContent::-webkit-scrollbar-track{
+    background: #fff;
+}
+#hotel_popup .popupContent::-webkit-scrollbar-thumb{
+    background: #777777;
+    border-radius: 10px;
+    border: 3.5px solid transparent;
+    background-clip: content-box;
+    cursor: pointer;
+}
+#hotel_popup .popupContent::-webkit-scrollbar-thumb:hover{
+    /*background: #a4a4a4;*/
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+#hotel_popup .title-popup{
+    font-size: 22px;
+    line-height: 28px;
+    color: #6A5D54;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#hotel_popup .popupContent img{
+    /*max-width: 400px;*/
+    margin: auto;
+}
+#hotel_popup .popupContent p{
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+#hotel_popup .popupContent p:last-child{
+    margin-bottom: 0;
+}
+#hotel_popup .popupContent li{
+    margin-top: 24px;
+}
+#hotel_popup .popupContent li img{
+    margin-top: 24px;
+}
+#hotel_popup .close-popup{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #CB4667;
+    border: 2px solid #CB4667;
+    border-radius: 50%;
+    top: -20px;
+    right: -20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: bold;
+    padding-top: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+#hotel_popup .close-popup:hover{
+    background: #fff;
+    color: #CB4667;
+}
+
+
+
+
 
 @media (max-width: 1440px) {
 
@@ -293,7 +445,10 @@
     }
 
 
-
+    #hotel_popup .popupContent{
+        min-height: 550px;
+        max-height: 550px;
+    }
 
 
 
@@ -366,9 +521,20 @@
 
 
 
-
-
-
+    #hotel_popup .popupContent{
+        min-height: 600px;
+        max-height: 600px;
+    }
+    #hotel_popup .popup-inner{
+        width: calc(100% - 60px);
+    }
+    #hotel_popup .title-popup{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #hotel_popup .popupContent p{
+        font-size: 14px;
+    }
 
 
 
@@ -501,10 +667,29 @@
     }
 
 
+    .hotel-by-rating .hotel_item .hotel_information .btn-seeMore{
+        margin: 0 auto 40px;
+        max-width: 240px;
+        padding-bottom: 4px;
+        height: 64px;
+    }
 
-
-
-
+    #hotel_popup .popup-inner{
+        width: calc(100% - 40px);
+        padding: 20px 10px 20px 20px;
+    }
+    #hotel_popup .close-popup{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        top: -15px;
+        right: -15px;
+    }
+    #hotel_popup .popupContent{
+        padding-right: 10px;
+        min-height: 480px;
+        max-height: 480px;
+    }
 
 
 
