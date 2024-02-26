@@ -330,7 +330,7 @@
 }
 #hotel_popup .popupContent{
     margin: auto;
-    min-height: 600px;
+    min-height: 300px;
     max-height: 600px;
     overflow-y: auto;
     background: #fff;
@@ -448,7 +448,7 @@
 
 
     #hotel_popup .popupContent{
-        min-height: 550px;
+        min-height: 300px;
         max-height: 550px;
     }
 
@@ -524,7 +524,7 @@
 
 
     #hotel_popup .popupContent{
-        min-height: 600px;
+        min-height: 300px;
         max-height: 600px;
     }
     #hotel_popup .popup-inner{
@@ -689,7 +689,7 @@
     }
     #hotel_popup .popupContent{
         padding-right: 10px;
-        min-height: 480px;
+        min-height: 250px;
         max-height: 480px;
     }
 
