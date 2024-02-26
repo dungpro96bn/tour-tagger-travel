@@ -325,6 +325,8 @@
     width: 100%;
     padding: 40px 20px 40px 40px;
     background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.4);
 }
 #hotel_popup .popupContent{
     margin: auto;
