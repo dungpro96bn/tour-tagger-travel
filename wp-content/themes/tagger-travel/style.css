@@ -487,6 +487,11 @@ html :where(img[class*=wp-image-]){
 .page-request-advice #header-menu:after{
     background: transparent;
 }
+
+.single.single-our-story #header-menu:after{
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.4) 100%);
+}
+
 #header-menu .header-nav:after{
     content: "";
     position: absolute;
